@@ -4,7 +4,7 @@
   justify-content: right;
   font-size: 15pt;
   background-color: #333;
-  box-shadow: 4px 4px 6px black;
+  box-shadow: var(--shadow);
   color: lightgray;
   z-index: 3;
   width: 100%;

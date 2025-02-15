@@ -1,0 +1,36 @@
+.toTop {
+  width: fit-content;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin: auto;
+}
+
+#toTopText {
+  font-family: monospace;
+  font-size: 12pt;
+}
+
+#arrow {
+  width: 50px;
+}
+
+#arrow:hover {
+  animation: arrow 1.5s ease infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, -15px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}

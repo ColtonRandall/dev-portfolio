@@ -42,7 +42,7 @@
 
 #github:hover {
   transition-duration: 0.4s;
-  box-shadow: var(--shadow);
+  box-shadow: 4px 4px 6px black;
   border-radius: 5px;
   border: 1.5px solid whitesmoke;
   padding: 4px;
@@ -55,7 +55,7 @@
 
 #gmail:hover {
   transition-duration: 0.4s;
-  box-shadow: var(--shadow);
+  box-shadow: 4px 4px 6px black;
   border-radius: 5px;
   border: 1.5px solid whitesmoke;
   padding: 4px;

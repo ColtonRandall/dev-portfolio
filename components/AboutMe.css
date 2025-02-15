@@ -1,0 +1,158 @@
+#ABOUTME {
+  display: none;
+  transition: height 1s, width 1s, padding 1s, visibility 1s,
+    opacity 0.5s ease-out;
+}
+
+#aboutmeTitle {
+  text-align: center;
+  font-size: 35pt;
+  text-shadow: var(--textShadow);
+}
+
+.aboutMeContent * {
+  font-size: 18pt;
+  text-align: justify;
+  text-shadow: var(--textShadow);
+  font-weight: 400;
+}
+
+.aboutMeContent {
+  width: 80%;
+  padding-top: 10%;
+  margin: auto;
+}
+
+/* IMAGES */
+.coleNanook {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5%;
+  margin: auto;
+}
+
+#coleNanookContent {
+  width: 100%;
+}
+
+#coleNanookIMG {
+  width: 80%;
+  margin: auto;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 30px;
+}
+
+/* RWANDA1 */
+.Rwanda1Div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#Rwanda1Content {
+  width: 100%;
+}
+
+#rwanda1IMG {
+  width: 75%;
+  margin: auto;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 30px;
+  filter: contrast(130%);
+}
+
+/* RWANDA2 */
+
+.Rwanda2Div {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  padding-top: 5%;
+}
+
+#Rwanda2Content {
+  width: 100%;
+}
+
+#rwanda2IMG {
+  margin: auto;
+  width: 70%;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+}
+
+#extraPhotos {
+  display: flex;
+  padding: 5px;
+}
+
+#elephant {
+  margin: auto;
+  width: 25%;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+}
+
+#kenya {
+  margin: auto;
+  width: 50%;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+  filter: contrast(110%);
+}
+
+/* OTAGO */
+
+#otagoContent1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#otagoImages {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+#otagoIMG {
+  width: 30%;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+}
+
+#otagoGradIMG {
+  width: 40%;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+}
+
+#otagoContent2 {
+  padding-top: 5%;
+}
+
+/* AVIATION */
+
+.flyingDiv,
+.XeroDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#flyingContent,
+#xeroContent {
+  width: 100%;
+}
+
+#flyingIMG {
+  width: 50%;
+  margin: auto;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+}
+
+#xeroIMG {
+  width: 25rem;
+  margin: auto;
+  box-shadow: 4px 4px 6px black;
+  border-radius: 10px;
+}
