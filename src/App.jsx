@@ -1,80 +1,29 @@
-// import { useState } from "react";
-// import reactLogo from "./assets/react.svg";
-// import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "../components/Navbar.jsx";
+import Header from "../components/Header.jsx";
+import Icons from "../components/Icons.jsx";
+import Scrollbar from "../components/Scrollbar.jsx";
 
 function App() {
   return (
     <body>
-      <div className="nav">
-        <a href="./projects.html">Personal Projects</a>
-        <a href="./certificates.html">Certifications</a>
-        <a href="./index.html" id="home">
-          Home
-        </a>
-      </div>
+      <Navbar />
 
       <br />
       <br />
       <br />
 
-      <div id="header">
-        <p id="title">
-          Colton <br />
-          Randall
-        </p>
-        <img src="./images/me.jpeg" id="mainphoto" title="Me 🙂" />
-
-        <div id="subTitle">
-          <div id="SEtitle">
-            Software Engineer <blink>|</blink>
-          </div>
-          <br />
-          with a background in Aviation and Biochemistry
-        </div>
-        <p id="location">
-          &#x1F30F; <br />
-          Auckland | New Zealand
-        </p>
-      </div>
-
-      <div className="iconLinks">
-        {/* <!-- CV --> */}
-        <a href="./documents/Colton CV 2025.pdf">
-          <img src="./images/CV3.png" id="cvicon" title="View my CV!" />
-        </a>
-
-        {/* <!-- github --> */}
-        <a href="https://github.com/ColtonRandall">
-          <img
-            src="./images/github4.png"
-            id="github"
-            title="See what I've been working on!"
-          />
-        </a>
-
-        {/* <!-- linkedin --> */}
-        <a href="https://www.linkedin.com/in/coltonrandall/">
-          <img
-            src="./images/linkedin3.png"
-            id="linkedin"
-            title="Find me on LinkedIn!"
-          />
-        </a>
-
-        {/* <!-- email --> */}
-        <a href="mailto:coltonrandall.nz@gmail.com">
-          <img src="./images/mail.png" id="gmail" title="Send me an email!" />
-        </a>
-      </div>
+      <Header />
+      <Icons />
 
       <br />
       <br />
 
+      <Scrollbar />
       {/* <!-- scroll down bar --> */}
-      <div id="scrollDiv">
+      {/* <div id="scrollDiv">
         <img src="./images/scroll.png" id="scroll" />
-      </div>
+      </div> */}
 
       {/* <!-- Aboutme reveal button --> */}
       <div id="buttonDiv">

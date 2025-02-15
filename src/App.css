@@ -16,7 +16,7 @@ body {
   background-attachment: fixed;
 }
 
-#mainphoto {
+/* #mainphoto {
   width: 55%;
   border-radius: 20%;
   margin: auto;
@@ -31,9 +31,9 @@ body {
   animation-delay: 2s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-}
+} */
 
-@keyframes mainImageFadeIn {
+/* @keyframes mainImageFadeIn {
   0% {
     opacity: 0;
   }
@@ -41,9 +41,9 @@ body {
   100% {
     opacity: 1;
   }
-}
+} */
 
-.iconLinks {
+/* .iconLinks {
   margin: auto;
   margin-top: 7%;
   width: 50%;
@@ -104,44 +104,16 @@ body {
   border-radius: 5px;
   border: 1.5px solid whitesmoke;
   padding: 4px;
-}
+} */
 
-/* CONTENT */
-.nav {
-  position: fixed;
-  display: flex;
-  justify-content: right;
-  font-size: 15pt;
-  background-color: var(--nav-colour);
-  box-shadow: var(--shadow);
-  color: lightgray;
-  z-index: 3;
-  width: 100%;
-  top: 0;
-}
-
-.nav * {
-  color: var(--textColour);
-  text-decoration: none;
-  border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  margin-right: 5px;
-}
-
-div.nav a:hover {
-  color: tomato;
-}
-
-#home {
+/* #home {
   color: tomato;
   text-decoration: underline;
   background-color: rgb(74, 74, 75);
   margin-right: 20px;
-}
+} */
 
-#header {
+/* #header {
   margin-top: 10%;
   margin: auto;
   display: grid;
@@ -161,9 +133,9 @@ div.nav a:hover {
   text-align: center;
   font-weight: 500;
   margin: auto;
-}
+} */
 
-@keyframes titleFadeIn {
+/* @keyframes titleFadeIn {
   0% {
     opacity: 0;
     color: tomato;
@@ -193,9 +165,9 @@ div.nav a:hover {
 blink {
   -webkit-animation: 1.5s linear infinite condemned_blink_effect;
   animation: 1.5s linear infinite condemned_blink_effect;
-}
+} */
 
-@keyframes condemned_blink_effect {
+/* @keyframes condemned_blink_effect {
   0% {
     visibility: hidden;
   }
@@ -215,11 +187,11 @@ blink {
   font-size: 13pt;
   font-weight: 500;
   margin: auto;
-}
+} */
 
 /* SCROLL ICON */
 
-#scrollDiv {
+/* #scrollDiv {
   margin-top: 4%;
 }
 
@@ -251,7 +223,7 @@ blink {
   display: flex;
   justify-content: center;
   bottom: 80px;
-}
+} */
 
 /* ABOUT ME BUTTON */
 
@@ -488,7 +460,7 @@ hr {
   width: 85%;
 }
 
-/* TABLET */
+/* TABLET - keep in App.css */
 @media (max-width: 1400px) {
   #background {
     width: 100%;
@@ -518,7 +490,7 @@ hr {
   }
 }
 
-/* MOBILE */
+/* MOBILE - keep in App.css */
 
 @media (max-width: 900px) {
   #background {

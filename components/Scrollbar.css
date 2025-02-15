@@ -1,0 +1,33 @@
+#scrollDiv {
+  margin-top: 4%;
+}
+
+#scroll {
+  -webkit-animation: scrolling 3s ease infinite;
+  -moz-animation: scrolling 3s ease infinite;
+  -o-animation: scrolling 3s ease infinite;
+  animation: scrolling 3s ease infinite;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(0, 100px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+#scroll {
+  position: relative;
+  width: 3%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  bottom: 80px;
+}

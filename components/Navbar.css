@@ -1,0 +1,33 @@
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  font-size: 15pt;
+  background-color: #333;
+  box-shadow: 4px 4px 6px black;
+  color: lightgray;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+}
+
+.nav * {
+  color: rgb(207, 238, 250);
+  text-decoration: none;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  margin-right: 5px;
+}
+
+div.nav a:hover {
+  color: tomato;
+}
+
+#home {
+  color: tomato;
+  text-decoration: underline;
+  background-color: rgb(74, 74, 75);
+  margin-right: 20px;
+}

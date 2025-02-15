@@ -1,0 +1,99 @@
+#header {
+  margin-top: 10%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-area: auto;
+  width: 80%;
+  text-shadow: 2px 2px 3px black;
+}
+
+#title {
+  animation: titleFadeIn ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+#title {
+  text-align: center;
+  font-weight: 500;
+  margin: auto;
+}
+
+#mainphoto {
+  width: 55%;
+  border-radius: 20%;
+  margin: auto;
+  border: 3px solid rgb(66, 66, 66);
+  box-shadow: var(--shadow);
+  margin-top: 10%;
+  filter: brightness(95%);
+  animation: mainImageFadeIn ease 3s;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+@keyframes mainImageFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titleFadeIn {
+  0% {
+    opacity: 0;
+    color: tomato;
+    font-size: 12pt;
+  }
+
+  100% {
+    opacity: 1;
+    color: tomato;
+    font-size: 80pt;
+    text-shadow: 5px 5px 7px black;
+  }
+}
+
+#subTitle {
+  color: var(--textColour);
+  text-align: center;
+  font-size: 14pt;
+  font-weight: 500;
+  margin: auto;
+}
+
+#SEtitle {
+  font-size: 30pt;
+}
+
+blink {
+  -webkit-animation: 1.5s linear infinite condemned_blink_effect;
+  animation: 1.5s linear infinite condemned_blink_effect;
+}
+
+@keyframes condemned_blink_effect {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+#location {
+  color: var(--textColour);
+  text-align: center;
+  font-size: 13pt;
+  font-weight: 500;
+  margin: auto;
+}
