@@ -1,6 +1,6 @@
-import "./Scrollbar.css";
+import "./ScrollDown.css";
 
-function Scrollbar() {
+function ScrollDown() {
   return (
     <div id="scrollDiv">
       <img src="./images/scroll.png" id="scroll" />
@@ -8,4 +8,4 @@ function Scrollbar() {
   );
 }
 
-export default Scrollbar;
+export default ScrollDown;
