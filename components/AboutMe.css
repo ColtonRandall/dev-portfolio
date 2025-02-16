@@ -1,7 +1,14 @@
 #ABOUTME {
-  display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out;
   transition: height 1s, width 1s, padding 1s, visibility 1s,
     opacity 0.5s ease-out;
+}
+
+#ABOUTME.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 #aboutmeTitle {
@@ -23,7 +30,6 @@
   margin: auto;
 }
 
-/* IMAGES */
 .coleNanook {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -42,7 +48,6 @@
   border-radius: 30px;
 }
 
-/* RWANDA1 */
 .Rwanda1Div {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -59,8 +64,6 @@
   border-radius: 30px;
   filter: contrast(130%);
 }
-
-/* RWANDA2 */
 
 .Rwanda2Div {
   display: grid;
@@ -99,8 +102,6 @@
   filter: contrast(110%);
 }
 
-/* OTAGO */
-
 #otagoContent1 {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -127,8 +128,6 @@
 #otagoContent2 {
   padding-top: 5%;
 }
-
-/* AVIATION */
 
 .flyingDiv,
 .XeroDiv {

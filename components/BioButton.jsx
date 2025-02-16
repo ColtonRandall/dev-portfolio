@@ -1,10 +1,10 @@
 import "./BioButton.css";
 
-function BioButton() {
+function BioButton({ toggleAboutMe, isVisible }) {
   return (
     <div id="buttonDiv">
-      <button type="button" onclick="showAboutme()">
-        Get to know me!
+      <button type="button" onClick={toggleAboutMe}>
+        {isVisible ? "Hide About Me" : "Show About Me"}
       </button>
     </div>
   );

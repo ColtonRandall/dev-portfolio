@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar.jsx";
 import Header from "../components/Header.jsx";
 import Icons from "../components/Icons.jsx";
 import Scrollbar from "../components/Scrollbar.jsx";
-import BioButton from "../components/BioButton.jsx";
 import AboutMe from "../components/AboutMe.jsx";
 import UpArrow from "../components/UpArrow.jsx";
 
 function App() {
+  console.log("App component rendered"); // Debugging
   return (
-    <body>
+    <div>
       <Navbar />
       <br />
       <br />
@@ -20,10 +20,9 @@ function App() {
       <br />
 
       <Scrollbar />
-      <BioButton />
       <AboutMe />
       <UpArrow />
-    </body>
+    </div>
   );
 }
 
