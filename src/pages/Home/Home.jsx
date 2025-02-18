@@ -8,18 +8,26 @@ import UpArrow from "../../components/UpArrow/UpArrow.jsx";
 
 function Home() {
   return (
-    <div>
-      <Navbar />
-      <br />
-      <br />
-      <br />
-      <Header />
-      <Icons />
-      <br />
-      <br />
-      <ScrollDown />
-      <AboutMe />
-      <UpArrow />
+    <div className="home">
+      <header>
+        <Navbar />
+        <br />
+        <br />
+        <br />
+        <Header />
+      </header>
+
+      <main>
+        <Icons />
+        <br />
+        <br />
+        <ScrollDown />
+        <AboutMe />
+      </main>
+
+      <footer>
+        <UpArrow />
+      </footer>
     </div>
   );
 }
