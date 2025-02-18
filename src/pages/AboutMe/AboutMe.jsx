@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import BioButton from "../BioButton/BioButton";
+import BioButton from "../../components/BioButton/BioButton";
 import "./AboutMe.css";
 
 function AboutMe() {
