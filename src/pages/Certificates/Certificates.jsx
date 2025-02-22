@@ -5,17 +5,7 @@ import { Link } from "react-router-dom";
 function Certificates() {
   return (
     <div>
-      {/* <div className="nav">
-        <Link to="/projects" id="projects">
-          Personal Projects
-        </Link>
-        <Link to="/certificates" id="certs">
-          Certifications
-        </Link>
-        <Link to="/" id="home">
-          Home
-        </Link>
-      </div> */}
+      <title>Certificates</title>
 
       <p id="mainTitle">Certifications</p>
 

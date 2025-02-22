@@ -22,7 +22,7 @@
   margin-right: 5px;
 }
 
-div.nav a:hover {
+#projects:hover {
   color: tomato;
 }
 
