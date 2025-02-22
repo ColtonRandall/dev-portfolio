@@ -12,22 +12,6 @@ function Certificates() {
 
       <hr />
 
-      <p id="industryCertsTitle">Industry</p>
-      <div className="industryCerts">
-        <img
-          src="../public/images/awsCP.png"
-          id="awsCP"
-          title="AWS Certified Cloud Practitioner"
-        />
-        <img
-          src="../public/images/aws.png"
-          id="aws"
-          title="AWS Academy Graduate"
-        />
-      </div>
-
-      <hr />
-
       <p id="UniCertsTitle">Postgraduate Studies</p>
       <div className="uniCerts">
         <img
@@ -39,6 +23,22 @@ function Certificates() {
           src="../public/images/719.png"
           id="webPGcert"
           title="COMPSCI719 - Programming for Web Technologies"
+        />
+      </div>
+
+      <hr />
+
+      <p id="industryCertsTitle">Industry</p>
+      <div className="industryCerts">
+        <img
+          src="../public/images/awsCP.png"
+          id="awsCP"
+          title="AWS Certified Cloud Practitioner"
+        />
+        <img
+          src="../public/images/aws.png"
+          id="aws"
+          title="AWS Academy Graduate"
         />
       </div>
 

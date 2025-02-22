@@ -15,7 +15,7 @@ function AboutMe() {
           if (aboutMeRef.current) {
             aboutMeRef.current.scrollIntoView({ behavior: "smooth" });
           }
-        }, 100);
+        }, 200);
       }
 
       return newVisibility;
@@ -190,7 +190,6 @@ function AboutMe() {
           </div>
 
           <br />
-          <hr />
           <hr />
           <br />
           <br />

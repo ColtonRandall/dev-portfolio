@@ -1,22 +1,3 @@
-#ABOUTME {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
-  transition: height 1s, width 1s, padding 1s, visibility 1s,
-    opacity 0.5s ease-out;
-}
-
-#ABOUTME.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-#aboutmeTitle {
-  text-align: center;
-  font-size: 35pt;
-  text-shadow: var(--textShadow);
-}
-
 .aboutMeContent * {
   font-size: 18pt;
   text-align: justify;
@@ -37,7 +18,13 @@
   margin: auto;
 }
 
-#coleNanookContent {
+#Rwanda1Content,
+#Rwanda2Content,
+#flyingContent,
+#xeroContent,
+#coleNanookContent,
+#otagoContent1,
+#otagoContent2 {
   width: 100%;
 }
 
@@ -53,9 +40,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-#Rwanda1Content {
-  width: 100%;
-}
 
 #rwanda1IMG {
   width: 75%;
@@ -69,10 +53,6 @@
   display: grid;
   grid-template-columns: 0.5fr 1fr;
   padding-top: 5%;
-}
-
-#Rwanda2Content {
-  width: 100%;
 }
 
 #rwanda2IMG {
@@ -135,11 +115,6 @@
   grid-template-columns: 1fr 1fr;
   padding-top: 5%;
   padding-bottom: 5%;
-}
-
-#flyingContent,
-#xeroContent {
-  width: 100%;
 }
 
 #flyingIMG {

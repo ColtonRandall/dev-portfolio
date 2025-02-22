@@ -1,5 +1,11 @@
 body {
   color: var(--textColour);
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 200px;
 }
 
 #gitHubLink {

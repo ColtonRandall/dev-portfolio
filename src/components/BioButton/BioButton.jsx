@@ -4,7 +4,7 @@ function BioButton({ toggleAboutMe, isVisible }) {
   return (
     <div id="buttonDiv">
       <button type="button" onClick={toggleAboutMe}>
-        {isVisible ? "Hide About Me" : "Show About Me"}
+        {isVisible ? "Hide my story 🔐" : "Show my story 📖"}
       </button>
     </div>
   );
