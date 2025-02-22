@@ -60,7 +60,7 @@
 }
 
 #subTitle {
-  color: rgb(207, 238, 250);
+  color: var(--textColour);
   text-align: center;
   font-size: 14pt;
   font-weight: 500;
@@ -96,4 +96,35 @@ blink {
   font-size: 13pt;
   font-weight: 500;
   margin: auto;
+}
+
+/* Tablet */
+@media (max-width: 1400px) {
+  #mainphoto {
+    width: 70%;
+  }
+}
+
+/* Mobile */
+ @media (max-width: 900px) {
+  #header {
+    grid-template-columns: 1fr;
+  }
+
+  #mainphoto {
+    box-shadow: var(--shadow);
+    width: 70%;
+    margin-bottom: 15px;
+  }
+
+  #location {
+    margin-top: 15px;
+    font-size: 15pt;
+  }
+
+  #subTitle {
+    margin-top: 5%;
+    font-size: 18pt;
+    text-align: center;
+  }
 }

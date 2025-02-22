@@ -1,4 +1,4 @@
-.iconLinks {
+.icons {
   margin: auto;
   margin-top: 7%;
   width: 50%;
@@ -7,56 +7,51 @@
   text-align: center;
 }
 
-.iconLinks * {
-  padding: 5px;
-}
-
-#cvicon {
-  width: 26%;
-}
-
-#cvicon:hover {
-  transition-duration: 0.3s;
-  box-shadow: 4px 4px 6px black;
-  border-radius: 5px;
-  border: 1.5px solid whitesmoke;
-  padding: 4px;
-}
-
-#linkedin {
-  width: 26%;
-}
-
-#linkedin:hover {
-  border-radius: 20px;
-  transition-duration: 0.4s;
-  box-shadow: 4px 4px 6px black;
-  border-radius: 5px;
-  border: 1.5px solid whitesmoke;
-  padding: 5px;
-}
-
-#github {
-  width: 27%;
-}
-
-#github:hover {
-  transition-duration: 0.4s;
-  box-shadow: 4px 4px 6px black;
-  border-radius: 5px;
-  border: 1.5px solid whitesmoke;
-  padding: 4px;
-}
-
+#cvicon,
+#github,
+#linkedin,
 #gmail {
-  position: relative;
-  width: 29%;
+  width: 26%;
 }
 
+#cvicon:hover,
+#github:hover,
+#linkedin:hover,
 #gmail:hover {
-  transition-duration: 0.4s;
-  box-shadow: 4px 4px 6px black;
+  transition-duration: 0.8s;
+  transform: scale(1.1);
+  box-shadow: 3px 3px 3px black;
   border-radius: 5px;
-  border: 1.5px solid whitesmoke;
-  padding: 4px;
+  border: 2px solid tomato;
+  background: var(--navColour);
+  padding: 5px;
+}
+
+@media (max-width: 900px) {
+  .icons {
+    display: flex;
+    flex-direction: column;
+    padding-left: 19%;
+    padding-top: 15%;
+  }
+
+  .icons * {
+    padding-top: 10%;
+    padding-bottom: 7%;
+    width: 60%;
+  }
+
+  #cvicon,
+  #github,
+  #linkedin,
+  #gmail {
+    width: 33%;
+  }
+
+  #cvicon:hover,
+  #github:hover,
+  #linkedin:hover,
+  #gmail:hover {
+    padding: 12px;
+  }
 }

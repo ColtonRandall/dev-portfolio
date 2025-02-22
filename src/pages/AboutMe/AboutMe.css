@@ -155,3 +155,159 @@
   box-shadow: 4px 4px 6px black;
   border-radius: 10px;
 }
+
+/* Tablet */
+@media (max-width: 1400px) {
+  #aboutMeButton {
+    width: 40%;
+    font-size: 3vh;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  #ABOUTME img {
+    box-shadow: var(--shadow);
+  }
+
+  #aboutMeButton {
+    background-color: #333;
+    border: 2px solid tomato;
+    box-shadow: var(--shadow);
+    color: whitesmoke;
+    width: 70%;
+    font-size: 15pt;
+    padding: 10px;
+    opacity: 1;
+  }
+
+  .aboutMeContent * {
+    font-size: 18pt;
+    font-weight: 400;
+  }
+
+  .aboutMeContent {
+    width: 70%;
+  }
+
+  .coleNanook {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  #coleNanookIMG {
+    margin-bottom: 5%;
+    margin-left: 50px;
+  }
+
+  .Rwanda1Div {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  .Rwanda1Div img:nth-of-type(2) {
+    order: 1;
+  }
+
+  .Rwanda1Div p:nth-of-type(1) {
+    order: 2;
+  }
+
+  #rwanda1IMG {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    place-content: center;
+  }
+
+  #extraPhotos {
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+
+  #kenya {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  #elephant {
+    width: 50%;
+    margin-top: 40px;
+  }
+
+  .Rwanda2Div {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  #rwanda2IMG {
+    margin-bottom: 5%;
+  }
+
+  .OtagoDiv {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  #otagoImages {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  #otagoIMG {
+    width: 60%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 65px;
+  }
+
+  #otagoGradIMG {
+    width: 70%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-left: 45px;
+  }
+
+  .flyingDiv {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  #flyingIMG {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    place-content: center;
+  }
+
+  .XeroDiv {
+    grid-template-columns: 1fr;
+    margin: auto;
+    width: 100%;
+    text-align: justify;
+    align-items: center;
+  }
+
+  #xeroIMG {
+    margin-bottom: 5%;
+    margin-top: 5%;
+    place-content: center;
+  }
+}

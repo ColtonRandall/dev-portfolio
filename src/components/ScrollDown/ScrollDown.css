@@ -31,3 +31,10 @@
   justify-content: center;
   bottom: 80px;
 }
+
+@media (max-width: 900px) {
+  #scroll {
+    display: none;
+    width: 5%;
+  }
+}

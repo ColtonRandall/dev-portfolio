@@ -2,7 +2,7 @@ import "./Icons.css";
 
 function Icons() {
   return (
-    <div className="iconLinks">
+    <div className="icons">
       <a href="./documents/Colton CV 2025.pdf">
         <img src="./images/CV3.png" id="cvicon" title="View my CV!" />
       </a>

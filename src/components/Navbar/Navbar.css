@@ -1,9 +1,10 @@
-.nav {
+nav {
   position: fixed;
   display: flex;
+  font-family: var(--cabinFont);
   justify-content: right;
   font-size: 15pt;
-  background-color: #333;
+  background-color: var(--navColour);
   box-shadow: var(--shadow);
   color: lightgray;
   z-index: 3;
@@ -11,7 +12,7 @@
   top: 0;
 }
 
-.nav * {
+nav * {
   color: rgb(207, 238, 250);
   text-decoration: none;
   border-radius: 5px;
@@ -22,13 +23,39 @@
   margin-right: 5px;
 }
 
-#projects:hover {
+.nav-button {
+  text-decoration: none;
+  color: whitesmoke;
+  background: none;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.nav-button:hover {
+  background: tomato;
+}
+
+.nav-button.active {
+  pointer-events: none;
   color: tomato;
 }
 
-#home {
-  color: tomato;
-  text-decoration: underline;
-  background-color: rgb(74, 74, 75);
-  margin-right: 20px;
+@media (max-width: 900px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    z-index: 4;
+    width: 60%;
+    font-size: 20pt;
+    top: 5px;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  nav * {
+    padding-bottom: 7px;
+    padding-top: 7px;
+    text-align: center;
+    margin-right: 0px;
+  }
 }

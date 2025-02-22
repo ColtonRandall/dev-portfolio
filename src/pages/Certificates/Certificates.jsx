@@ -1,11 +1,12 @@
 import Navbar from "../../components/Navbar/Navbar";
 import "./Certificates.css";
-import { Link } from "react-router-dom";
 
 function Certificates() {
   return (
     <div>
       <title>Certificates</title>
+
+      <Navbar />
 
       <p id="mainTitle">Certifications</p>
 
@@ -94,11 +95,7 @@ function Certificates() {
 
       <div className="toTop">
         <a href="#">
-          <img
-            src="./website_attachments/images/up.png"
-            id="arrow"
-            title="Back to top!"
-          />
+          <img src="../public/images/up.png" id="arrow" title="Back to top!" />
         </a>
       </div>
     </div>
