@@ -12,6 +12,7 @@ const Navbar = () => {
       >
         Projects
       </NavLink>
+
       <NavLink
         to="/certificates"
         className={({ isActive }) =>
@@ -20,6 +21,16 @@ const Navbar = () => {
       >
         Certifications
       </NavLink>
+
+      <NavLink
+        to="/education"
+        className={({ isActive }) =>
+          isActive ? "nav-button active" : "nav-button"
+        }
+      >
+        Education
+      </NavLink>
+
       <NavLink
         to="/"
         className={({ isActive }) =>

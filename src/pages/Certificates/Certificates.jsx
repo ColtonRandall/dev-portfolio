@@ -8,11 +8,11 @@ function Certificates() {
 
       <Navbar />
 
-      <p id="mainTitle">Certifications</p>
+      <p id="mainTitle">Certificates</p>
 
-      <hr />
+      {/* <hr /> */}
 
-      <p id="UniCertsTitle">Postgraduate Studies</p>
+      {/* <p id="UniCertsTitle">Postgraduate Studies</p>
       <div className="uniCerts">
         <img
           src="../public/images/718.png"
@@ -24,7 +24,7 @@ function Certificates() {
           id="webPGcert"
           title="COMPSCI719 - Programming for Web Technologies"
         />
-      </div>
+      </div> */}
 
       <hr />
 
