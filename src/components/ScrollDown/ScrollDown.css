@@ -1,5 +1,5 @@
 #scrollDiv {
-  margin-top: 4%;
+  margin-top: 10%;
 }
 
 #scroll {
@@ -25,14 +25,14 @@
 
 #scroll {
   position: relative;
-  width: 3%;
+  width: 3rem;
   margin: auto;
   display: flex;
   justify-content: center;
   bottom: 80px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 780px) {
   #scroll {
     display: none;
     width: 5%;

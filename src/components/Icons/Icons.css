@@ -11,7 +11,11 @@
 #github,
 #linkedin,
 #gmail {
-  width: 26%;
+  width: 3rem;
+}
+
+#gmail {
+  margin-top: 5%;
 }
 
 #cvicon:hover,
@@ -27,16 +31,16 @@
   padding: 5px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 780px) {
   .icons {
     display: flex;
     flex-direction: column;
     padding-left: 19%;
-    padding-top: 15%;
+    padding-top: 11%;
   }
 
   .icons * {
-    padding-top: 10%;
+    padding-top: 12%;
     padding-bottom: 7%;
     width: 60%;
   }
@@ -45,7 +49,8 @@
   #github,
   #linkedin,
   #gmail {
-    width: 33%;
+    width: 4rem;
+    pointer-events: none;
   }
 
   #cvicon:hover,
@@ -53,5 +58,6 @@
   #linkedin:hover,
   #gmail:hover {
     padding: 12px;
+    /* pointer-events: none; */
   }
 }

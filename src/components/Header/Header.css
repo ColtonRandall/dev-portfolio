@@ -1,10 +1,8 @@
 #header {
-  margin-top: 10%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-area: auto;
-  width: 80%;
+  width: 75%;
   text-shadow: 2px 2px 3px black;
 }
 
@@ -12,22 +10,18 @@
   animation: titleFadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
-}
-
-#title {
   text-align: center;
-  font-weight: 500;
-  margin: auto;
+  font-weight: 600;
+  padding-top: 5%;
 }
 
 #mainphoto {
-  width: 55%;
+  width: 23rem;
   border-radius: 20%;
   margin: auto;
-  border: 3px solid rgb(66, 66, 66);
-  box-shadow: 4px 4px 6px black;
-  margin-top: 10%;
-  filter: brightness(95%);
+  border: 3px solid rgb(3, 2, 2);
+  box-shadow: 3px 3px 3px black;
+  margin-top: 20%;
   animation: mainImageFadeIn ease 3s;
   animation-delay: 1.5s;
   animation-iteration-count: 1;
@@ -59,16 +53,19 @@
   }
 }
 
+#SEtitle {
+  font-size: 33pt;
+  margin: auto;
+  margin-top: 0;
+  padding-top: 0%;
+}
+
 #subTitle {
   color: var(--textColour);
   text-align: center;
   font-size: 14pt;
   font-weight: 500;
   margin: auto;
-}
-
-#SEtitle {
-  font-size: 30pt;
 }
 
 blink {
@@ -93,28 +90,28 @@ blink {
 #location {
   color: rgb(207, 238, 250);
   text-align: center;
-  font-size: 13pt;
+  font-size: 14pt;
   font-weight: 500;
   margin: auto;
+  padding-top: 8%;
 }
 
-/* Tablet */
-@media (max-width: 1400px) {
-  #mainphoto {
-    width: 70%;
+@media (max-width: 1200px) {
+  #mainphoto{
+    width: 20rem;
   }
 }
 
-/* Mobile */
- @media (max-width: 900px) {
+@media (max-width: 950px) {
   #header {
     grid-template-columns: 1fr;
   }
 
   #mainphoto {
     box-shadow: var(--shadow);
-    width: 70%;
+    width: 25rem;
     margin-bottom: 15px;
+    margin-top: 10%;
   }
 
   #location {

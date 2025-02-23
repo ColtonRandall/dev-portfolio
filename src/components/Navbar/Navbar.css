@@ -40,7 +40,7 @@ nav * {
   color: tomato;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   nav {
     position: relative;
     flex-direction: column;
@@ -50,11 +50,11 @@ nav * {
     top: 5px;
     margin: auto;
     border-radius: 10px;
+    margin-top: 5%;
   }
 
   nav * {
     padding-bottom: 7px;
-    padding-top: 7px;
     text-align: center;
     margin-right: 0px;
   }

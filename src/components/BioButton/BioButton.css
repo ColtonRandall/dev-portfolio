@@ -29,3 +29,10 @@ button:hover {
 button.active {
   background-color: tomato;
 }
+
+/* Mobile */
+@media (max-width: 900px) {
+  button{
+    width: 20rem;
+  }
+}
