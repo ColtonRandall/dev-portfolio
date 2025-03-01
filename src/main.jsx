@@ -5,7 +5,7 @@ import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/colton-website-react/">
+    <BrowserRouter basename="/dev-portfolio/">
       <App />
     </BrowserRouter>
   </React.StrictMode>
