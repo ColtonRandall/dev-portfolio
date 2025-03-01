@@ -1,9 +1,21 @@
-# Colton's React Portfolio
+# Colton's Engineering Portfolio
 
-Welcome to my website 👋
+Welcome to my Dev Portfolio! 👋
 
-This is an updated version of the first site I created years ago when I just got started ([see here](https://github.com/ColtonRandall/coltonrandall.github.io)), which was written in standard HTMl, CSS and JavaScript.
+> View the live site [here](https://coltonrandall.github.io/dev-portfolio/).
 
-I wanted to convert it to a more modern framework, consolidating knowledge in React / Typescript, while using it as a canvas for future learnings. The transfer was done manually, without using any AI tooling. I figured doing so would serve my learnings better.
+While here, you'll get a better sense of my background (both personally and professionally), the credentials/training I've recieved, and see the projects I've created 🔨 .
 
-Thanks for taking the time to check it out!
+This is also my space for consolidating modern web-development knowledge in varying frameworks and languages, while also acting as a canvas for experimenting with new concepts.
+
+> This site was built manually **<ins>without using any AI</ins>**.
+
+<hr>
+
+### Tech Stack
+
+Currently, this website is built using a combination of React and the [Material UI library](https://mui.com). It's an updated version of my initial site I created years ago when I began experimenting with HTMl, CSS and JavaScript ([see here](https://github.com/ColtonRandall/old-portfolio-website)).
+
+This portfolio is continually being updated as I progress through my career.
+
+Thanks for taking the time to check it out.

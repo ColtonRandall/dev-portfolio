@@ -5,6 +5,7 @@ function Education() {
   return (
     <>
       <Navbar />
+      <title>Education</title>
       <p id="mainTitle">Education</p>
 
       <hr />
