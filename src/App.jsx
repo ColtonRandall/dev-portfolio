@@ -6,14 +6,12 @@ import Projects from "./pages/Projects/Projects";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/certificates" element={<Certificates />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/projects" element={<Projects />}></Route>
-      </Routes>
-    </Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/certificates" element={<Certificates />} />
+      <Route path="/education" element={<Education />} />
+      <Route path="/projects" element={<Projects />}></Route>
+    </Routes>
   );
 }
 

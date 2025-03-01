@@ -88,7 +88,7 @@ function ProjectCard({
               },
             }}
           >
-            <img src="/images/octocat.png" height={30} />
+            <img src="./images/octocat.png" height={30} />
           </IconButton>
         </Link>
       </CardActions>
