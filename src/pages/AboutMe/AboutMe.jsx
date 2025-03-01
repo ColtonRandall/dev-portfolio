@@ -36,7 +36,7 @@ function AboutMe() {
             <div className="coleNanook">
               <div id="imgTag">
                 <img
-                  src="./images/coleNanook.jpg"
+                  src="/images/coleNanook.jpg"
                   id="coleNanookIMG"
                   title="1999: My first playstation and first puppy, what a life!"
                 />
@@ -60,7 +60,7 @@ function AboutMe() {
                 itself.
               </p>
               <img
-                src="./images/rwanda1.jpg"
+                src="/images/rwanda1.jpg"
                 id="rwanda1IMG"
                 title="2013: Volunteering at a Rwandan pre-school"
               />
@@ -69,7 +69,7 @@ function AboutMe() {
             {/* <!-- RWANDA2  --> */}
             <div className="Rwanda2Div">
               <img
-                src="./images/rwanda2.jpg"
+                src="/images/rwanda2.jpg"
                 id="rwanda2IMG"
                 title="Me and my good friend Kristen!"
               />
@@ -89,7 +89,7 @@ function AboutMe() {
 
             <div id="extraPhotos">
               <img
-                src="./images/kenya.jpg"
+                src="/images/kenya.jpg"
                 title="2016, Kenya: The pre-school in Kibera slum I volunteered at"
                 id="kenya"
               />
@@ -119,9 +119,9 @@ function AboutMe() {
             </div>
 
             <div id="otagoImages">
-              <img src="./images/otago.jpg" id="otagoIMG" />
+              <img src="/images/otago.jpg" id="otagoIMG" />
               <img
-                src="./images/otagoGrad.JPG"
+                src="/images/otagoGrad.JPG"
                 id="otagoGradIMG"
                 title="2018: Graduation day - My partner Emma and I"
               />
@@ -142,14 +142,14 @@ function AboutMe() {
                 industry forced me to step back and reconsider this path.
               </p>
               <img
-                src="./images/flying.JPG"
+                src="/images/flying.JPG"
                 id="flyingIMG"
                 title="2019: My first solo cross country flight"
               />
             </div>
 
             <div className="XeroDiv">
-              <img src="./images/xero.jpg" id="xeroIMG" title="Xero" />
+              <img src="/images/xero.jpg" id="xeroIMG" title="Xero" />
               <p id="xeroContent">
                 During lockdown, I wanted to be as productive as possible, and
                 fell back on honing in on my interest in Programming that
