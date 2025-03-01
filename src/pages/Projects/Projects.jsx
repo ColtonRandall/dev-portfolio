@@ -22,7 +22,7 @@ function Projects() {
         }}
       >
         <ProjectCard
-          image={"public/images/kalah.png"}
+          image={"/images/kalah.png"}
           title={"Kalah Board Game"}
           description={
             "My final assignment for COMPSCI 701: Creating Maintainable Software, one of my postgraduate courses. Kalah is a console app that touches on almost every facet of OOP and maintainable design. You can choose, easy, medium or hard mode against the computer, and flip the board to 'horizontal mode'."
@@ -33,7 +33,7 @@ function Projects() {
         />
 
         <ProjectCard
-          image={"public/images/rpgGame.jpg"}
+          image={"/images/rpgGame.jpg"}
           title={"Console RPG App"}
           description={
             "A role playing game built into the console. You can create a player, fight different enemies, and continue on your adventure."
@@ -44,7 +44,7 @@ function Projects() {
         />
 
         <ProjectCard
-          image={"public/images/paperScissorsRock.png"}
+          image={"/images/paperScissorsRock.png"}
           title={"Paper Scissors Rock"}
           description={
             "Users make their choice via buttons in the UI. The app tallies up scores against the computer, and after 5 rounds it declares a winner."
@@ -55,7 +55,7 @@ function Projects() {
         />
 
         <ProjectCard
-          image={"public/images/shoppingListApp.png"}
+          image={"/images/shoppingListApp.png"}
           title={"Shopping List"}
           description={
             "Basic shopping list app. Let's you create and remove items from the shopping list."
