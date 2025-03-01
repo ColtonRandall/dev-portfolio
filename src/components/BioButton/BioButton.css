@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-button {
+.aboutMeButton {
   background-color: var(--textColour);
   color: black;
   width: 25%;
@@ -17,7 +17,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.aboutMeButton:hover {
   color: var(--textColour);
   background-color: var(--navColour);
   transition-duration: 0.2s;
@@ -26,13 +26,13 @@ button:hover {
   opacity: 1;
 }
 
-button.active {
+.aboutMeButton.active {
   background-color: tomato;
 }
 
 /* Mobile */
 @media (max-width: 900px) {
-  button{
+  .aboutMeButton {
     width: 20rem;
   }
 }

@@ -2,7 +2,7 @@
   font-size: 70pt;
   color: tomato;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 150px;
   text-shadow: var(--shadow);
 }
 
@@ -100,11 +100,7 @@ hr {
   width: 85%;
 }
 
-@media (max-width: 900px) {
-  #mainTitle {
-    font-size: 40pt;
-  }
-
+@media (max-width: 800px) {
   #industryCertsTitle,
   #UniCertsTitle,
   #OnlineCertsTitle {
