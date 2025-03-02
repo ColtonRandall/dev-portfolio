@@ -16,6 +16,8 @@ This is also my space for consolidating modern web-development knowledge in vary
 
 Currently, this website is built using a combination of React and the [Material UI library](https://mui.com). It's an updated version of my initial site I created years ago when I began experimenting with HTMl, CSS and JavaScript ([see here](https://github.com/ColtonRandall/old-portfolio-website)).
 
+✶ **This site is also responsive** - so see how it responds to different window sizes, or view the url on your tablet / phone! 📱 <https://coltonrandall.github.io/dev-portfolio/>
+
 This portfolio is continually being updated as I progress through my career.
 
 Thanks for taking the time to check it out.
