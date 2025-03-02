@@ -7,6 +7,7 @@ import {
   CardContent,
   Typography,
   IconButton,
+  Tooltip,
 } from "@mui/material";
 
 function ProjectCard({
@@ -76,20 +77,22 @@ function ProjectCard({
           {dateCreated}
         </Typography>
         <Link to={url} target="_blank" rel="noopener noreferrer">
-          <IconButton
-            sx={{
-              background: "lightgray",
-              padding: 1,
-              marginRight: 1,
-              boxShadow: 1,
-              "&:hover": {
-                background: "tomato",
-                boxShadow: 2,
-              },
-            }}
-          >
-            <img src="./images/octocat.png" height={30} />
-          </IconButton>
+          <Tooltip title="view repo" placement="right" arrow>
+            <IconButton
+              sx={{
+                background: "lightgray",
+                padding: 1,
+                marginRight: 1,
+                boxShadow: 1,
+                "&:hover": {
+                  background: "tomato",
+                  boxShadow: 2,
+                },
+              }}
+            >
+              <img src="./images/octocat.png" height={30} />
+            </IconButton>
+          </Tooltip>
         </Link>
       </CardActions>
     </Card>

@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-const Navbar = () => {
+function Navbar() {
   return (
     <nav className="navbar">
       <NavLink
@@ -41,6 +41,6 @@ const Navbar = () => {
       </NavLink>
     </nav>
   );
-};
+}
 
 export default Navbar;
