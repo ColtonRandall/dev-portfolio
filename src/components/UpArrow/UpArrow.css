@@ -1,23 +1,4 @@
-.toTop {
-  width: fit-content;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  border-radius: 5px;
-  text-align: center;
-  margin: auto;
-}
-
-#toTopText {
-  font-family: monospace;
-  font-size: 12pt;
-}
-
-#arrow {
-  width: 50px;
-}
-
-#arrow:hover {
+.upArrow:hover {
   animation: arrow 1.5s ease infinite;
 }
 
@@ -27,7 +8,7 @@
   }
 
   50% {
-    transform: translate(0, -15px);
+    transform: translate(0, -5px);
   }
 
   100% {
@@ -37,10 +18,11 @@
 
 /* Mobile */
 @media (max-width: 900px) {
-  .toTop {
+  .upArrow {
     bottom: 20px;
     right: 1px;
     text-align: center;
     margin: auto;
+    display: none;
   }
 }

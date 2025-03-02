@@ -7,17 +7,6 @@
   text-align: center;
 }
 
-#cvicon,
-#github,
-#linkedin,
-#gmail {
-  width: 3rem;
-}
-
-#gmail {
-  margin-top: 5%;
-}
-
 @media (max-width: 780px) {
   .icons {
     display: flex;
@@ -28,22 +17,7 @@
 
   .icons * {
     padding-top: 12%;
-    padding-bottom: 7%;
-    width: 60%;
-  }
-
-  #cvicon,
-  #github,
-  #linkedin,
-  #gmail {
-    width: 4rem;
-    pointer-events: none;
-  }
-
-  #cvicon:hover,
-  #github:hover,
-  #linkedin:hover,
-  #gmail:hover {
-    padding: 12px;
+    padding-bottom: 10%;
+    width: 70%;
   }
 }

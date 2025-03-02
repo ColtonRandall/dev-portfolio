@@ -2,7 +2,7 @@
   margin-top: 10%;
 }
 
-#scroll {
+.scroll {
   -webkit-animation: scrolling 3s ease infinite;
   -moz-animation: scrolling 3s ease infinite;
   -o-animation: scrolling 3s ease infinite;
@@ -23,17 +23,17 @@
   }
 }
 
-#scroll {
+/* .scroll {
   position: relative;
   width: 3rem;
   margin: auto;
   display: flex;
   justify-content: center;
   bottom: 80px;
-}
+} */
 
 @media (max-width: 780px) {
-  #scroll {
+  .scroll {
     display: none;
     width: 5%;
   }

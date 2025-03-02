@@ -1,7 +1,7 @@
+import "./Projects.css";
 import ProjectCard from "../../components/Card/ProjectCard";
 import Navbar from "../../components/Navbar/Navbar";
 import { Grid2 } from "@mui/material";
-import "./Projects.css";
 
 function Projects() {
   return (

@@ -23,6 +23,7 @@ function Icons() {
             }}
           >
             <DescriptionIcon
+              className="cvicon"
               sx={{
                 fontSize: 55,
                 color: "black",
