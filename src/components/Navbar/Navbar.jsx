@@ -1,5 +1,5 @@
-import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -12,7 +12,6 @@ function Navbar() {
       >
         Projects
       </NavLink>
-
       <NavLink
         to="/certificates"
         className={({ isActive }) =>
@@ -21,7 +20,6 @@ function Navbar() {
       >
         Certifications
       </NavLink>
-
       <NavLink
         to="/education"
         className={({ isActive }) =>
@@ -30,7 +28,6 @@ function Navbar() {
       >
         Education
       </NavLink>
-
       <NavLink
         to="/"
         className={({ isActive }) =>

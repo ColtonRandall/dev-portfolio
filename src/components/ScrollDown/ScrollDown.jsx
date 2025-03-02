@@ -4,20 +4,24 @@ import ExpandCircleDownIcon from "@mui/icons-material/ExpandCircleDown";
 function CenteredArrow() {
   const pulseDown = keyframes`
   0%, 100% {
-    transform: translateY(0);
+    transform: translateY(-90px);
   }
   50% {
-    transform: translateY(110px);
+    transform: translateY(20px);
   }
 `;
 
   return (
     <Box
+      className="scroll"
       sx={{
         height: "15vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        "@media(max-width: 900px)": {
+          display: "none",
+        },
       }}
     >
       <ExpandCircleDownIcon
