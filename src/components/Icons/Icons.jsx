@@ -9,7 +9,7 @@ function Icons() {
   return (
     <div className="icons">
       <Tooltip title="Check out my CV">
-        <a href="./documents/Colton CV 2025.pdf">
+        <a href="./docs/Colton CV 2025.pdf">
           <Box
             sx={{
               display: "inline-block",
