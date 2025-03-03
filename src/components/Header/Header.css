@@ -1,12 +1,14 @@
 #header {
+  color: var(--text-colour);
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 75%;
-  text-shadow: 2px 2px 3px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 #title {
+  color: var(--text-colour);
   animation: titleFadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
@@ -54,6 +56,7 @@
 }
 
 #SEtitle {
+  color: var(--text-colour);
   font-size: 33pt;
   margin: auto;
   margin-top: 0;
@@ -88,7 +91,7 @@ blink {
 }
 
 #location {
-  color: rgb(207, 238, 250);
+  color: var(--textColour)
   text-align: center;
   font-size: 14pt;
   font-weight: 500;

@@ -1,7 +1,7 @@
 :root {
-  --textColour: rgb(164, 218, 234);
+  --textColour: rgb(200, 200, 200);
   --navColour: #333;
-  --shadow: 4px 4px 6px black;
+  --shadow: 1px 1px 1px black;
   --textShadow: 1px 1px 1px black;
   --cabinFont: "Cabin", sans-serif;
   --backgroundColour: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
@@ -14,6 +14,5 @@ body {
   height: 100vh;
   background: var(--backgroundColour);
   background-attachment: fixed;
-  color: var(--text-colour);
   font-weight: lighter;
 }

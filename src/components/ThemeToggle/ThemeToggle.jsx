@@ -4,18 +4,31 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useState } from "react";
 
 function ThemeToggle() {
-  const [activeTheme, setActiveTheme] = useState(false);
+  const [lightMode, setLightMode] = useState(false);
 
   const toggleDarkAndLightMode = () => {
-    setActiveTheme((activeTheme) => !activeTheme);
+    setLightMode((lightMode) => !lightMode);
   };
+
+  const subTitle = document.getElementsByClassName("subTitle");
+
+  // toggle background and text colour based on dark/light mode button
+  if (!lightMode) {
+    document.body.style.background = "var(--backgroundColour)";
+    document.body.style.color = "var(--textColour)";
+  } else {
+    document.body.style.background = "#F6E7D2";
+    document.body.style.color = "black";
+  }
 
   return (
     <IconButton
       className="themeButton"
-      onClick={() => toggleDarkAndLightMode()}
+      onClick={() => {
+        toggleDarkAndLightMode();
+      }}
     >
-      {(!activeTheme && (
+      {(!lightMode && (
         <Tooltip title="Light Mode" placement="right">
           <LightModeIcon
             sx={{
@@ -27,11 +40,10 @@ function ThemeToggle() {
                 color: "gold",
               },
             }}
-            // onClick={() => }
           />
         </Tooltip>
       )) ||
-        (activeTheme && (
+        (lightMode && (
           <Tooltip title="Dark Mode" placement="right">
             <DarkModeIcon
               sx={{

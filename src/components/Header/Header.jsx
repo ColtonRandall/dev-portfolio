@@ -10,7 +10,7 @@ function Header() {
       </h1>
       <img src="./images/me.jpeg" id="mainphoto" title="Me 🙂" />
 
-      <div id="subTitle">
+      <div className="subTitle">
         <div id="SEtitle">
           Software Engineer <blink>|</blink>
         </div>
