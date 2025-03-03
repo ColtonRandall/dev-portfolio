@@ -3,14 +3,14 @@ import "./Header.css";
 function Header() {
   return (
     <div id="header">
-      <h1 id="title">
+      <div id="title">
         Colton
         <br />
         Randall
-      </h1>
+      </div>
       <img src="./images/me.jpeg" id="mainphoto" title="Me 🙂" />
 
-      <div className="subTitle">
+      <div class="subTitle">
         <div id="SEtitle">
           Software Engineer <blink>|</blink>
         </div>
