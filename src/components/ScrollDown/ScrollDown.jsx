@@ -7,7 +7,7 @@ function CenteredArrow() {
     transform: translateY(-90px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(40px);
   }
 `;
 

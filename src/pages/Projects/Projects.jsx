@@ -12,7 +12,7 @@ function Projects() {
       <hr />
       <Grid2
         container
-        spacing={4}
+        spacing={6}
         direction="row"
         justifyContent={"center"}
         alignItems={"center"}
@@ -65,6 +65,18 @@ function Projects() {
           url={
             "https://github.com/ColtonRandall/shopping-list-dom-manipulation-project"
           }
+        />
+
+        <ProjectCard
+          image={"./images/bulls.png"}
+          title={"Bulls & Cows Game"}
+          description={
+            "Similar to Wordle, but with numbers. You play against the computer to guess your randomised 4-digit code, using OOP concepts. There is the choice of easy, medium, or hard mode, prompting the computer to behave differently, and the result is written to a .txt file."
+          }
+          language={"Java, File I/O"}
+          dateCreated={"28.04.2021"}
+          url={"https://github.com/ColtonRandall/Bulls-And-Cows-Game"}
+          height="50px"
         />
       </Grid2>
     </>

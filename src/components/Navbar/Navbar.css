@@ -6,7 +6,6 @@ nav {
   font-size: 15pt;
   background-color: var(--navColour);
   box-shadow: var(--shadow);
-  color: lightgray;
   z-index: 3;
   width: 100%;
   top: 0;
