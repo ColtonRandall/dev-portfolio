@@ -13,7 +13,7 @@ function Navbar() {
             isActive ? "nav-button active" : "nav-button"
           }
         >
-          FizzBuzz Generator
+          FizzBuzz
         </NavLink>
         <NavLink
           to="/projects"
