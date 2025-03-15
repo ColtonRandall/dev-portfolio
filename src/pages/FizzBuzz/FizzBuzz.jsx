@@ -44,18 +44,11 @@ function FizzBuzz() {
       <hr />
       <h3
         style={{
-          textAlign: "center",
           marginTop: 50,
-        }}
-      >
-        Enter either "Fizz", "Buzz", or "FizzBuzz" into the text field below.
-      </h3>
-      <p
-        style={{
           textAlign: "center",
         }}
       >
-        If you're unfamiliar with this game, see{" "}
+        If you haven't heard of this game, see{" "}
         <a
           href="https://en.wikipedia.org/wiki/Fizz_buzz#:~:text=Fizz%20buzz%20is%20a%20group,with%20the%20word%20%22fizzbuzz%22."
           style={{
@@ -65,6 +58,21 @@ function FizzBuzz() {
         >
           this link.
         </a>
+      </h3>
+      <p
+        style={{
+          textAlign: "center",
+        }}
+      >
+        In a nutshell, the words "Fizz", "Buzz", and "FizzBuzz" replace
+        multiples of 3, 5 and both 3 & 5, respectively, while counting up.
+      </p>
+      <p
+        style={{
+          textAlign: "center",
+        }}
+      >
+        Enter a number and see what happens...
       </p>
 
       <Box
