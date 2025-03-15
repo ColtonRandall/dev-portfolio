@@ -8,6 +8,14 @@ function Navbar() {
       <ThemeToggle />
       <nav className="navbar">
         <NavLink
+          to="/fizzbuzz"
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+        >
+          FizzBuzz Generator
+        </NavLink>
+        <NavLink
           to="/projects"
           className={({ isActive }) =>
             isActive ? "nav-button active" : "nav-button"

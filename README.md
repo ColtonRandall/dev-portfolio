@@ -21,3 +21,9 @@ Currently, this website is built using a combination of React and the [Material 
 This portfolio is continually being updated as I progress through my career.
 
 Thanks for taking the time to check it out.
+
+#### Commands run every time I add changes
+
+1. `npm run dev` - Runs the application locally
+2. `npm run build` - builds and compiles prior to committing changes and pushing up to GitHub
+3. `npm run deploy` - deploy/publish to lives github pages website https://coltonrandall.github.io/dev-portfolio/
