@@ -3,104 +3,82 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
-import { Box, Tooltip } from "@mui/material";
 
 function Icons() {
   return (
     <div className="icons">
-      <Tooltip title="Check out my CV">
+      <div title="Check out my CV">
         <a href="./docs/Colton CV 2025.pdf">
-          <Box
+          <DescriptionIcon
+            className="cvicon"
             sx={{
-              display: "inline-block",
+              fontSize: 55,
+              color: "gray",
               transition: "transform 0.3s ease-in-out",
               "&:hover": {
-                transform: "scale(1.2)",
+                transform: "scale(1.1)",
                 background: "gold",
-                boxShadow: 7,
+                color: "black",
                 borderRadius: 4,
               },
             }}
-          >
-            <DescriptionIcon
-              className="cvicon"
-              sx={{
-                fontSize: 55,
-                color: "black",
-              }}
-            />
-          </Box>
+          />
         </a>
-      </Tooltip>
+      </div>
 
-      <Tooltip title="View my GitHub">
+      <div title="View my GitHub">
         <a href="https://github.com/ColtonRandall">
-          <Box
+          <GitHubIcon
             sx={{
-              display: "inline-block",
-              transition: "transform 0.3s ease-in-out",
+              color: "gray",
+              fontSize: 55,
+              transition: "transform 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.2)",
+                transform: "scale(1.1)",
                 background: "#FAF8F6",
-                boxShadow: 7,
+                color: "black",
                 borderRadius: 4,
               },
             }}
-          >
-            <GitHubIcon sx={{ color: "black", fontSize: 55 }} />
-          </Box>
+          />
         </a>
-      </Tooltip>
+      </div>
 
-      <Tooltip title="Find me on LinkedIn">
+      <div title="Find me on LinkedIn">
         <a href="https://www.linkedin.com/in/coltonrandall/">
-          <Box
+          <LinkedInIcon
             sx={{
-              display: "inline-block",
+              fontSize: 60,
+              color: "gray",
               transition: "transform 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.2)",
+                transform: "scale(1.1)",
                 background: "#0072b1",
-                boxShadow: 7,
+                color: "black",
                 borderRadius: 4,
               },
             }}
-          >
-            <LinkedInIcon
-              sx={{
-                paddingTop: "3px",
-                fontSize: 60,
-                color: "black",
-              }}
-            />
-          </Box>
+          />
         </a>
-      </Tooltip>
+      </div>
 
-      <Tooltip title="Send me an Email">
+      <div title="Send me an Email">
         <a href="mailto:coltonrandall.nz@gmail.com">
-          <Box
+          <EmailIcon
             sx={{
-              display: "inline-block",
+              fontSize: 55,
+              color: "gray",
               transition: "transform 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.2)",
+                transform: "scale(1.1)",
                 background: "#FF6961",
-                boxShadow: 7,
+                color: "black",
                 borderRadius: 4,
               },
             }}
-          >
-            <EmailIcon
-              sx={{
-                paddingTop: "2px",
-                fontSize: 55,
-                color: "black",
-              }}
-            />
-          </Box>
+          />
         </a>
-      </Tooltip>
+      </div>
     </div>
   );
 }

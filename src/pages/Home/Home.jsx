@@ -11,12 +11,8 @@ function Home() {
     <div className="home">
       <header>
         <Navbar />
-        <br />
-        <br />
-        <br />
         <Header />
       </header>
-
       <main>
         <Icons />
         <br />

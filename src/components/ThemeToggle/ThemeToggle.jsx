@@ -10,7 +10,7 @@ function ThemeToggle() {
     setLightMode((lightMode) => !lightMode);
   };
 
-  const subTitle = document.getElementsByClassName("subTitle");
+  // const subTitle = document.getElementsByClassName("subTitle");
 
   // toggle background and text colour based on dark/light mode button
   if (!lightMode) {
@@ -24,18 +24,19 @@ function ThemeToggle() {
   return (
     <IconButton
       className="themeButton"
+      sx={{ marginLeft: 2, marginTop: 1 }}
       onClick={() => {
         toggleDarkAndLightMode();
       }}
     >
+      {/* conditional rendering of light/dark */}
       {(!lightMode && (
         <Tooltip title="Light Mode" placement="right">
           <LightModeIcon
             sx={{
               color: "white",
               zIndex: 10,
-              fontSize: 24,
-              marginLeft: 3,
+              fontSize: 28,
               "&:hover": {
                 color: "gold",
               },
@@ -44,13 +45,13 @@ function ThemeToggle() {
         </Tooltip>
       )) ||
         (lightMode && (
-          <Tooltip title="Dark Mode" placement="right">
+          <Tooltip title="Dark Mode" placement="right" sx={{ marginLeft: 3 }}>
             <DarkModeIcon
               sx={{
-                color: "white",
+                color: "black",
                 zIndex: 10,
-                fontSize: 24,
-                marginLeft: 3,
+                fontSize: 28,
+                // paddingLeft: 3,
                 "&:hover": {
                   color: "#90c0df",
                 },

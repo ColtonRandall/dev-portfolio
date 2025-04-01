@@ -4,7 +4,7 @@
   --shadow: 1px 1px 1px black;
   --textShadow: 1px 1px 1px black;
   --cabinFont: "Cabin", sans-serif;
-  --backgroundColour: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  --backgroundColour: black;
 }
 
 body {

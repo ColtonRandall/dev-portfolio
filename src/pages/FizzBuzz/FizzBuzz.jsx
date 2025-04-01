@@ -18,7 +18,7 @@ function FizzBuzz() {
 
       for (let i = 0; i <= numbers.length; i++) {
         if (num > 200) {
-          setSubmittedText("Please enter a number lower than 200");
+          setSubmittedText("⚠️ Please enter a number lower than 200");
           break;
         }
         if ((i + 1) % 3 === 0) {

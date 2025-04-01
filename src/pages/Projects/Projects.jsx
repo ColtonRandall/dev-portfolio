@@ -1,5 +1,5 @@
 import "./Projects.css";
-import ProjectCard from "../../components/Card/ProjectCard";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Navbar from "../../components/Navbar/Navbar";
 import { Grid2 } from "@mui/material";
 
