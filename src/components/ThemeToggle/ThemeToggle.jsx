@@ -24,7 +24,7 @@ function ThemeToggle() {
   return (
     <IconButton
       className="themeButton"
-      sx={{ marginLeft: 2, marginTop: 1 }}
+      sx={{ marginLeft: 2 }}
       onClick={() => {
         toggleDarkAndLightMode();
       }}
@@ -48,7 +48,7 @@ function ThemeToggle() {
           <Tooltip title="Dark Mode" placement="right" sx={{ marginLeft: 3 }}>
             <DarkModeIcon
               sx={{
-                color: "black",
+                color: "smoke",
                 zIndex: 10,
                 fontSize: 28,
                 // paddingLeft: 3,
