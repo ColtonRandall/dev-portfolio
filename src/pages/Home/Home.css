@@ -4,7 +4,7 @@
   --shadow: 1px 1px 1px black;
   --textShadow: 1px 1px 1px black;
   --cabinFont: "Cabin", sans-serif;
-  --backgroundColour: black;
+  --backgroundColour: #2e3440;
 }
 
 body {

@@ -17,7 +17,7 @@ function ThemeToggle() {
     document.body.style.background = "var(--backgroundColour)";
     document.body.style.color = "var(--textColour)";
   } else {
-    document.body.style.background = "#F6E7D2";
+    document.body.style.background = "#FDF6E3";
     document.body.style.color = "black";
   }
 
