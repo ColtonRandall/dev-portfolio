@@ -7,7 +7,7 @@ function HomeIcon() {
       sx={{
         color: "grey",
         position: "absolute",
-        marginTop: 0.6,
+        marginTop: 0.8,
         marginLeft: 2,
         zIndex: 100,
         fontSize: 29,
