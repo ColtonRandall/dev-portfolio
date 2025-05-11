@@ -1,7 +1,6 @@
 .aboutMeContent * {
   font-size: 18pt;
   text-align: justify;
-  text-shadow: var(--textShadow);
   font-weight: 400;
 }
 
@@ -25,7 +24,7 @@
 #coleNanookContent,
 #otagoContent1,
 #otagoContent2 {
-  width: 100%;
+  width: 90%;
 }
 
 #coleNanookIMG {
@@ -124,7 +123,7 @@
 }
 
 #xeroIMG {
-  width: 25rem;
+  width: 15rem;
   margin: auto;
   box-shadow: 4px 4px 6px black;
   border-radius: 10px;
@@ -139,7 +138,7 @@
 }
 
 /* Mobile */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   #ABOUTME img {
     box-shadow: var(--shadow);
   }
@@ -156,11 +155,11 @@
   }
 
   .aboutMeContent * {
-    font-size: 18pt;
-    font-weight: 400;
+    font-size: 14pt;
   }
 
   .aboutMeContent {
+    justify-content: center;
     width: 70%;
   }
 

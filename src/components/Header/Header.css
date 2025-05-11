@@ -5,12 +5,17 @@
   grid-template-columns: 1fr 1fr;
   width: 100%;
   text-shadow: 1px 1px 1px black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #title {
   animation: titleFadeIn ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: both;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-weight: 600;
   padding-top: 7%;
@@ -87,28 +92,31 @@ blink {
   margin: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   #title {
-    font-size: 80pt;
+    font-size: 70pt;
+    margin: auto;
   }
-  /* #mainphoto {
+  #mainphoto {
     width: 20rem;
-  } */
+  }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 900px) {
   #header {
     grid-template-columns: 1fr;
-    width: 100%
+    width: 100%;
+    margin: auto;
   }
 
   #title {
     font-size: 20pt;
+    margin: auto;
   }
 
   #mainphoto {
     box-shadow: var(--shadow);
-    width: 25rem;
+    width: 20rem;
     margin-bottom: 15px;
     margin-top: 10%;
   }
