@@ -39,7 +39,7 @@ nav * {
   color: tomato;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   nav {
     position: relative;
     flex-direction: column;

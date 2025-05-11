@@ -1,11 +1,13 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
+import HomeIcon from "./HomeIcon";
 
 function Navbar() {
   return (
     <div className="navBar">
       <ThemeToggle />
+      <HomeIcon />
       <nav className="navbar">
         <NavLink
           to="/fizzbuzz"
@@ -38,14 +40,6 @@ function Navbar() {
           }
         >
           Education
-        </NavLink>
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
-            isActive ? "nav-button active" : "nav-button"
-          }
-        >
-          Home
         </NavLink>
       </nav>
     </div>

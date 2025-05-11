@@ -13,11 +13,11 @@ function ThemeToggle() {
   // Apply styles and save to localStorage whenever lightMode changes
   useEffect(() => {
     if (lightMode) {
-      document.body.style.background = "#FDF6E3"; // Light mode
+      document.body.style.background = "#FDF6E3"; // Light
       document.body.style.color = "black";
       localStorage.setItem("theme", "light");
     } else {
-      document.body.style.background = "var(--backgroundColour)"; // Dark mode
+      document.body.style.background = "var(--backgroundColour)"; // Dark
       document.body.style.color = "var(--textColour)";
       localStorage.setItem("theme", "dark");
     }
@@ -38,6 +38,8 @@ function ThemeToggle() {
           <LightModeIcon
             sx={{
               color: "white",
+              marginTop: 2,
+              position: "fixed",
               zIndex: 10,
               fontSize: 28,
               "&:hover": {
@@ -50,7 +52,9 @@ function ThemeToggle() {
         <Tooltip title="Dark Mode" placement="right">
           <DarkModeIcon
             sx={{
-              color: "black", // or use rgba(0, 0, 0, 0.87)
+              color: "#D3D3D3",
+              marginTop: 2,
+              position: "fixed",
               zIndex: 10,
               fontSize: 28,
               "&:hover": {
