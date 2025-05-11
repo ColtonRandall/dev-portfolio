@@ -5,10 +5,17 @@ import HomeIcon from "./HomeIcon";
 
 function Navbar() {
   return (
-    <div className="navBar">
+    <>
       <ThemeToggle />
-      <HomeIcon />
-      <nav className="navbar">
+      <NavLink to="/">
+        <HomeIcon
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+          sx={{ zIndex: 100 }}
+        />
+      </NavLink>
+      <nav>
         <NavLink
           to="/fizzbuzz"
           className={({ isActive }) =>
@@ -42,7 +49,7 @@ function Navbar() {
           Education
         </NavLink>
       </nav>
-    </div>
+    </>
   );
 }
 
