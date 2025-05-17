@@ -1,7 +1,8 @@
 .icons {
   margin: auto;
-  margin-top: 5%;
-  width: 80%;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
@@ -11,8 +12,6 @@
   .icons {
     display: flex;
     flex-direction: column;
-    /* padding-left: 19%; */
-    /* padding-top: 11%; */
   }
   .icons * {
     margin-top: 10%;
