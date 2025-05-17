@@ -17,20 +17,20 @@ function Navbar() {
           FizzBuzz
         </NavLink>
         <NavLink
-          to="/projects"
-          className={({ isActive }) =>
-            isActive ? "nav-button active" : "nav-button"
-          }
-        >
-          Projects
-        </NavLink>
-        <NavLink
           to="/certificates"
           className={({ isActive }) =>
             isActive ? "nav-button active" : "nav-button"
           }
         >
           Certifications
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+        >
+          Projects
         </NavLink>
         <NavLink
           to="/education"
@@ -40,6 +40,16 @@ function Navbar() {
         >
           Education
         </NavLink>
+
+        <NavLink
+          to="/aboutme"
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+        >
+          About Me
+        </NavLink>
+
         <NavLink
           to="/"
           className={({ isActive }) =>

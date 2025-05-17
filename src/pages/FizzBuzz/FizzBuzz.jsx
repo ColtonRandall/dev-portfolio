@@ -79,7 +79,6 @@ function FizzBuzz() {
       <Box
         component="form"
         sx={{
-          justifyContent: "center",
           textAlign: "center",
           marginTop: 5,
         }}
@@ -107,7 +106,6 @@ function FizzBuzz() {
           marginTop: 50,
           marginLeft: 200,
           marginRight: 200,
-          paddingBottom: 200,
         }}
       >
         {submittedText}
