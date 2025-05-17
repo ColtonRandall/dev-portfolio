@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
+import Footer from "../../components/Footer/Footer.jsx";
 
 function FizzBuzz() {
   const [input, setInput] = useState(""); // store input while typing
@@ -111,6 +112,7 @@ function FizzBuzz() {
       >
         {submittedText}
       </p>
+      <Footer />
     </>
   );
 }

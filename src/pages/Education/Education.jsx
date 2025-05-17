@@ -1,5 +1,6 @@
-import Navbar from "../../components/Navbar/Navbar";
 import "./Education.css";
+import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer.jsx";
 
 function Education() {
   return (
@@ -23,6 +24,7 @@ function Education() {
           title="COMPSCI719 - Programming for Web Technologies"
         />
       </div>
+      <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import "./Projects.css";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Navbar from "../../components/Navbar/Navbar";
 import { Grid2 } from "@mui/material";
+import Footer from "../../components/Footer/Footer.jsx";
 
 function Projects() {
   return (
@@ -78,6 +79,7 @@ function Projects() {
           url={"https://github.com/ColtonRandall/Bulls-And-Cows-Game"}
           height="50px"
         />
+        <Footer />
       </Grid2>
     </>
   );

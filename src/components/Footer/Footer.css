@@ -1,0 +1,11 @@
+footer {
+    background-color: var(--navColour);
+    color: var(--textColour);
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 0.2rem;
+    bottom: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }

@@ -1,6 +1,7 @@
+import "./Certificates.css";
 import Navbar from "../../components/Navbar/Navbar";
 import UpArrow from "../../components/UpArrow/UpArrow";
-import "./Certificates.css";
+import Footer from "../../components/Footer/Footer.jsx";
 
 function Certificates() {
   return (
@@ -57,8 +58,8 @@ function Certificates() {
           title="SQL Fundamentals - SoloLearn"
         />
       </div>
-
       <UpArrow />
+      <Footer />
     </div>
   );
 }

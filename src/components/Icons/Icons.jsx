@@ -3,30 +3,31 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
+import { Tooltip } from "@mui/material";
 
 function Icons() {
   return (
     <div className="icons">
-      <div title="Check out my CV">
+      <Tooltip title="My CV" placement="bottom">
         <a href="./docs/Colton CV 2025.pdf">
           <DescriptionIcon
             className="cvicon"
             sx={{
               fontSize: 55,
               color: "gray",
-              transition: "transform 0.3s ease-in-out",
+              transition: "transform 0.5s ease-in-out",
               "&:hover": {
                 transform: "scale(1.1)",
-                background: "gold",
+                background: "#FDFD96",
                 color: "black",
-                borderRadius: 4,
+                borderRadius: 3,
               },
             }}
           />
         </a>
-      </div>
+      </Tooltip>
 
-      <div title="View my GitHub">
+      <Tooltip title="My GitHub profile" placement="bottom">
         <a href="https://github.com/ColtonRandall">
           <GitHubIcon
             sx={{
@@ -37,14 +38,15 @@ function Icons() {
                 transform: "scale(1.1)",
                 background: "#FAF8F6",
                 color: "black",
-                borderRadius: 4,
+                padding: 0.05,
+                borderRadius: 3,
               },
             }}
           />
         </a>
-      </div>
+      </Tooltip>
 
-      <div title="Find me on LinkedIn">
+      <Tooltip title="My LinkedIn page" placement="bottom">
         <a href="https://www.linkedin.com/in/coltonrandall/">
           <LinkedInIcon
             sx={{
@@ -55,14 +57,14 @@ function Icons() {
                 transform: "scale(1.1)",
                 background: "#0072b1",
                 color: "black",
-                borderRadius: 4,
+                borderRadius: 3,
               },
             }}
           />
         </a>
-      </div>
+      </Tooltip>
 
-      <div title="Send me an Email">
+      <Tooltip title="Flick me an email" placement="bottom">
         <a href="mailto:coltonrandall.nz@gmail.com">
           <EmailIcon
             sx={{
@@ -73,12 +75,14 @@ function Icons() {
                 transform: "scale(1.1)",
                 background: "#FF6961",
                 color: "black",
-                borderRadius: 4,
+                paddingRight: 0.25,
+                paddingLeft: 0.25,
+                borderRadius: 3,
               },
             }}
           />
         </a>
-      </div>
+      </Tooltip>
     </div>
   );
 }
