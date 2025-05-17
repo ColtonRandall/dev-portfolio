@@ -3,8 +3,8 @@
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 90%;
-  text-shadow: 1px 1px 1px black;
+  width: 95%;
+  text-shadow: 0.5px 1px 2px black;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -18,14 +18,15 @@
   justify-content: center;
   text-align: center;
   font-weight: 600;
-  padding-top: 3%;
+  padding-top: 3rem;
+  margin-bottom: 0;
 }
 
 #mainphoto {
-  width: 25rem;
-  border-radius: 8%;
+  width: 22rem;
+  border-radius: 50%;
   margin: auto;
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 2px 2px 2px black;
   margin-top: 15%;
   animation: mainImageFadeIn ease 3s;
   animation-delay: 1.5s;
@@ -57,37 +58,19 @@
   }
 }
 
-#SEtitle {
-  color: var(--text-colour);
-  font-size: 20pt;
-  margin: auto;
-}
-
 .subTitle {
+  color: var(--text-colour);
+  font-size: 3.5rem;
+  margin: auto;
   text-align: center;
   font-weight: 500;
   margin: 0;
 }
 
-blink {
-  -webkit-animation: 1.5s linear infinite condemned_blink_effect;
-  animation: 1.5s linear infinite condemned_blink_effect;
-}
-
-@keyframes condemned_blink_effect {
-  0% {
-    visibility: hidden;
-  }
-  50% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
-
 #location {
   margin: auto;
+  margin-top: 6%;
+  font-size: 15pt;
 }
 
 @media (max-width: 1000px) {
@@ -117,13 +100,13 @@ blink {
   }
 
   #location {
-    margin-top: 50px;
-    font-size: 12pt;
+    margin-top: 3rem;
+    font-size: 15pt;
   }
 
   .subTitle {
     margin-top: 5%;
-    font-size: 15pt;
+    font-size: 35pt;
     text-align: center;
   }
 }
