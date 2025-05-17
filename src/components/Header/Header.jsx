@@ -18,8 +18,7 @@ function Header() {
       </div>
       <hr
         style={{
-          marginTop: "rem",
-          marginBottom: 0,
+          marginTop: "3rem",
           height: "2.5px",
           backgroundColor: "slategrey" /* or any color you like */,
           border: "none",
