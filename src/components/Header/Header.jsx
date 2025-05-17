@@ -4,7 +4,7 @@ function Header() {
   return (
     <>
       <div id="header">
-        <div id="title">
+        <div className="title">
           Colton
           <br />
           Randall

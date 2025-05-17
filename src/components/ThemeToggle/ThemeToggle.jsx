@@ -38,7 +38,7 @@ function ThemeToggle() {
           <LightModeIcon
             sx={{
               color: "white",
-              marginTop: 2,
+              marginTop: 3,
               position: "fixed",
               zIndex: 10,
               fontSize: 30,
@@ -53,7 +53,7 @@ function ThemeToggle() {
           <DarkModeIcon
             sx={{
               color: "#D3D3D3",
-              marginTop: 1.7,
+              marginTop: 3,
               position: "fixed",
               zIndex: 10,
               fontSize: 28,
