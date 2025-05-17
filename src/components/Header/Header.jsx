@@ -9,7 +9,7 @@ function Header() {
           <br />
           Randall
         </div>
-        <img src="./images/me.jpeg" id="mainphoto" title="Me 🙂" />
+        <img src="./images/me-circle.png" id="mainphoto" title="Me 🙂" />
 
         <div className="subTitle">
           Software Engineer
@@ -18,7 +18,7 @@ function Header() {
       </div>
       <hr
         style={{
-          marginTop: "4rem",
+          marginTop: "rem",
           marginBottom: 0,
           height: "2.5px",
           backgroundColor: "slategrey" /* or any color you like */,
