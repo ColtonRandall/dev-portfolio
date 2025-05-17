@@ -3,7 +3,7 @@
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 100%;
+  width: 90%;
   text-shadow: 1px 1px 1px black;
   align-items: center;
   justify-content: center;
@@ -18,12 +18,12 @@
   justify-content: center;
   text-align: center;
   font-weight: 600;
-  padding-top: 7%;
+  padding-top: 3%;
 }
 
 #mainphoto {
   width: 25rem;
-  border-radius: 15%;
+  border-radius: 8%;
   margin: auto;
   box-shadow: 1px 1px 2px black;
   margin-top: 15%;
@@ -59,16 +59,14 @@
 
 #SEtitle {
   color: var(--text-colour);
-  font-size: 33pt;
+  font-size: 20pt;
   margin: auto;
-  margin-top: 0;
-  padding-top: 0%;
 }
 
 .subTitle {
   text-align: center;
   font-weight: 500;
-  margin: auto;
+  margin: 0;
 }
 
 blink {
@@ -94,23 +92,20 @@ blink {
 
 @media (max-width: 1000px) {
   #title {
-    font-size: 70pt;
+    font-size: 40pt;
     margin: auto;
   }
+
   #mainphoto {
     width: 20rem;
   }
 }
 
 @media (max-width: 900px) {
+
   #header {
     grid-template-columns: 1fr;
-    width: 100%;
-    margin: auto;
-  }
-
-  #title {
-    font-size: 20pt;
+    width: 50%;
     margin: auto;
   }
 

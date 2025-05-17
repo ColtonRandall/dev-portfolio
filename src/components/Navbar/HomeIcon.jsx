@@ -6,7 +6,7 @@ function HomeIcon() {
     <HomeRoundedIcon
       sx={{
         color: "grey",
-        position: "absolute",
+        position: "fixed",
         marginTop: 0.8,
         marginLeft: 2,
         zIndex: 100,
