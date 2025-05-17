@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 
@@ -5,14 +6,11 @@ function HomeIcon() {
   return (
     <HomeRoundedIcon
       sx={{
-        color: "grey",
-        position: "fixed",
-        marginTop: 0.8,
-        marginLeft: 2,
+        margin: "auto",
         zIndex: 100,
-        fontSize: 29,
+        fontSize: 30,
         "&:hover": {
-          color: "#f25d3d",
+          backgroundColor: "#f25d3d",
         },
       }}
     />

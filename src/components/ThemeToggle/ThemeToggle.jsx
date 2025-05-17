@@ -38,10 +38,10 @@ function ThemeToggle() {
           <LightModeIcon
             sx={{
               color: "white",
-              marginTop: 1.7,
+              marginTop: 2,
               position: "fixed",
               zIndex: 10,
-              fontSize: 28,
+              fontSize: 30,
               "&:hover": {
                 color: "gold",
               },

@@ -14,17 +14,17 @@ nav {
 nav * {
   color: rgb(207, 238, 250);
   text-decoration: none;
+  align-items: center;
   border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 5px;
-  padding-top: 8px;
   margin-right: 5px;
+  justify-content: center;
+  display: flex;
+  padding: 0 1rem;
+  height: 40px;
 }
 
 .nav-button {
   text-decoration: none;
-  color: whitesmoke;
   background: none;
   cursor: pointer;
   transition: background 0.5s;
@@ -35,8 +35,8 @@ nav * {
 }
 
 .nav-button.active {
-  pointer-events: none;
-  color: tomato;
+  background: #c2c5c7;
+  color: black;
 }
 
 @media (max-width: 600px) {
@@ -44,9 +44,8 @@ nav * {
     position: relative;
     flex-direction: column;
     z-index: 4;
-    width: 60%;
+    width: 50%;
     font-size: 20pt;
-    top: 5px;
     margin: auto;
     border-radius: 10px;
     margin-top: 5%;

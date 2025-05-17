@@ -1,20 +1,12 @@
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
-import HomeIcon from "./HomeIcon";
+import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 
 function Navbar() {
   return (
     <>
       <ThemeToggle />
-      <NavLink to="/">
-        <HomeIcon
-          className={({ isActive }) =>
-            isActive ? "nav-button active" : "nav-button"
-          }
-          sx={{ zIndex: 100 }}
-        />
-      </NavLink>
       <nav>
         <NavLink
           to="/fizzbuzz"
@@ -47,6 +39,20 @@ function Navbar() {
           }
         >
           Education
+        </NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "home-button active" : "home-button"
+          }
+        >
+          <HomeRoundedIcon
+            sx={{
+              margin: "auto",
+              fontSize: 30,
+              color: "red", // allow it to get color from the NavLink wrapper
+            }}
+          />
         </NavLink>
       </nav>
     </>

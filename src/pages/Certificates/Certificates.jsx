@@ -1,4 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
+import UpArrow from "../../components/UpArrow/UpArrow";
 import "./Certificates.css";
 
 function Certificates() {
@@ -57,11 +58,7 @@ function Certificates() {
         />
       </div>
 
-      <div className="toTop">
-        <a href="#">
-          <img src="./images/up.png" id="arrow" title="Back to top!" />
-        </a>
-      </div>
+      <UpArrow />
     </div>
   );
 }

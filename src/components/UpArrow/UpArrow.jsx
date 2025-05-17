@@ -10,7 +10,6 @@ function UpArrow() {
         <Tooltip title="Back to top">
           <Fab className="upArrow" size="small">
             <NavigationIcon />
-            {/* Back to top */}
           </Fab>
         </Tooltip>
       </a>
