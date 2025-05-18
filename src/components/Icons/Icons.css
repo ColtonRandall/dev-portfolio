@@ -1,7 +1,6 @@
 .icons {
   margin: auto;
-  margin-top: 4%;
-  margin-bottom: 6%;
+  margin-top: 5rem;
   width: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

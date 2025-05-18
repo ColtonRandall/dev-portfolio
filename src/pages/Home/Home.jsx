@@ -5,18 +5,28 @@ import Icons from "../../components/Icons/Icons";
 import Footer from "../../components/Footer/Footer.jsx";
 
 function Home() {
-
   return (
-    <div className="home">
-      <header>
-        <Navbar />
-        <Header />
-      </header>
-      <main>
-        <Icons />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div
+        className="home"
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "100vh",
+        }}
+      >
+        <div style={{ flex: 1 }}>
+          <header>
+            <Navbar />
+            <Header />
+          </header>
+          <main>
+            <Icons />
+          </main>
+        </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 
