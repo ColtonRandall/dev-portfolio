@@ -47,7 +47,7 @@ function Navbar() {
             isActive ? "nav-button active" : "nav-button"
           }
         >
-          About Me
+          My Journey
         </NavLink>
 
         <NavLink

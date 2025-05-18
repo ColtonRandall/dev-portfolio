@@ -1,11 +1,14 @@
 import "./Education.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer.jsx";
+import CoverImage from "../../components/CoverImage/CoverImage.jsx";
 
 function Education() {
   return (
     <>
       <Navbar />
+      <CoverImage src={"./images/education-cover.jpg"} />
+
       <title>Education</title>
       <p id="mainTitle">Education</p>
 

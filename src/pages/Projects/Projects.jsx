@@ -3,12 +3,13 @@ import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Navbar from "../../components/Navbar/Navbar";
 import { Grid2 } from "@mui/material";
 import Footer from "../../components/Footer/Footer.jsx";
+import CoverImage from "../../components/CoverImage/CoverImage.jsx";
 
 function Projects() {
   return (
     <>
-      <title>Projects</title>
       <Navbar />
+      <CoverImage src={"./images/projects-cover.jpg"} />
       <p id="mainTitle">Projects</p>
       <hr />
       <Grid2

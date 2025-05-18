@@ -2,13 +2,13 @@ import "./Certificates.css";
 import Navbar from "../../components/Navbar/Navbar";
 import UpArrow from "../../components/UpArrow/UpArrow";
 import Footer from "../../components/Footer/Footer.jsx";
+import CoverImage from "../../components/CoverImage/CoverImage.jsx";
 
 function Certificates() {
   return (
     <div>
-      <title>Certificates</title>
-
       <Navbar />
+      <CoverImage src={"./images/certificates-cover.jpg"} />
 
       <p id="mainTitle">Certificates</p>
 

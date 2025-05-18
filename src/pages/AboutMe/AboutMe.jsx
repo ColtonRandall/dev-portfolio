@@ -2,19 +2,16 @@ import "./AboutMe.css";
 import Footer from "../../components/Footer/Footer";
 import UpArrow from "../../components/UpArrow/UpArrow";
 import Navbar from "../../components/Navbar/Navbar";
+import CoverImage from "../../components/CoverImage/CoverImage";
 
 function AboutMe() {
-
   return (
     <>
-      <title>About Me</title>
-
       <Navbar />
-
-      <p id="mainTitle">About Me</p>
-
-      <hr />
+      <CoverImage src={"./images/my-journey-cover.jpg"} />
       <div id="ABOUTME">
+        <p id="mainTitle">My Journey</p>
+        <hr />
         <div className="aboutMeContent">
           <div className="coleNanook">
             <div id="imgTag">

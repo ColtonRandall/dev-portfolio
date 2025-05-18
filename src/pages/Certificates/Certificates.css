@@ -1,8 +1,7 @@
 #mainTitle {
-  font-size: 70pt;
+  font-size: 60pt;
   color: tomato;
   text-align: center;
-  margin-top: 150px;
   text-shadow: var(--shadow);
 }
 
@@ -83,7 +82,7 @@
   animation: arrow 1.5s ease infinite;
 }
 
-/* timeline of hover animation */
+timeline of hover animation
 @keyframes arrow {
   0% {
     transform: translate(0);
