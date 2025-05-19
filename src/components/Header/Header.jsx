@@ -20,7 +20,7 @@ function Header() {
         style={{
           marginTop: "3rem",
           height: "2.5px",
-          backgroundColor: "slategrey" /* or any color you like */,
+          backgroundColor: "slategrey",
           border: "none",
         }}
       />

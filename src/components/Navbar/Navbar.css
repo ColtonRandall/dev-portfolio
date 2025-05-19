@@ -1,9 +1,9 @@
 nav {
   position: fixed;
   display: flex;
-  font-family: var(--cabinFont);
+  font-family: var(--font);
   justify-content: right;
-  font-size: 12pt;
+  font-size: 14pt;
   background-color: var(--navColour);
   box-shadow: var(--shadow);
   z-index: 3;
@@ -12,7 +12,7 @@ nav {
 }
 
 nav * {
-  color: rgb(207, 238, 250);
+  color:rgb(143, 201, 202);
   text-decoration: none;
   align-items: center;
   border-radius: 10px;
@@ -32,6 +32,7 @@ nav * {
 
 .nav-button:hover {
   background: tomato;
+  color: white;
 }
 
 .nav-button.active {
@@ -39,7 +40,7 @@ nav * {
   color: black;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 750px) {
   nav {
     position: relative;
     flex-direction: column;

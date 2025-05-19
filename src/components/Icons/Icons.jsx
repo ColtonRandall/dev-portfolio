@@ -14,13 +14,12 @@ function Icons() {
             className="cvicon"
             sx={{
               fontSize: 55,
-              color: "gray",
-              transition: "transform 0.5s ease-in-out",
+              color: "#92B4A7",
+              borderRadius: 3,
+              transition: "background 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.1)",
                 background: "#FDFD96",
                 color: "black",
-                borderRadius: 3,
               },
             }}
           />
@@ -31,15 +30,13 @@ function Icons() {
         <a href="https://github.com/ColtonRandall">
           <GitHubIcon
             sx={{
-              color: "gray",
+              color: "#92B4A7",
               fontSize: 55,
-              transition: "transform 0.5s ease-in-out",
+              borderRadius: 3,
+              transition: "background 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.1)",
                 background: "#FAF8F6",
                 color: "black",
-                padding: 0.05,
-                borderRadius: 3,
               },
             }}
           />
@@ -51,13 +48,12 @@ function Icons() {
           <LinkedInIcon
             sx={{
               fontSize: 60,
-              color: "gray",
-              transition: "transform 0.5s ease-in-out",
+              color: "#92B4A7",
+              borderRadius: 3,
+              transition: "background 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.1)",
                 background: "#0072b1",
                 color: "black",
-                borderRadius: 3,
               },
             }}
           />
@@ -68,16 +64,13 @@ function Icons() {
         <a href="mailto:coltonrandall.nz@gmail.com">
           <EmailIcon
             sx={{
-              fontSize: 55,
-              color: "gray",
-              transition: "transform 0.5s ease-in-out",
+              fontSize: 60,
+              color: "#92B4A7",
+              borderRadius: 3,
+              transition: "background 0.5s ease-in-out",
               "&:hover": {
-                transform: "scale(1.1)",
                 background: "#FF6961",
                 color: "black",
-                paddingRight: 0.25,
-                paddingLeft: 0.25,
-                borderRadius: 3,
               },
             }}
           />

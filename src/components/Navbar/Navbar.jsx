@@ -25,6 +25,14 @@ function Navbar() {
           Certifications
         </NavLink>
         <NavLink
+          to="/blog"
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+        >
+          Blog
+        </NavLink>
+        <NavLink
           to="/projects"
           className={({ isActive }) =>
             isActive ? "nav-button active" : "nav-button"
@@ -60,7 +68,6 @@ function Navbar() {
             sx={{
               margin: "auto",
               fontSize: 30,
-              color: "red", // allow it to get color from the NavLink wrapper
             }}
           />
         </NavLink>

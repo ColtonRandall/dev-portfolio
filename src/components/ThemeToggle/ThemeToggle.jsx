@@ -13,11 +13,11 @@ function ThemeToggle() {
   // Apply styles and save to localStorage whenever lightMode changes
   useEffect(() => {
     if (lightMode) {
-      document.body.style.background = "#FDF6E3"; // Light
+      document.body.style.background = "#F0F0EB"; // Light mode
       document.body.style.color = "black";
       localStorage.setItem("theme", "light");
     } else {
-      document.body.style.background = "var(--backgroundColour)"; // Dark
+      document.body.style.background = "var(--backgroundColour)"; // Dark mode
       document.body.style.color = "var(--textColour)";
       localStorage.setItem("theme", "dark");
     }

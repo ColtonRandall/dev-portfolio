@@ -10,14 +10,7 @@ import {
   Box,
 } from "@mui/material";
 
-function ProjectCard({
-  image,
-  title,
-  description,
-  dateCreated,
-  language,
-  url,
-}) {
+function BlogCard({ image, title, description, dateCreated, url }) {
   return (
     <Box
       sx={{
@@ -25,7 +18,6 @@ function ProjectCard({
         transition: "box-shadow 0.3s ease, transform 0.5s ease",
         "&:hover": {
           boxShadow: "0 0 0 8px tomato",
-          transform: "scale(1.02)",
         },
       }}
     >
@@ -41,7 +33,7 @@ function ProjectCard({
           sx={{
             objectFit: "cover",
             width: "100%",
-            height: "100%",
+            height: "150px",
           }}
           image={image}
         />
@@ -56,20 +48,9 @@ function ProjectCard({
           </Typography>
           <Typography variant="body2">{description}</Typography>
         </CardContent>
-        <Typography
-          variant="body2"
-          fontWeight={"bold"}
-          sx={{
-            padding: 0.5,
-            textAlign: "center",
-            background: "lightblue",
-          }}
-        >
-          {language}
-        </Typography>
         <CardActions
           sx={{
-            background: "#ffebcd",
+            background: "#C1CBB3",
             justifyContent: "space-evenly",
           }}
         >
@@ -87,7 +68,7 @@ function ProjectCard({
             {dateCreated}
           </Typography>
           <Link to={url} target="_blank" rel="noopener noreferrer">
-            <Tooltip title="view repo" placement="right" arrow>
+            <Tooltip title="view full article" placement="right" arrow>
               <IconButton
                 sx={{
                   background: "lightgray",
@@ -95,12 +76,12 @@ function ProjectCard({
                   marginRight: 1,
                   boxShadow: 1,
                   "&:hover": {
-                    background: "tomato",
+                    border: "tomato",
                     boxShadow: 2,
                   },
                 }}
               >
-                <img src="./images/octocat.png" height={30} />
+                <img src="./images/medium.png" height={30} />
               </IconButton>
             </Tooltip>
           </Link>
@@ -110,4 +91,4 @@ function ProjectCard({
   );
 }
 
-export default ProjectCard;
+export default BlogCard;
