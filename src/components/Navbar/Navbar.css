@@ -40,7 +40,7 @@ nav * {
   color: black;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 830px) {
   nav {
     position: relative;
     flex-direction: column;

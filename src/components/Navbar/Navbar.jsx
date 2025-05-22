@@ -68,6 +68,9 @@ function Navbar() {
             sx={{
               margin: "auto",
               fontSize: 30,
+              "&:hover": {
+                background: "tomato",
+              },
             }}
           />
         </NavLink>
