@@ -6,11 +6,7 @@ function Footer() {
     return date.getFullYear();
   };
 
-  return (
-      <footer>
-        © {currentYear()} • Colton Randall • Built with React & Vite ⚡️
-      </footer>
-  );
+  return <footer>© Colton Randall - 2025</footer>;
 }
 
 export default Footer;
