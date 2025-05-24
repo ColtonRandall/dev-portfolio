@@ -1,20 +1,10 @@
-.icons {
-  margin: auto;
-  margin-top: 5rem;
-  width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  text-align: center;
+.top-bar {
+  position: relative;
+  top: 0.3rem;
 }
 
-@media (max-width: 780px) {
-  .icons {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    margin-bottom: 5rem;
-  }
-  .icons * {
-    margin-top: 10%;
-  }
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
 }

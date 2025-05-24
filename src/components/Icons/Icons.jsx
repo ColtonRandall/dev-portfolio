@@ -4,8 +4,9 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import DescriptionIcon from "@mui/icons-material/Description";
 import { Tooltip } from "@mui/material";
+import PropTypes from "prop-types";
 
-function Icons() {
+function Icons({ size = 27, iconColor = "#6A9F85" }) {
   return (
     <div className="icons">
       <Tooltip title="My CV" placement="bottom">
@@ -13,8 +14,8 @@ function Icons() {
           <DescriptionIcon
             className="cvicon"
             sx={{
-              fontSize: 55,
-              color: "#92B4A7",
+              fontSize: size,
+              color: iconColor,
               borderRadius: 3,
               transition: "background 0.5s ease-in-out",
               "&:hover": {
@@ -30,8 +31,8 @@ function Icons() {
         <a href="https://github.com/ColtonRandall">
           <GitHubIcon
             sx={{
-              color: "#92B4A7",
-              fontSize: 55,
+              color: iconColor,
+              fontSize: size,
               borderRadius: 3,
               transition: "background 0.5s ease-in-out",
               "&:hover": {
@@ -47,8 +48,8 @@ function Icons() {
         <a href="https://www.linkedin.com/in/coltonrandall/">
           <LinkedInIcon
             sx={{
-              fontSize: 60,
-              color: "#92B4A7",
+              fontSize: size + 5,
+              color: iconColor,
               borderRadius: 3,
               transition: "background 0.5s ease-in-out",
               "&:hover": {
@@ -64,8 +65,8 @@ function Icons() {
         <a href="mailto:coltonrandall.nz@gmail.com">
           <EmailIcon
             sx={{
-              fontSize: 60,
-              color: "#92B4A7",
+              fontSize: size + 5,
+              color: iconColor,
               borderRadius: 3,
               transition: "background 0.5s ease-in-out",
               "&:hover": {
@@ -79,5 +80,9 @@ function Icons() {
     </div>
   );
 }
+
+Icons.propTypes = {
+  size: PropTypes.number,
+};
 
 export default Icons;

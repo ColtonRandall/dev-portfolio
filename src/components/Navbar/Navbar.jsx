@@ -2,11 +2,17 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
+import Icons from "../Icons/Icons";
 
 function Navbar() {
   return (
     <>
-      <ThemeToggle />
+      <div className="top-bar">
+        <ThemeToggle className="themeToggle" />
+        <div className="top-bar-icons">
+          <Icons />
+        </div>
+      </div>
       <nav>
         <NavLink
           to="/fizzbuzz"

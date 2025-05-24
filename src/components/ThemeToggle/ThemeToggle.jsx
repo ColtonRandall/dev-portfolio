@@ -3,7 +3,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useState, useEffect } from "react";
 
-function ThemeToggle() {
+function ThemeToggle({ className }) {
   // Load from localStorage on initial render
   const [lightMode, setLightMode] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -29,12 +29,12 @@ function ThemeToggle() {
 
   return (
     <IconButton
-      className="themeButton"
+      className={className}
       sx={{ marginLeft: 2 }}
       onClick={toggleDarkAndLightMode}
     >
       {!lightMode ? (
-        <Tooltip title="Light Mode" placement="right">
+        <Tooltip title="Light Mode" placement="bottom">
           <LightModeIcon
             sx={{
               color: "white",
@@ -49,7 +49,7 @@ function ThemeToggle() {
           />
         </Tooltip>
       ) : (
-        <Tooltip title="Dark Mode" placement="right">
+        <Tooltip title="Dark Mode" placement="bottom">
           <DarkModeIcon
             sx={{
               color: "#D3D3D3",
