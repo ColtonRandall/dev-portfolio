@@ -1,7 +1,7 @@
 #UniCertsTitle {
   font-size: 40pt;
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 7rem;
   text-shadow: var(--shadow);
 }
 
@@ -11,8 +11,8 @@
   flex-wrap: wrap;
   margin: auto;
   padding-top: 3%;
-  padding-bottom: 10%;
-  width: 90%;
+  width: 95%;
+  margin-bottom: 4rem;
 }
 
 .uniCerts img {
@@ -21,13 +21,18 @@
   transition-duration: 1s;
 }
 
-#softwarePGcert {
+#softwarePGcert,
+#otagoDegree {
   width: 30%;
 }
 
-@media (max-width: 768px) {
-  #softwarePGcert {
+@media (max-width: 900px) {
+
+  #softwarePGcert, #javaPGcert, #webPGcert {
     width: 80%;
-    margin-bottom: 3rem;
+  }
+
+  #otagoDegree {
+    width: 65%;
   }
 }

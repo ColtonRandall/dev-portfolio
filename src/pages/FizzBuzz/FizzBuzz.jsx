@@ -43,10 +43,11 @@ function FizzBuzz() {
       <Navbar />
 
       <div
+      className="fizzbuzz-container"
         style={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "100vh",
+          minHeight: "98vh",
         }}
       >
         <div style={{ flex: 1 }}>
