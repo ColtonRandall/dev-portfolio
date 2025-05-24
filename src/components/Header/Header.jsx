@@ -9,7 +9,7 @@ function Header() {
           <br />
           Randall
         </div>
-        <img src="./images/me-circle.png" id="mainphoto" title="Me 🙂" />
+        <img src="./images/me-circle.png" id="mainphoto"/>
 
         <div className="subTitle">
           Software Engineer
