@@ -3,6 +3,7 @@ import { useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import Footer from "../../components/Footer/Footer.jsx";
+import "./FizzBuzz.css";
 
 function FizzBuzz() {
   const [input, setInput] = useState(""); // store input while typing

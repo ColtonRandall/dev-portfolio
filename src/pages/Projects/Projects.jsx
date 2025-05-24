@@ -10,8 +10,6 @@ function Projects() {
     <>
       <Navbar />
       <CoverImage src={"./images/projects-cover.jpg"} />
-      <p id="mainTitle">Projects</p>
-      <hr />
       <Grid2
         container
         spacing={6}

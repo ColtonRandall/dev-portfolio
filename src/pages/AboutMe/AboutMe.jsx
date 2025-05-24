@@ -10,8 +10,6 @@ function AboutMe() {
       <Navbar />
       <CoverImage src={"./images/my-journey-cover.jpg"} />
       <div id="ABOUTME">
-        <p id="mainTitle">My Journey</p>
-        <hr />
         <div className="aboutMeContent">
           <div className="coleNanook">
             <div id="imgTag">
@@ -168,7 +166,6 @@ function AboutMe() {
           </div>
         </div>
       </div>
-      <hr />
       <UpArrow />
       <Footer />
     </>

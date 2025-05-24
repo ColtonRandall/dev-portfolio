@@ -11,9 +11,6 @@ function Education() {
       <CoverImage src={"./images/education-cover.jpg"} />
 
       <title>Education</title>
-      <p id="mainTitle">Education</p>
-
-      <hr />
 
       <p id="UniCertsTitle">Postgraduate Studies</p>
       <div className="uniCerts">

@@ -1,0 +1,6 @@
+#mainTitle {
+  font-size: 60pt;
+  color: tomato;
+  text-align: center;
+  text-shadow: var(--shadow);
+}

@@ -9,8 +9,6 @@ function Blog() {
     <>
       <Navbar />
       <CoverImage src={"./images/blog-cover.jpg"} />
-      <p id="mainTitle">Blog</p>
-      <hr />
       <Grid2
         container
         spacing={6}

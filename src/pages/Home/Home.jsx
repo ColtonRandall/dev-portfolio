@@ -1,8 +1,9 @@
 import "./Home.css";
 import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
-import Icons from "../../components/Icons/Icons";
 import Footer from "../../components/Footer/Footer.jsx";
+import HomeContent from "../../components/HomeContent/HomeContent.jsx";
+import { AlignCenter } from "lucide-react";
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
             <Header />
           </header>
           <main>
-            <Icons />
+            <HomeContent />
           </main>
         </div>
         <Footer />
