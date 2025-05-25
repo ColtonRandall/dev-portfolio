@@ -24,7 +24,8 @@ function MyJourney() {
       <Navbar />
       <CoverImage src={"./images/my-journey-cover.jpg"} />
       <p className="my-journey-intro">
-        Welcome to my timeline! <br />
+        <div className="welcome">Welcome to my timeline!</div>
+        <br />
         <br />
         Here you'll find key life milestones that led me to where I am today.
         Feel free to reach out with any questions. <br />
