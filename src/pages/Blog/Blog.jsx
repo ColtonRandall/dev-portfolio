@@ -1,5 +1,5 @@
 import Navbar from "../../components/Navbar/Navbar";
-import { Grid2 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import Footer from "../../components/Footer/Footer.jsx";
 import CoverImage from "../../components/CoverImage/CoverImage.jsx";
 import BlogCard from "../../components/BlogCard.jsx";
@@ -9,7 +9,7 @@ function Blog() {
     <>
       <Navbar />
       <CoverImage src={"./images/blog-cover.jpg"} />
-      <Grid2
+      <Grid
         container
         spacing={6}
         direction="row"
@@ -33,7 +33,7 @@ function Blog() {
           }
         />
         <Footer />
-      </Grid2>
+      </Grid>
     </>
   );
 }

@@ -24,16 +24,16 @@ function FizzBuzz() {
 
       for (let i = 0; i < numbers.length; i++) {
         if ((i + 1) % 15 === 0) {
-          numbers[i] = `FizzBuzz! [${i + 1}]`;
+          numbers[i] = `FizzBuzz!`;
         } else if ((i + 1) % 3 === 0) {
-          numbers[i] = `Fizz [${i + 1}]`;
+          numbers[i] = `Fizz`;
         } else if ((i + 1) % 5 === 0) {
-          numbers[i] = `Buzz [${i + 1}]`;
+          numbers[i] = `Buzz`;
         }
       }
 
-      setSubmittedText(numbers.join(" . . . "));
-      setInput(""); // clear input field
+      setSubmittedText(numbers.join("... "));
+      setInput(""); 
     }
   };
 
@@ -43,7 +43,7 @@ function FizzBuzz() {
       <Navbar />
 
       <div
-      className="fizzbuzz-container"
+        className="fizzbuzz-container"
         style={{
           display: "flex",
           flexDirection: "column",

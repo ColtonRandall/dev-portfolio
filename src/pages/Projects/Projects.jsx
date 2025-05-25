@@ -1,7 +1,7 @@
 import "./Projects.css";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import Navbar from "../../components/Navbar/Navbar";
-import { Grid2 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import Footer from "../../components/Footer/Footer.jsx";
 import CoverImage from "../../components/CoverImage/CoverImage.jsx";
 
@@ -10,7 +10,7 @@ function Projects() {
     <>
       <Navbar />
       <CoverImage src={"./images/projects-cover.jpg"} />
-      <Grid2
+      <Grid
         container
         spacing={6}
         direction="row"
@@ -21,6 +21,40 @@ function Projects() {
           marginTop: 10,
         }}
       >
+        <ProjectCard
+          image={"./images/dev-portfolio-image.png"}
+          title={"This Website / Dev Portfolio"}
+          description={
+            <>
+              The website you're currently on began as my first personal
+              project, as a canvas for my early IT courses back in 2021.
+              <br />
+              <br />
+              It’s evolved from basic HTML and CSS into a React app using
+              Material UI and other libraries, and is fully responsive for
+              smaller screens 📱.
+              <br />
+              <br />
+              You can check out the codebase for the original version of this
+              site{" "}
+              <a
+                href="https://github.com/ColtonRandall/old-portfolio-website"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                here
+              </a>
+              .
+              <br />
+              <br />I now use this site to showcase my projects, blog posts, and
+              other milestones.
+            </>
+          }
+          language={"React, JavaScript, CSS, Material UI"}
+          dateCreated={"01.05.2021"}
+          url={"https://github.com/ColtonRandall/dev-portfolio"}
+        />
+
         <ProjectCard
           image={"./images/kalah.png"}
           title={"Kalah Board Game"}
@@ -79,7 +113,7 @@ function Projects() {
           height="50px"
         />
         <Footer />
-      </Grid2>
+      </Grid>
     </>
   );
 }

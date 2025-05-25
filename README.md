@@ -2,13 +2,11 @@
 
 Welcome to my Dev Portfolio! 👋
 
-> View the live site [here](https://coltonrandall.github.io/dev-portfolio/).
+> View the live site [here](https://coltonrandall.com).
 
 While here, you'll get a better sense of my background (both personally and professionally), the credentials/training I've recieved, and see the projects I've created 🔨 .
 
 This is also my space for consolidating modern web-development knowledge in varying frameworks and languages, while also acting as a canvas for experimenting with new concepts.
-
-> This site was built manually **<ins>without using any AI</ins>**.
 
 <hr>
 

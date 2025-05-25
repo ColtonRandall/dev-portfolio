@@ -1,17 +1,17 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
-import AboutMe from "./pages/AboutMe/AboutMe";
 import Certificates from "./pages/Certificates/Certificates";
 import Education from "./pages/Education/Education";
 import Projects from "./pages/Projects/Projects";
 import FizzBuzz from "./pages/FizzBuzz/FizzBuzz";
 import Blog from "./pages/Blog/Blog";
+import MyJourney from "./pages/MyJourney/MyJourney";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/aboutme" element={<AboutMe />} />
+      <Route path="/myjourney" element={<MyJourney />} />
       <Route path="/education" element={<Education />} />
       <Route path="/projects" element={<Projects />}></Route>
       <Route path="/certificates" element={<Certificates />} />

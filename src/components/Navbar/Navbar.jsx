@@ -56,7 +56,7 @@ function Navbar() {
         </NavLink>
 
         <NavLink
-          to="/aboutme"
+          to="/myjourney"
           className={({ isActive }) =>
             isActive ? "nav-button active" : "nav-button"
           }
