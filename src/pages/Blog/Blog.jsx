@@ -3,10 +3,15 @@ import Grid from "@mui/material/Grid";
 import Footer from "../../components/Footer/Footer.jsx";
 import CoverImage from "../../components/CoverImage/CoverImage.jsx";
 import BlogCard from "../../components/BlogCard.jsx";
+import Box from "@mui/material/Box";
 
 function Blog() {
   return (
-    <>
+    <Box
+      display="flex"
+      flexDirection="column"
+      minHeight="100vh"
+    >
       <Navbar />
       <CoverImage src={"./images/blog-cover.jpg"} />
       <Grid
@@ -32,9 +37,9 @@ function Blog() {
             "https://medium.com/@coltonrandall.nz/dora-metrics-what-are-they-and-how-do-they-promote-engineering-excellence-bfb501a42544"
           }
         />
-        <Footer />
+      <Footer />
       </Grid>
-    </>
+    </Box>
   );
 }
 
