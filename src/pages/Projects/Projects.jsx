@@ -102,6 +102,51 @@ function Projects() {
         />
 
         <ProjectCard
+          image={"./images/react-todo.png"}
+          title={"Todo App"}
+          description={
+            <>
+              Simple React task tracking app that remembers state and has
+              persistent todos / completed items.
+            </>
+          }
+          language={"React, JavaScript, CSS"}
+          dateCreated={"31.05.2021"}
+          url={"https://github.com/ColtonRandall/react-todo-app"}
+        />
+
+        <ProjectCard
+          image={"./images/react-calculator.png"}
+          title={"Calculator"}
+          description={
+            <>
+              Simple React calculator app.
+              <br />
+              <br />
+              Performs basic maths and displays them in a proper Calculator-like
+              UI.
+            </>
+          }
+          language={"React, JavaScript, CSS"}
+          dateCreated={"31.05.2022"}
+          url={"https://github.com/ColtonRandall/calculator-app"}
+        />
+
+        <ProjectCard
+          image={"./images/java-contact-book.png"}
+          title={"Contact Book"}
+          description={
+            <>
+              Java knowledge refresher through a simple OOP CRUD console app
+              that creates, and manages contacts within a contact book.
+            </>
+          }
+          language={"Java"}
+          dateCreated={"23.03.2025"}
+          url={"https://github.com/ColtonRandall/Java-ContactBook"}
+        />
+
+        <ProjectCard
           image={"./images/kalah.png"}
           title={"Kalah Board Game"}
           description={

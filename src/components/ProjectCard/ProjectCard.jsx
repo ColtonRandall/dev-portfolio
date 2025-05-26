@@ -73,21 +73,23 @@ function ProjectCard({
             justifyContent: "space-evenly",
           }}
         >
-          <Typography
-            variant="body2"
-            sx={{
-              marginRight: 1,
-              marginLeft: 1,
-              padding: 0.5,
-              borderRadius: 2,
-              boxShadow: 1,
-              background: "lightgray",
-            }}
-          >
-            {dateCreated}
-          </Typography>
+          <Tooltip title="Date created" placement="bottom" arrow>
+            <Typography
+              variant="body2"
+              sx={{
+                marginRight: 1,
+                marginLeft: 1,
+                padding: 0.5,
+                borderRadius: 2,
+                boxShadow: 1,
+                background: "lightgray",
+              }}
+            >
+              {dateCreated}
+            </Typography>
+          </Tooltip>
           <Link to={url} target="_blank" rel="noopener noreferrer">
-            <Tooltip title="view repo" placement="right" arrow>
+            <Tooltip title="view repo" placement="bottom" arrow>
               <IconButton
                 sx={{
                   background: "lightgray",
