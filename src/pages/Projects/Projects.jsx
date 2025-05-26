@@ -22,6 +22,52 @@ function Projects() {
         }}
       >
         <ProjectCard
+          image={"./images/java-weather-app.png"}
+          title={"Weather App"}
+          description={
+            <>
+              This is a weather application that aims to mock an API for weather
+              based on cities around the world.
+              <br />
+              <br />
+              The structure of this project is based on the Spring Boot
+              Controller-Service-Repository pattern.
+              <br />
+              <br />
+              There will be a User interface in the console that will allow a
+              client/user to enter a city and receive weather information (in
+              JSON) about that particular city.
+            </>
+          }
+          language={"Java, Spring Boot, API / Postman"}
+          dateCreated={"28.03.2025"}
+          url={
+            "https://github.com/ColtonRandall/java-weather-information-service"
+          }
+        />
+
+        <ProjectCard
+          image={"./images/tictactoe.png"}
+          title={"Tic Tac Toe"}
+          description={
+            <>
+              A simple OOP Tic Tac Toe game built with C#/.NET.
+              <br />
+              <br />
+              You play aginst a computer with a randomly generated name, and it
+              uses a basic AI to make its moves.
+              <br />
+              <br />
+              The game will loop until either you or the computer wins, or the
+              game ends in a draw.
+            </>
+          }
+          language={"C#, .NET 7.0"}
+          dateCreated={"28.02.2025"}
+          url={"https://github.com/ColtonRandall/tic-tac-toe-csharp"}
+        />
+
+        <ProjectCard
           image={"./images/dev-portfolio-image.png"}
           title={"This Website / Dev Portfolio"}
           description={
@@ -59,7 +105,14 @@ function Projects() {
           image={"./images/kalah.png"}
           title={"Kalah Board Game"}
           description={
-            "My final assignment for COMPSCI 701: Creating Maintainable Software, one of my postgraduate courses. Kalah is a console app that touches on almost every facet of OOP and maintainable design. You can choose, easy, medium or hard mode against the computer, and flip the board to 'horizontal mode'."
+            <>
+              My final assignment for COMPSCI 701: Creating Maintainable
+              Software, one of my postgraduate courses. <br />
+              <br />
+              Kalah is a console app that touches on almost every facet of OOP
+              and maintainable design. You can choose, easy, medium or hard mode
+              against the computer, and flip the board to 'horizontal mode'.
+            </>
           }
           language={"Java"}
           dateCreated={"07.09.2021"}
@@ -70,7 +123,7 @@ function Projects() {
           image={"./images/rpgGame.jpg"}
           title={"Console RPG App"}
           description={
-            "A role playing game built into the console. You can create a player, fight different enemies, and continue on your adventure."
+            "A role playing game built into the console with C# using OOP methods. You can create a player, fight different enemies, and continue on your adventure."
           }
           language={"C#"}
           dateCreated={"10.10.2022"}
