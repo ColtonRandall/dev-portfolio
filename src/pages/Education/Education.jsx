@@ -14,15 +14,21 @@ function Education() {
 
       <p id="UniCertsTitle">Postgraduate Studies</p>
       <div className="uniCerts">
-        <Tooltip title="PgCert InfoTech" placement="bottom">
+        <Tooltip title="Postgraduate Certificate in IT" placement="bottom">
           <img src="./images/PGCertITCertificate2021.png" id="softwarePGcert" />
         </Tooltip>
       </div>
       <div className="uniCerts">
-        <Tooltip title="COMPSCI718 - OOP in Java" placement="bottom">
-          <img src="./images/718.png" id="javaPGcert"/>
+        <Tooltip
+          title="Certificate of Outstanding Achievement (COMPSCI-718: OOP in Java)"
+          placement="bottom"
+        >
+          <img src="./images/718.png" id="javaPGcert" />
         </Tooltip>
-        <Tooltip title="COMPSCI719 - Web Development" placement="bottom">
+        <Tooltip
+          title="Certificate of Outstanding Achievement (COMPSCI-719: Web Development)"
+          placement="bottom"
+        >
           <img src="./images/719.png" id="webPGcert" />
         </Tooltip>
         <hr style={{ marginTop: "5rem" }} />

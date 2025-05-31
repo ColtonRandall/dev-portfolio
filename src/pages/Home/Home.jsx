@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer.jsx";
 import HomeContent from "../../components/HomeContent/HomeContent.jsx";
-import { AlignCenter } from "lucide-react";
 
 function Home() {
   return (
