@@ -26,23 +26,6 @@ function HomeContent() {
         Outside of work, I enjoy side projects (this portfolio being one of
         them), photography, travel, staying active, and exploring the outdoors
         with my wife and golden retriever.
-        <br />
-        <br />
-        <Box textAlign="center">
-          <p>
-            Click{" "}
-            <Link
-              href="/myjourney"
-              target="_blank"
-              rel="noopener noreferrer"
-              color="tomato"
-              underline="hover"
-            >
-              here
-            </Link>{" "}
-            to view my journey into software engineering.
-          </p>
-        </Box>
       </p>
     </div>
   );
