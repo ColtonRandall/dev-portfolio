@@ -6,6 +6,7 @@ import Projects from "./pages/Projects/Projects";
 import FizzBuzz from "./pages/FizzBuzz/FizzBuzz";
 import Blog from "./pages/Blog/Blog";
 import MyJourney from "./pages/MyJourney/MyJourney";
+import BlogPostPage from "./pages/Blog/BlogPostPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Route path="/certificates" element={<Certificates />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/fizzbuzz" element={<FizzBuzz />}></Route>
+      <Route path="/blog/:slug" element={<BlogPostPage />} />
     </Routes>
   );
 }

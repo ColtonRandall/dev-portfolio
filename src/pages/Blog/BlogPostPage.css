@@ -1,0 +1,38 @@
+.back-to-blogs-link {
+  text-decoration: none;
+}
+
+.back-to-blogs-btn {
+  padding: 0.6em 1.4em;
+  border-radius: 8px;
+  border: 1.5px solid #888;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.png {
+  shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.back-to-blogs-btn:hover {
+  background: #222;
+  color: #fff;
+  border: 1.5px solid #222;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post-page-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-post-page-bottom-spacer {
+  height: 4rem;
+}
