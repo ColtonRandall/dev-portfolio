@@ -1,6 +1,6 @@
-### July 11, 2024
+#### July 11, 2024
 
-# DORA metrics — What are they and how do they promote Engineering excellence?
+# DORA metrics: What are they and how do they promote Engineering excellence?
 
 For me at least, I feel like the phrase “DORA metrics” has been thrown around a fair bit recently in the software scene, and while I know what it stands for, I still struggled to understand and articulate the nuances in how they drive and measure engineering performance, efficiency and ultimately, business outcomes.
 
@@ -25,7 +25,7 @@ DevOps Research and Assessment - The measurement of software development perform
 
 DORA focuses on four key metrics, split across two categories that define these rankings.
 
-![Dora1](../../public/images/dora1.png)
+![Dora1](../images/dora1.png)
 
 Velocity (also referred to as Throughput)
 
@@ -71,7 +71,7 @@ A good place to start would be the above table. Teams are encouraged to assess w
 However, in his talk ‘[DORA Metrics: We’ve Been Using Them Wrong](https://www.youtube.com/watch?v=H3nlvHQHb5E&ab_channel=LinearB)~’ Zach Westall emphasises how teams put too much focus on DORA when wanting to improve their overall efficiency, which obscures the bigger picture of maximising engineering performance.
 He illustrated where DORA fits into the ‘engineering improvement’ pipeline and how they influence engineering and business performance. I’ve re-visualised the diagram below:
 
-![dora2](../../public/images/dora2.png)
+![dora2](../images/dora2.png)
 
 #### The Domino Effect
 

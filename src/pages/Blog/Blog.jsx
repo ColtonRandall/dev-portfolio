@@ -22,7 +22,7 @@ function Blog() {
       >
         <Grid item xs={12} md={8}>
           <BlogPost
-            file={"/src/posts/dora.md"}
+            file={"/posts/dora.md"}
             previewOnly
             readMoreLink="/blog/dora"
           />

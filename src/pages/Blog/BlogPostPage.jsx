@@ -6,8 +6,7 @@ import "./BlogPostPage.css";
 
 const BlogPostPage = () => {
   const { slug } = useParams();
-  // Dynamically resolve the markdown file path based on the slug
-  const file = `/src/posts/${slug}.md`;
+  const file = `/posts/${slug}.md`;
   return (
     <div className="blog-post-page-root">
       <Box mb={3} mt={2} ml={{ xs: 0, sm: 2 }}>
