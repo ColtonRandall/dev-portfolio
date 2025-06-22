@@ -22,6 +22,13 @@ function Blog() {
       >
         <Grid item xs={12} md={8}>
           <BlogPost
+            file={"/posts/springBoot.md"}
+            previewOnly
+            readMoreLink="/blog/springBoot"
+          />
+        </Grid>
+        <Grid item xs={12} md={8}>
+          <BlogPost
             file={"/posts/dora.md"}
             previewOnly
             readMoreLink="/blog/dora"

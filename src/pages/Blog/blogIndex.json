@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "dora",
+    "title": "DORA metrics: What are they and how do they promote Engineering excellence?",
+    "date": "2024-07-11",
+    "summary": "A practical summary of DORA metrics, their impact on engineering performance, and how they drive business outcomes.",
+    "coverImage": "/images/dora1.png"
+  },
+  {
+    "slug": "springBoot",
+    "title": "How Spring Boot can Accelerate Java Development",
+    "date": "2025-06-22",
+    "summary": "A practical overview of Spring Boot, its benefits, trade-offs, and how it can speed up Java development for modern web apps and APIs.",
+    "coverImage": "/images/springboot.png"
+  }
+]
