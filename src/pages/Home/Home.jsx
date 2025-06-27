@@ -6,20 +6,16 @@ import HomeContent from "../../components/HomeContent/HomeContent.jsx";
 
 function Home() {
   return (
-    <>
-      <div className="home">
-        <div>
-          <header>
-            <Navbar />
-            <Header />
-          </header>
-          <main>
-            <HomeContent />
-          </main>
-        </div>
-        <Footer />
-      </div>
-    </>
+    <div className="home-layout">
+      <header>
+        <Navbar />
+        <Header />
+      </header>
+      <main className="main-content">
+        <HomeContent />
+      </main>
+      <Footer />
+    </div>
   );
 }
 

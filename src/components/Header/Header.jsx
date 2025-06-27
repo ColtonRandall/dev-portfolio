@@ -17,14 +17,6 @@ function Header() {
           Auckland, New Zealand
         </p>
       </div>
-      <hr
-        style={{
-          marginTop: "3rem",
-          height: "2.5px",
-          backgroundColor: "slategrey",
-          border: "none",
-        }}
-      />
     </>
   );
 }
