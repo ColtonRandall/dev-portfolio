@@ -20,12 +20,28 @@ function Navbar() {
           FizzBuzz
         </NavLink>
         <NavLink
+          to="/timeline"
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+        >
+          Timeline
+        </NavLink>
+        <NavLink
+          to="/education"
+          className={({ isActive }) =>
+            isActive ? "nav-button active" : "nav-button"
+          }
+        >
+          Education
+        </NavLink>
+        <NavLink
           to="/certificates"
           className={({ isActive }) =>
             isActive ? "nav-button active" : "nav-button"
           }
         >
-          Certifications
+          Certificates
         </NavLink>
         <NavLink
           to="/blog"
@@ -43,24 +59,6 @@ function Navbar() {
         >
           Projects
         </NavLink>
-        <NavLink
-          to="/education"
-          className={({ isActive }) =>
-            isActive ? "nav-button active" : "nav-button"
-          }
-        >
-          Education
-        </NavLink>
-
-        <NavLink
-          to="/myjourney"
-          className={({ isActive }) =>
-            isActive ? "nav-button active" : "nav-button"
-          }
-        >
-          My Journey
-        </NavLink>
-
         <NavLink
           to="/"
           className={({ isActive }) =>

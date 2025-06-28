@@ -9,6 +9,7 @@ import {
   Tooltip,
   Box,
 } from "@mui/material";
+import LaunchIcon from "@mui/icons-material/Launch";
 
 function ProjectCard({
   image,
@@ -22,10 +23,10 @@ function ProjectCard({
     <Box
       sx={{
         borderRadius: 3,
-        transition: "box-shadow 0.3s ease, transform 0.5s ease",
+        transition: "box-shadow 0.3s, transform 0.3s",
         "&:hover": {
-          boxShadow: "0 0 0 8px tomato",
-          transform: "scale(1.02)",
+          boxShadow: "0 4px 24px 0 rgba(0, 0, 0, 0.15)",
+          transform: "scale(1.01)",
         },
       }}
     >
@@ -33,76 +34,58 @@ function ProjectCard({
         sx={{
           maxWidth: 345,
           borderRadius: 3,
-          boxShadow: 20,
+          boxShadow: 2,
+          background: "#fff",
         }}
       >
         <CardMedia
           component="img"
           sx={{
-            objectFit: "cover",
+            objectFit: "contain",
             width: "100%",
-            height: "100%",
+            height: 180,
+            border: "6px solid #000", // Black border
+            borderRadius: "8px 8px 0 0",
+            boxSizing: "border-box", // Ensures border is inside the width
           }}
           image={image}
         />
         <CardContent
           sx={{
             textAlign: "center",
+            background: "#f5faff",
+            borderRadius: "0 0 8px 8px",
           }}
         >
           <Typography gutterBottom variant="h6">
             {title}
-            <hr />
           </Typography>
-          <Typography variant="body2">{description}</Typography>
+          <Typography variant="body2" color="text.secondary">
+            {description}
+          </Typography>
         </CardContent>
-        <Typography
-          variant="body2"
-          fontWeight={"bold"}
-          sx={{
-            padding: 0.5,
-            textAlign: "center",
-            background: "lightblue",
-          }}
-        >
-          {language}
-        </Typography>
-        <CardActions
-          sx={{
-            background: "#ffebcd",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <CardActions sx={{ justifyContent: "space-between", px: 2 }}>
           <Tooltip title="Date created" placement="bottom" arrow>
-            <Typography
-              variant="body2"
-              sx={{
-                marginRight: 1,
-                marginLeft: 1,
-                padding: 0.5,
-                borderRadius: 2,
-                boxShadow: 1,
-                background: "lightgray",
-              }}
-            >
+            <Typography variant="caption" color="text.secondary">
               {dateCreated}
             </Typography>
           </Tooltip>
+          <Typography
+            variant="caption"
+            sx={{
+              color: "#1976d2",
+              background: "#e3f2fd",
+              px: 1,
+              borderRadius: 1,
+              fontWeight: 500,
+            }}
+          >
+            {language}
+          </Typography>
           <Link to={url} target="_blank" rel="noopener noreferrer">
-            <Tooltip title="view repo" placement="bottom" arrow>
-              <IconButton
-                sx={{
-                  background: "lightgray",
-                  padding: 1,
-                  marginRight: 1,
-                  boxShadow: 1,
-                  "&:hover": {
-                    background: "tomato",
-                    boxShadow: 2,
-                  },
-                }}
-              >
-                <img src="./images/octocat.png" height={30} />
+            <Tooltip title="View Repo" placement="bottom" arrow>
+              <IconButton sx={{ color: "#1976d2" }}>
+                <LaunchIcon />
               </IconButton>
             </Tooltip>
           </Link>

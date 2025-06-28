@@ -5,14 +5,14 @@ import Education from "./pages/Education/Education";
 import Projects from "./pages/Projects/Projects";
 import FizzBuzz from "./pages/FizzBuzz/FizzBuzz";
 import Blog from "./pages/Blog/Blog";
-import MyJourney from "./pages/MyJourney/MyJourney";
+import ColtonTimeline from "./pages/Timeline/ColtonTimeline";
 import BlogPostPage from "./pages/Blog/BlogPostPage";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/myjourney" element={<MyJourney />} />
+      <Route path="/timeline" element={<ColtonTimeline />} />
       <Route path="/education" element={<Education />} />
       <Route path="/projects" element={<Projects />}></Route>
       <Route path="/certificates" element={<Certificates />} />

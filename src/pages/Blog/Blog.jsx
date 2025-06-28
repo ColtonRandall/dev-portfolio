@@ -12,12 +12,10 @@ function Blog() {
       <CoverImage src={"./images/blog-cover.jpg"} />
       <Grid
         container
-        spacing={6}
         direction="row"
         justifyContent={"center"}
-        alignItems={"center"}
         sx={{
-          marginTop: 10,
+          marginTop: 5,
         }}
       >
         <Grid item xs={12} md={8}>

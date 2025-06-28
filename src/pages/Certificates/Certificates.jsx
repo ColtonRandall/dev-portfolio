@@ -33,7 +33,6 @@ function Certificates() {
         justifyContent={"center"}
         alignItems={"center"}
         sx={{
-          // height: "100vh",
           marginBottom: 15,
         }}
       >
@@ -48,7 +47,6 @@ function Certificates() {
             </>
           }
           language={"Core programming & OOP concepts in Java"}
-          dateAchieved={"Oct 2021"}
           url={"https://www.codecademy.com/learn/learn-java"}
         />
 
@@ -63,7 +61,6 @@ function Certificates() {
             </>
           }
           language={"AWS services, Cloud computing concepts"}
-          dateAchieved={"Sept 2021"}
           url={
             "https://www.udemy.com/course/aws-certified-cloud-practitioner-new/?couponCode=LEARNNOWPLANS"
           }
@@ -80,7 +77,6 @@ function Certificates() {
             </>
           }
           language={"Java"}
-          dateAchieved={"Jan 2021"}
           url={
             "https://www.udemy.com/course/practice-java-by-building-projects/?srsltid=AfmBOorpA1aLR6uXOnU6jV4Unq2dGqomSRhMjnzjuaz8b0vntRZw0sGX&couponCode=LEARNNOWPLANS"
           }
@@ -92,7 +88,6 @@ function Certificates() {
           title={"Python Course"}
           description={<>Master foundational concepts of coding with Python.</>}
           language={"Python 3"}
-          dateAchieved={"Dec 2020"}
           url={"https://www.sololearn.com/en/learn/courses/python-introduction"}
         />
 
@@ -108,7 +103,6 @@ function Certificates() {
             </>
           }
           language={"Python 3"}
-          dateAchieved={"Oct 2020"}
           url={"https://www.coursera.org/learn/learn-to-program"}
         />
 
@@ -123,7 +117,6 @@ function Certificates() {
             </>
           }
           language={"Git, Github, Version control"}
-          dateAchieved={"Sep 2020"}
           url={
             "https://www.udemy.com/course/github-ultimate/?srsltid=AfmBOoq48fKdDN7kKeK5dyvv5jYxJZQgRzkEgLsgdwXe6Ox_XJRU5Sm1&couponCode=LEARNNOWPLANS"
           }
@@ -140,7 +133,6 @@ function Certificates() {
             </>
           }
           language={"SQL, Databases"}
-          dateAchieved={"May 2020"}
           url={"https://www.sololearn.com/en/learn/courses/sql-introduction"}
         />
 
@@ -155,7 +147,6 @@ function Certificates() {
             </>
           }
           language={"JavaScript"}
-          dateAchieved={"Apr 2020"}
           url={
             "https://www.sololearn.com/en/learn/courses/javascript-introduction"
           }
@@ -172,19 +163,9 @@ function Certificates() {
             </>
           }
           language={"HTML 5"}
-          dateAchieved={"Apr 2020"}
           url={"https://www.sololearn.com/en/learn/courses/html-introduction"}
         />
       </Grid>
-
-      {/* <div className="certImages">
-        
-        <img
-          src="./images/sql.png"
-          id="sql"
-          title="SQL Fundamentals - SoloLearn"
-        />
-      </div> */}
       <UpArrow />
       <Footer />
     </div>
