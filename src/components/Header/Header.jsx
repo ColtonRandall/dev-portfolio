@@ -1,5 +1,6 @@
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+import LocationPinIcon from "@mui/icons-material/LocationPin";
 import "./Header.css";
+import Icons from "../Icons/Icons"; 
 
 function Header() {
   return (
@@ -11,11 +12,14 @@ function Header() {
         </div>
         <img src="./images/me-circle.png" id="mainphoto" />
         <p id="location">
-          <LocationOnIcon
+          <LocationPinIcon
             style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
           />
           Auckland, New Zealand
         </p>
+        <div className="header-icons">
+          <Icons />
+        </div>
       </div>
     </>
   );

@@ -26,11 +26,11 @@
 
 #mainphoto {
   position: absolute;
-  top: 4.5rem;
+  top: 6rem;
   right: 0;
   width: 14rem;
   margin: 0 2rem 0 0;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.25), 0 1px 0.5px rgba(0,0,0,0.10);
   border-radius: 50%;
   animation-delay: 1.5s;
   animation-iteration-count: 1;
@@ -102,7 +102,6 @@
     display: block;
     margin: 2rem auto 1rem auto;
     width: 15rem;
-    box-shadow: 2px 2px 2px black;
   }
   #location {
     margin: 1.5rem;

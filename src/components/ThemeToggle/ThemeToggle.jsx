@@ -30,7 +30,7 @@ function ThemeToggle({ className }) {
   return (
     <IconButton
       className={className}
-      sx={{ marginLeft: 2 }}
+      sx={{ marginLeft: 2, position: "relative", top: 5, zIndex: 10 }}
       onClick={toggleDarkAndLightMode}
     >
       {!lightMode ? (

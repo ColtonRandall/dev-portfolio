@@ -9,9 +9,6 @@ function Navbar() {
     <>
       <div className="top-bar">
         <ThemeToggle className="themeToggle" />
-        <div className="top-bar-icons">
-          <Icons />
-        </div>
       </div>
       <nav>
         <NavLink
