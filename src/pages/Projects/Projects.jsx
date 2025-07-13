@@ -116,23 +116,6 @@ function Projects() {
         />
 
         <ProjectCard
-          image={"./images/react-calculator.png"}
-          title={"Calculator"}
-          description={
-            <>
-              Simple React calculator app.
-              <br />
-              <br />
-              Performs basic maths and displays them in a proper Calculator-like
-              UI.
-            </>
-          }
-          language={"React, JavaScript, CSS"}
-          dateCreated={"31.05.2022"}
-          url={"https://github.com/ColtonRandall/calculator-app"}
-        />
-
-        <ProjectCard
           image={"./images/java-contact-book.png"}
           title={"Contact Book"}
           description={
@@ -184,19 +167,6 @@ function Projects() {
           language={"HTML, CSS, JavaScript"}
           dateCreated={"11.10.2023"}
           url={"https://github.com/ColtonRandall/rock-paper-scissors"}
-        />
-
-        <ProjectCard
-          image={"./images/shoppingListApp.png"}
-          title={"Shopping List"}
-          description={
-            "Basic shopping list app. Let's you create and remove items from the shopping list."
-          }
-          language={"HTML, Javascript, DOM manipulation"}
-          dateCreated={"29.09.2023"}
-          url={
-            "https://github.com/ColtonRandall/shopping-list-dom-manipulation-project"
-          }
         />
 
         <ProjectCard

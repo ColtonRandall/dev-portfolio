@@ -28,7 +28,7 @@ function ColtonTimeline() {
         sx={{ margin: "50px auto" }}
       >
         <TimelineComponent
-          yearEntry="2025 (April) - Present ⭐️"
+          yearEntry="2025 (Apr) - Present ⭐️"
           iconColour="primary"
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer"
@@ -37,16 +37,16 @@ function ColtonTimeline() {
         />
 
         <TimelineComponent
-          yearEntry="2024 (July) - 2025 (April)"
+          yearEntry="2024 (Jul) - 2025 (Apr)"
           iconColour="primary"
           iconComponent={<TrendingUpIcon />}
-          title="Software Engineer"
+          title="Full-Stack Software Engineer"
           description="Xero"
           subtext="C# (.NET), React, TypeScript, AWS"
         />
 
         <TimelineComponent
-          yearEntry="2023 (Feb) - 2024 (July)"
+          yearEntry="2023 (Feb) - 2024 (Jul)"
           iconColour="primary"
           iconComponent={<TrendingUpIcon />}
           title="Associate Software Engineer"
@@ -73,7 +73,7 @@ function ColtonTimeline() {
         />
 
         <TimelineComponent
-          yearEntry="2021 (July - Nov)"
+          yearEntry="2021 (Jul - Nov)"
           iconColour="primary"
           iconComponent={<SchoolIcon />}
           title="Master of IT"
@@ -94,7 +94,7 @@ function ColtonTimeline() {
         />
 
         <TimelineComponent
-          yearEntry="2021 (Feb - June)"
+          yearEntry="2021 (Feb - Jun)"
           iconColour="primary"
           iconComponent={<SchoolIcon />}
           title="Postgraduate Certificate in IT"
@@ -125,7 +125,7 @@ function ColtonTimeline() {
         />
 
         <TimelineComponent
-          yearEntry="2020 (March - May)"
+          yearEntry="2020 (Mar - May)"
           iconColour="primary"
           iconComponent={<CoronavirusIcon />}
           title="COVID Lockdown"
@@ -158,7 +158,7 @@ function ColtonTimeline() {
         />
 
         <TimelineComponent
-          yearEntry="2016 (June - July)"
+          yearEntry="2016 (Jun - Jul)"
           iconColour="primary"
           iconComponent={<VolunteerActivismIcon />}
           title="Volunteering"
@@ -189,7 +189,7 @@ function ColtonTimeline() {
         />
 
         <TimelineComponent
-          yearEntry="2013 (March - May)"
+          yearEntry="2013 (Mar - May)"
           iconColour="primary"
           iconComponent={<VolunteerActivismIcon />}
           title="Volunteering"
