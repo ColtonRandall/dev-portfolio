@@ -28,12 +28,12 @@ function HomeContent() {
         title="My Toolbox"
         subTitle="My core technical experience and skills."
         text={[
-          "Full-stack experience - C#/.NET, React, TypeScript",
-          "Java, Spring Boot",
-          "DevOps, Docker, Kubernetes, Cloud (AWS)",
-          "Microservices, REST APIs",
+          "Full-stack development: C#/.NET, React, TypeScript",
+          "Java & Spring Boot",
+          "Docker, Kubernetes, AWS (cloud-native DevOps)",
+          "REST APIs & microservices",
         ]}
-        bgcolor="#b3d3ea"
+        bgcolor="#bfdbfe"
       />
       <InfoCard
         icon={(props) => <StarsIcon sx={{ color: orange[700] }} {...props} />}
@@ -42,10 +42,10 @@ function HomeContent() {
         text={[
           "Java 17, Spring Boot, Maven",
           "Docker, Kubernetes, Jenkins",
-          "Backend modernisation, performance and reliability.",
-          "System Design and Architecture.",        
+          "Backend modernisation & performance optimisation",
+          "System design & architecture",
         ]}
-        bgcolor="#f7cfa2"
+        bgcolor="#fcd6a0"
         iconColor={orange[700]}
       />
       <InfoCard
@@ -53,12 +53,12 @@ function HomeContent() {
         title="Beyond Work"
         subTitle="What inspires me and keeps me balanced."
         text={[
-          "Photography, Travel, Guitar, Movies, Music.",
-          "Being outdoors with my wife and dog.",
-          "Enjoying the simple things.",
-          "Constantly learning and growing.",
+          "Photography, travel, guitar, movies",
+          "Love coffee and trying new food",
+          "Exploring the outdoors with my wife and dog",
+          "Always learning and growing",
         ]}
-        bgcolor="#b3ead3"
+        bgcolor="#a7f3d0"
       />
     </Box>
   );

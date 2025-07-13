@@ -11,16 +11,9 @@
 }
 
 .section-card {
-  background: #b3d3ea;
   font-size: 0.95rem;
-}
-.section-card:nth-of-type(2) {
-  background: #f7cfa2;
-}
-.section-card:nth-of-type(3) {
-  background: #b3ead3;
 }
 
 .section-card ul {
-  margin-top: 1.5rem;
+  margin-top: 1.8rem;
 }
