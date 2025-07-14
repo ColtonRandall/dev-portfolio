@@ -22,6 +22,21 @@ function Projects() {
         }}
       >
         <ProjectCard
+          image={"./images/note-app.png"}
+          title={"Full Stack Notes App"}
+          description={
+            <>
+              A simple full-stack Java, Spring Boot + React app where you can
+              create, view, and delete personal notes. <br />
+              <br />
+            </>
+          }
+          language={"React, Java, Spring Boot"}
+          dateCreated={"29.06.2025"}
+          url={"https://github.com/ColtonRandall/notes-app"}
+        />
+
+        <ProjectCard
           image={"./images/java-weather-app.png"}
           title={"Weather App"}
           description={
