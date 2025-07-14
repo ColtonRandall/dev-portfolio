@@ -8,7 +8,7 @@ import "./BlogPost.css";
 
 const PREVIEW_CHAR_LIMIT = 400;
 
-const BlogPost = ({ file, previewOnly, readMoreLink }) => {
+const BlogPost = ({ title, description, file, previewOnly, readMoreLink }) => {
   const [content, setContent] = useState("");
 
   useEffect(() => {
