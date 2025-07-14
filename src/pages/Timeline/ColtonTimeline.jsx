@@ -33,6 +33,7 @@ function ColtonTimeline() {
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer"
           description="Westpac New Zealand"
+          logo="./images/westpac.png"
           subtext="Java 17, Spring Boot, Kubernetes, Docker"
         />
 
@@ -42,6 +43,7 @@ function ColtonTimeline() {
           iconComponent={<TrendingUpIcon />}
           title="Full-Stack Software Engineer"
           description="Xero"
+          logo="./images/xero.png"
           subtext="C# (.NET), React, TypeScript, AWS"
         />
 
@@ -51,6 +53,7 @@ function ColtonTimeline() {
           iconComponent={<TrendingUpIcon />}
           title="Associate Software Engineer"
           description="Xero"
+          logo="./images/xero.png"
           subtext="C# (.NET), React, TypeScript, AWS"
         />
 
@@ -60,6 +63,7 @@ function ColtonTimeline() {
           iconComponent={<TrendingUpIcon />}
           title="Graduate Software Engineer"
           description="Xero"
+          logo="./images/xero.png"
           subtext="C# (.NET), React, TypeScript, AWS"
         />
 
@@ -67,8 +71,9 @@ function ColtonTimeline() {
           yearEntry="2021 (Nov) - 2022 (Feb)"
           iconColour="primary"
           iconComponent={<RocketLaunchIcon />}
-          title="Software Engineer Intern - First software role"
+          title="Software Engineer Intern"
           description="Xero"
+          logo="./images/xero.png"
           subtext="C#, AWS, Docker, Kubernetes"
         />
 
@@ -79,6 +84,7 @@ function ColtonTimeline() {
           title="Master of IT"
           link="https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/master-of-information-technology-minfotech.html"
           description="Auckland University"
+          logo="./images/aucklandUni.png"
           subtext={
             <>
               Partial completion before moving into industry
@@ -100,6 +106,7 @@ function ColtonTimeline() {
           title="Postgraduate Certificate in IT"
           link="https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/postgraduate-certificate-in-information-technology-pgcertinfotech.html"
           description="Auckland University"
+          logo="./images/aucklandUni.png"
           subtext={
             <>
               - HTML, CSS, JavaScript, SQL, Node.js
@@ -114,6 +121,7 @@ function ColtonTimeline() {
           iconComponent={<BiotechIcon />}
           title="Bioinformatics Research Assistant"
           description="Auckland University"
+          logo="./images/aucklandUni.png"
         />
 
         <TimelineComponent
@@ -147,6 +155,7 @@ function ColtonTimeline() {
           iconComponent={<AirplanemodeActiveIcon />}
           title="Began training as a pilot"
           description="Ardmore Flying School"
+          logo="./images/ardmore.jpeg"
         />
 
         <TimelineComponent
@@ -155,6 +164,7 @@ function ColtonTimeline() {
           iconComponent={<SchoolIcon />}
           title="Graduated - BSc Biochemistry"
           description="University of Otago"
+          logo="./images/otago.png"
         />
 
         <TimelineComponent
@@ -162,7 +172,7 @@ function ColtonTimeline() {
           iconColour="primary"
           iconComponent={<VolunteerActivismIcon />}
           title="Volunteering"
-          subtext="Nairobi, Kenya 🇰🇪"
+          subtext="🇰🇪 Nairobi, Kenya"
         />
 
         <TimelineComponent
@@ -171,6 +181,7 @@ function ColtonTimeline() {
           iconComponent={<SchoolIcon />}
           title="First year of University"
           description="University of Otago"
+          logo="./images/otago.png"
         />
 
         <TimelineComponent
@@ -180,10 +191,11 @@ function ColtonTimeline() {
           title="Travel & work abroad"
           subtext={
             <>
-              - Portugal
+              🇵🇹 Portugal
               <br />
-              - Scotland
-              <br />- Canada for 18 months
+              🏴󠁧󠁢󠁳󠁣󠁴󠁿 Scotland
+              <br />
+              🇨🇦 Canada
             </>
           }
         />
@@ -193,7 +205,7 @@ function ColtonTimeline() {
           iconColour="primary"
           iconComponent={<VolunteerActivismIcon />}
           title="Volunteering"
-          subtext="Rwanda, Africa 🇷🇼"
+          subtext="🇷🇼 Rwanda, Africa"
         />
 
         <TimelineComponent
@@ -202,6 +214,7 @@ function ColtonTimeline() {
           iconComponent={<SchoolIcon />}
           title="Finished High School"
           description="Westlake Boys High School"
+          logo="./images/westlake.jpeg"
         />
 
         <TimelineComponent
@@ -209,7 +222,7 @@ function ColtonTimeline() {
           iconColour="primary"
           iconComponent={<FlightTakeoffIcon />}
           title="Family move overseas"
-          subtext="From Canada 🇨🇦 to New Zealand 🇳🇿"
+          subtext="🇨🇦 Canada to 🇳🇿 New Zealand"
         />
 
         <TimelineComponent
@@ -217,7 +230,7 @@ function ColtonTimeline() {
           iconColour="primary"
           iconComponent={<ChildCareIcon />}
           title="Early Days"
-          subtext="Born in Canada 🍁"
+          subtext="Born in Canada"
         />
       </Timeline>
       <UpArrow />

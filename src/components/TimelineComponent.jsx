@@ -14,6 +14,7 @@ function TimelineComponent({
   title,
   link,
   description,
+  logo,
   subtext,
 }) {
   return (
@@ -42,11 +43,28 @@ function TimelineComponent({
             </a>
           </Tooltip>
         ) : (
-          <Typography variant="h6" component="span">
+          <Typography
+            variant="h6"
+            component="span"
+            sx={{ textDecoration: "Underline" }}
+          >
             {title}
           </Typography>
         )}
-        <Typography fontWeight="bold">{description}</Typography>
+        <Typography fontWeight="bold">
+          {logo ? (
+            <img
+              src={logo}
+              style={{
+                width: "20px",
+                marginTop: "10px",
+                marginRight: "8px",
+                borderRadius: "5px",
+              }}
+            />
+          ) : null}
+          {description}
+        </Typography>
         {subtext ? (
           <Typography variant="subtitle2" component="span">
             {subtext}
