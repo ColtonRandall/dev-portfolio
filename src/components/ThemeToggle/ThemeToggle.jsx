@@ -4,13 +4,11 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import { useState, useEffect } from "react";
 
 function ThemeToggle({ className }) {
-  // Load from localStorage on initial render
   const [lightMode, setLightMode] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
     return storedTheme === "light";
   });
 
-  // Apply styles and save to localStorage whenever lightMode changes
   useEffect(() => {
     if (lightMode) {
       document.body.style.background = "#F0F0EB"; // Light mode
@@ -30,7 +28,12 @@ function ThemeToggle({ className }) {
   return (
     <IconButton
       className={className}
-      sx={{ marginLeft: 2, position: "relative", top: 5, zIndex: 10 }}
+      sx={{
+        zIndex: 1000,
+        position: "absolute",
+        top: 15,
+        left: 35,
+      }}
       onClick={toggleDarkAndLightMode}
     >
       {!lightMode ? (
@@ -39,9 +42,9 @@ function ThemeToggle({ className }) {
             sx={{
               color: "white",
               marginTop: 2,
-              position: "fixed",
-              zIndex: 10,
-              fontSize: 30,
+              position: "absolute",
+              zIndex: 1000,
+              fontSize: 35,
               "&:hover": {
                 color: "gold",
               },
@@ -53,10 +56,10 @@ function ThemeToggle({ className }) {
           <DarkModeIcon
             sx={{
               color: "#D3D3D3",
+              position: "absolute",
+              zIndex: 1000,
               marginTop: 2,
-              position: "fixed",
-              zIndex: 10,
-              fontSize: 28,
+              fontSize: 35,
               "&:hover": {
                 color: "#90c0df",
               },

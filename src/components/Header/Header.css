@@ -30,7 +30,8 @@
   right: 0;
   width: 14rem;
   margin: 0 2rem 0 0;
-  box-shadow: 0 0 0 4px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.25), 0 1px 0.5px rgba(0,0,0,0.10);
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.5), 0 4px 16px rgba(0, 0, 0, 0.25),
+    0 1px 0.5px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   animation-delay: 1.5s;
   animation-iteration-count: 1;
@@ -112,27 +113,28 @@
 }
 
 @media (max-width: 600px) {
-  #header {
-    padding-top: 2rem;
+
+  #header{
+    width: 80%;
   }
 
   .title {
-    font-size: 3rem;
-    padding-top: 1.5rem;
+    font-size: 4rem;
   }
 
   .subTitle {
-    font-size: 2rem;
-    margin-top: 0.5rem;
+    font-size: 2.5rem;
+    margin-top: 1.9rem;
   }
 
   #mainphoto {
-    width: 12rem;
+    width: 15rem;
   }
 
   #location {
-    font-size: 1rem;
+    font-size: 1.1rem;
     justify-content: center;
+    margin-right: 3rem;
   }
 
   hr {

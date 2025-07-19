@@ -7,17 +7,10 @@ import Box from "@mui/material/Box";
 
 function Blog() {
   return (
-    <Box display="flex" flexDirection="column" minHeight="100vh">
+    <Box>
       <Navbar />
       <CoverImage src={"./images/blog-cover.jpg"} />
-      <Grid
-        container
-        direction="row"
-        justifyContent={"center"}
-        sx={{
-          marginTop: 5,
-        }}
-      >
+      <Grid container direction="row" justifyContent="center">
         <Grid item xs={12} md={8}>
           <BlogPost
             file={"/posts/springBoot.md"}
