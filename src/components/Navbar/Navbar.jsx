@@ -4,14 +4,24 @@ import { NavLink } from "react-router-dom";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 import { useMediaQuery, IconButton, Menu, MenuItem, Box } from "@mui/material";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const isMobile = useMediaQuery("(max-width:1000px)");
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const handleMenuOpen = (e) => setAnchorEl(e.currentTarget);
-  const handleMenuClose = () => setAnchorEl(null);
+  const handleMenuOpen = (e) => {
+    setAnchorEl(e.currentTarget);
+    setMenuOpen(true);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    setMenuOpen(false);
+  };
 
   const navLinks = [
     { to: "/fizzbuzz", label: "FizzBuzz" },
@@ -43,13 +53,19 @@ function Navbar() {
         >
           <IconButton
             aria-label="menu"
-            onClick={handleMenuOpen}
+            onClick={(e) => {
+              menuOpen ? handleMenuClose() : handleMenuOpen(e);
+            }}
             sx={{
               color: "rgb(152, 204, 179)",
               marginRight: "1rem",
             }}
           >
-            <MenuIcon fontSize="large" />
+            {!menuOpen ? (
+              <MenuIcon fontSize="large" />
+            ) : (
+              <CloseIcon fontSize="large" />
+            )}
           </IconButton>
           <Menu
             anchorEl={anchorEl}
