@@ -100,7 +100,7 @@ function Navbar() {
                 },
               }}
             >
-              <HomeRoundedIcon sx={{ fontSize: 30 }} />
+              <HomeRoundedIcon sx={{ fontSize: 23 }} />
             </MenuItem>
             {navLinks
               .slice()
@@ -114,6 +114,7 @@ function Navbar() {
                   sx={{
                     justifyContent: "center",
                     borderRadius: 2,
+                    fontSize: "20px",
                     color: "rgb(152, 204, 179)",
                     marginTop: 1,
                     "&.active": {
@@ -153,7 +154,7 @@ function Navbar() {
             <HomeRoundedIcon
               sx={{
                 margin: "auto",
-                fontSize: 35,
+                fontSize: 27,
                 "&.active": {
                   background: "#c2c5c7",
                   color: "black",

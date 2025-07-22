@@ -2,7 +2,7 @@ import "./HomeContent.css";
 import { Box } from "@mui/material";
 import BuildIcon from "@mui/icons-material/Build";
 import StarsIcon from "@mui/icons-material/Stars";
-import WbSunnyIcon from "@mui/icons-material/WbSunny";
+import LandscapeIcon from "@mui/icons-material/Landscape";
 import { orange } from "@mui/material/colors";
 import InfoCard from "./InfoCard";
 
@@ -49,7 +49,7 @@ function HomeContent() {
         iconColor={orange[700]}
       />
       <InfoCard
-        icon={(props) => <WbSunnyIcon color="success" {...props} />}
+        icon={(props) => <LandscapeIcon color="success" {...props} />}
         title="Beyond Work"
         subTitle="What inspires me and keeps me balanced."
         text={[
