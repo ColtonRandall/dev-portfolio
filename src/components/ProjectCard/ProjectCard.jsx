@@ -5,11 +5,9 @@ import {
   CardActions,
   CardContent,
   Typography,
-  IconButton,
   Tooltip,
   Box,
 } from "@mui/material";
-import LaunchIcon from "@mui/icons-material/Launch";
 
 function ProjectCard({
   image,
@@ -20,78 +18,89 @@ function ProjectCard({
   url,
 }) {
   return (
-    <Box
-      sx={{
-        borderRadius: 3,
-        transition: "box-shadow 0.3s, transform 0.3s",
-        "&:hover": {
-          boxShadow: "0 4px 24px 0 rgba(0, 0, 0, 0.15)",
-          transform: "scale(1.01)",
-        },
+    <Link
+      to={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        textDecoration: "none",
+        color: "inherit",
       }}
     >
-      <Card
+      <Box
         sx={{
-          maxWidth: 345,
           borderRadius: 3,
-          boxShadow: 2,
-          background: "#fff",
+          transition: "box-shadow 0.3s, transform 0.3s",
+          "&:hover": {
+            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.12)",
+            transform: "translateY(-4px)",
+          },
         }}
       >
-        <CardMedia
-          component="img"
+        <Card
           sx={{
-            objectFit: "contain",
-            width: "100%",
-            height: 180,
-            border: "6px solid #000", // Black border
-            borderRadius: "8px 8px 0 0",
-            boxSizing: "border-box", // Ensures border is inside the width
-          }}
-          image={image}
-        />
-        <CardContent
-          sx={{
-            textAlign: "center",
-            background: "#f5faff",
-            borderRadius: "0 0 8px 8px",
+            maxWidth: 345,
+            borderRadius: 3,
+            boxShadow: 2,
+            backgroundColor: "background.paper",
+            color: "text.primary",
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
           }}
         >
-          <Typography gutterBottom variant="h6">
-            {title}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {description}
-          </Typography>
-        </CardContent>
-        <CardActions sx={{ justifyContent: "space-between", px: 2 }}>
-          <Tooltip title="Date created" placement="bottom" arrow>
-            <Typography variant="caption" color="text.secondary">
-              {dateCreated}
-            </Typography>
-          </Tooltip>
-          <Typography
-            variant="caption"
+          <CardMedia
+            component="img"
+            image={image}
+            alt={title}
             sx={{
-              color: "#1976d2",
-              background: "#e3f2fd",
-              px: 1,
-              borderRadius: 1,
-              fontWeight: 500,
+              objectFit: "cover",
+              height: 180,
+              width: "100%",
+              borderRadius: "12px 12px 0 0",
+              borderBottom: "1px solid rgba(0,0,0,0.1)",
             }}
-          >
-            {language}
-          </Typography>
-          <Link to={url} target="_blank" rel="noopener noreferrer">
-            <Tooltip title="View Repo" placement="bottom" arrow>
-              <IconButton sx={{ color: "#1976d2" }}>
-                <LaunchIcon />
-              </IconButton>
+          />
+
+          <CardContent sx={{ px: 3, py: 2, flexGrow: 1 }}>
+            <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
+              {title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              {description}
+            </Typography>
+          </CardContent>
+
+          <CardActions sx={{ justifyContent: "space-between", px: 3, pb: 2 }}>
+            <Tooltip title="Date created" placement="bottom" arrow>
+              <Typography
+                variant="caption"
+                color="text.secondary"
+                sx={{ fontWeight: "bold" }}
+              >
+                {dateCreated}
+              </Typography>
             </Tooltip>
-          </Link>
-        </CardActions>
-      </Card>
-    </Box>
+
+            <Typography
+              variant="caption"
+              sx={{
+                backgroundColor: "#e3f2fd",
+                color: "#1976d2",
+                px: 1.5,
+                py: 0.5,
+                borderRadius: "6px",
+                fontSize: "0.75rem",
+                fontWeight: 500,
+                whiteSpace: "nowrap",
+              }}
+            >
+              {language}
+            </Typography>
+          </CardActions>
+        </Card>
+      </Box>
+    </Link>
   );
 }
 

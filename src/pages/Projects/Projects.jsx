@@ -25,13 +25,9 @@ function Projects() {
           image={"./images/note-app.png"}
           title={"Full Stack Notes App"}
           description={
-            <>
-              A simple full-stack Java, Spring Boot + React app where you can
-              create, view, and delete personal notes. <br />
-              <br />
-            </>
+            "Java + Spring Boot + React app to create, view, and delete personal notes with a clean, responsive UI."
           }
-          language={"React, Java, Spring Boot"}
+          language={"Java · Spring Boot · React"}
           dateCreated={"29.06.2025"}
           url={"https://github.com/ColtonRandall/notes-app"}
         />
@@ -40,21 +36,9 @@ function Projects() {
           image={"./images/java-weather-app.png"}
           title={"Weather App"}
           description={
-            <>
-              This is a weather application that aims to mock an API for weather
-              based on cities around the world.
-              <br />
-              <br />
-              The structure of this project is based on the Spring Boot
-              Controller-Service-Repository pattern.
-              <br />
-              <br />
-              There will be a User interface in the console that will allow a
-              client/user to enter a city and receive weather information (in
-              JSON) about that particular city.
-            </>
+            "Console-based Java app that mimics a weather API using Spring Boot and REST, built with layered architecture."
           }
-          language={"Java, Spring Boot, API / Postman"}
+          language={"Java · Spring Boot · REST API"}
           dateCreated={"28.03.2025"}
           url={
             "https://github.com/ColtonRandall/java-weather-information-service"
@@ -65,19 +49,9 @@ function Projects() {
           image={"./images/tictactoe.png"}
           title={"Tic Tac Toe"}
           description={
-            <>
-              A simple OOP Tic Tac Toe game built with C#/.NET.
-              <br />
-              <br />
-              You play aginst a computer with a randomly generated name, and it
-              uses a basic AI to make its moves.
-              <br />
-              <br />
-              The game will loop until either you or the computer wins, or the
-              game ends in a draw.
-            </>
+            "OOP-based C#/.NET console game with a basic AI opponent and game loop logic for win/draw detection."
           }
-          language={"C#, .NET 7.0"}
+          language={"C# · .NET 7"}
           dateCreated={"28.02.2025"}
           url={"https://github.com/ColtonRandall/tic-tac-toe-csharp"}
         />
@@ -86,32 +60,9 @@ function Projects() {
           image={"./images/dev-portfolio-image.png"}
           title={"This Website / Dev Portfolio"}
           description={
-            <>
-              The website you're currently on began as my first personal
-              project, as a canvas for my early IT courses back in 2021.
-              <br />
-              <br />
-              It’s evolved from basic HTML and CSS into a React app using
-              Material UI and other libraries, and is fully responsive for
-              smaller screens 📱.
-              <br />
-              <br />
-              You can check out the codebase for the original version of this
-              site{" "}
-              <a
-                href="https://github.com/ColtonRandall/old-portfolio-website"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                here
-              </a>
-              .
-              <br />
-              <br />I now use this site to showcase my projects, blog posts, and
-              other milestones.
-            </>
+            "Personal portfolio site built with React & Material UI; responsive, modular, and evolved from early HTML/CSS work."
           }
-          language={"React, JavaScript, CSS, Material UI"}
+          language={"React · JavaScript · Material UI"}
           dateCreated={"01.05.2021"}
           url={"https://github.com/ColtonRandall/dev-portfolio"}
         />
@@ -120,12 +71,9 @@ function Projects() {
           image={"./images/react-todo.png"}
           title={"Todo App"}
           description={
-            <>
-              Simple React task tracking app that remembers state and has
-              persistent todos / completed items.
-            </>
+            "Lightweight React app for task management with persistent state and styled component design."
           }
-          language={"React, JavaScript, CSS"}
+          language={"React · JavaScript"}
           dateCreated={"31.05.2021"}
           url={"https://github.com/ColtonRandall/react-todo-app"}
         />
@@ -134,12 +82,9 @@ function Projects() {
           image={"./images/java-contact-book.png"}
           title={"Contact Book"}
           description={
-            <>
-              Java knowledge refresher through a simple OOP CRUD console app
-              that creates, and manages contacts within a contact book.
-            </>
+            "Java console CRUD app for managing contacts — a practical refresher in object-oriented programming."
           }
-          language={"Java"}
+          language={"Java · OOP · Console"}
           dateCreated={"23.03.2025"}
           url={"https://github.com/ColtonRandall/Java-ContactBook"}
         />
@@ -148,16 +93,9 @@ function Projects() {
           image={"./images/kalah.png"}
           title={"Kalah Board Game"}
           description={
-            <>
-              My final assignment for COMPSCI 701: Creating Maintainable
-              Software, one of my postgraduate courses. <br />
-              <br />
-              Kalah is a console app that touches on almost every facet of OOP
-              and maintainable design. You can choose, easy, medium or hard mode
-              against the computer, and flip the board to 'horizontal mode'.
-            </>
+            "Advanced Java console game from a postgraduate assignment, showcasing AI difficulty levels and OOP principles."
           }
-          language={"Java"}
+          language={"Java · OOP · Game Logic"}
           dateCreated={"07.09.2021"}
           url={"https://github.com/ColtonRandall/Kalah"}
         />
@@ -166,9 +104,9 @@ function Projects() {
           image={"./images/rpgGame.jpg"}
           title={"Console RPG App"}
           description={
-            "A role playing game built into the console with C# using OOP methods. You can create a player, fight different enemies, and continue on your adventure."
+            "Console-based C# RPG game using OOP; features include player creation, enemy combat, and game progression."
           }
-          language={"C#"}
+          language={"C# · OOP · Console"}
           dateCreated={"10.10.2022"}
           url={"https://github.com/ColtonRandall/console-rpg"}
         />
@@ -177,9 +115,9 @@ function Projects() {
           image={"./images/paperScissorsRock.png"}
           title={"Paper Scissors Rock"}
           description={
-            "Users make their choice via buttons in the UI. The app tallies up scores against the computer, and after 5 rounds it declares a winner."
+            "JavaScript UI game with interactive buttons, score tracking, and a win declaration after 5 rounds."
           }
-          language={"HTML, CSS, JavaScript"}
+          language={"JavaScript · HTML · CSS"}
           dateCreated={"11.10.2023"}
           url={"https://github.com/ColtonRandall/rock-paper-scissors"}
         />
@@ -188,13 +126,14 @@ function Projects() {
           image={"./images/bulls.png"}
           title={"Bulls & Cows Game"}
           description={
-            "Similar to Wordle, but with numbers. You play against the computer to guess your randomised 4-digit code, using OOP concepts. There is the choice of easy, medium, or hard mode, prompting the computer to behave differently, and the result is written to a .txt file."
+            "OOP-based number guessing game in Java, featuring difficulty levels, computer logic, and .txt file output."
           }
-          language={"Java, File I/O"}
+          language={"Java · File I/O · OOP"}
           dateCreated={"28.04.2021"}
           url={"https://github.com/ColtonRandall/Bulls-And-Cows-Game"}
           height="50px"
         />
+
         <Footer />
       </Grid>
     </>
