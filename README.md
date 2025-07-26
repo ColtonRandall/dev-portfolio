@@ -1,25 +1,39 @@
-# Colton's Dev Website | Portfolio
+# Colton’s Developer Portfolio | Website
 
-> View the live site: https://coltonrandall.com
+<br/>
 
-While here, you'll get a better sense of my background (both personally and professionally), the credentials/training I've recieved, and see the projects I've created 🔨 .
+🔗 View the live site → [coltonrandall.com](https://coltonrandall.com)
 
-This is also my space for consolidating modern web-development knowledge in varying frameworks and languages, while also acting as a canvas for experimenting with new concepts.
+Welcome to my personal developer portfolio. This is a space where you can learn more about my professional background, training, and explore the projects I’ve built 🔨.
 
-<hr>
+This site also serves as my development sandbox, where I consolidate modern web knowledge across frameworks and languages, while experimenting with new tools, techniques, and UI patterns.
 
-### Tech Stack
+<br/>
 
-Currently, this website is built using a combination of React and the [Material UI library](https://mui.com). It's an updated version of the initial, static site I created years ago when I began experimenting with HTMl, CSS and JavaScript ([see here](https://github.com/ColtonRandall/old-portfolio-website)).
+### UI
 
-Build and deployments were done exclusively using GitHub actions and is hosted on GitHub pages :octocat: 
+Dark mode
+![](/public/images/desktop-dark.png)
 
-✶ **This site is also responsive** - so see how it responds to different window sizes, or view the url on your tablet / phone.
+Light mode
+![](/public/images/desktop-light.png)
 
-This portfolio is continually being updated as I progress through my career.
+Mobile
+![](/public/gif/mobile-mode.gif)
 
-#### Commands run every time I add changes
+<br/>
 
-1. `npm run dev` - Runs the application locally
-2. `npm run build` - builds and compiles prior to committing changes and pushing up to GitHub
-3. `npm run deploy` - deploy/publish to lives github pages website https://coltonrandall.com
+### ⚙️ Tech Stack
+
+- Framework: React
+- UI Library: Material UI (MUI)
+- Deployment: GitHub Actions + GitHub Pages
+- Responsive Design: Mobile & tablet-friendly layouts
+
+This version is a complete overhaul of my original static HTML/CSS/JS site, which you can still view here: [old-portfolio-website](https://github.com/ColtonRandall/old-portfolio-website).
+
+<br/>
+
+### 🚧 Work in Progress
+
+This site evolves alongside my career, both in content and code. More projects, UI refinements, and interactive features will be added over time.
