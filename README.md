@@ -13,13 +13,29 @@ This site also serves as my development sandbox, where I consolidate modern web 
 ### UI
 
 Dark mode
-![](/public/images/desktop-dark.png)
+<img 
+  src="./public/images/desktop-dark.png" 
+  width="400" 
+  style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"
+  border="2px solid grey" 
+/>
 
 Light mode
-![](/public/images/desktop-light.png)
+<img 
+  src="./public/images/desktop-light.png" 
+  width="400" 
+  style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"
+  border="2px solid grey" 
+/>
 
 Mobile
-![](/public/gif/mobile-mode.gif)
+<br/>
+<img 
+  src="./public/gif/mobile-mode.gif" 
+  width="200" 
+  style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"
+  border="2px solid grey" 
+/>
 
 <br/>
 
