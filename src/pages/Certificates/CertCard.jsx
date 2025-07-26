@@ -1,88 +1,110 @@
-import { Link } from "react-router-dom";
 import {
   Card,
   CardMedia,
-  CardActions,
   CardContent,
   Typography,
-  Box,
+  CardActionArea,
+  Stack,
+  Chip,
 } from "@mui/material";
 
-function CertCard({ image, title, description, language, url }) {
+// Simple function to decide chip color based on keywords
+function getChipColor(tag) {
+  const lower = tag.toLowerCase();
+
+  if (
+    lower.includes("java") ||
+    lower.includes("spring") ||
+    lower.includes("hibernate")
+  ) {
+    return "primary"; // Blue = Java
+  }
+
+  if (lower.includes("python")) {
+    return "secondary"; // Purple = Python
+  }
+
+  if (
+    lower.includes("html") ||
+    lower.includes("css") ||
+    lower.includes("javascript") ||
+    lower.includes("dom")
+  ) {
+    return "warning"; // Orange = frontend
+  }
+
+  if (
+    lower.includes("aws") ||
+    lower.includes("cloud") ||
+    lower.includes("iam")
+  ) {
+    return "success"; // Green = cloud
+  }
+
+  if (
+    lower.includes("git") ||
+    lower.includes("github") ||
+    lower.includes("version")
+  ) {
+    return "info"; // Light blue = dev tools
+  }
+
+  if (
+    lower.includes("sql") ||
+    lower.includes("database") ||
+    lower.includes("queries")
+  ) {
+    return "error"; // Red = databases
+  }
+
+  return "default"; // Default grey if no match
+}
+
+function CertCard({ image, title, language, url }) {
+  // Split language string by '•' and remove extra spaces
+  const tags = language ? language.split("•").map((t) => t.trim()) : [];
+
   return (
-    <Link
-      to={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      style={{
-        textDecoration: "none",
-        color: "inherit",
+    <Card
+      sx={{
+        width: 400,
+        borderRadius: 3,
+        boxShadow: 3,
+        "&:hover": { boxShadow: 6 },
       }}
     >
-      <Box
-        sx={{
-          borderRadius: 3,
-          transition: "box-shadow 0.3s, transform 0.3s",
-          "&:hover": {
-            boxShadow: "0 8px 24px rgba(0, 0, 0, 0.12)",
-            transform: "translateY(-4px)",
-          },
-        }}
-      >
-        <Card
-          sx={{
-            maxWidth: 345,
-            borderRadius: 3,
-            boxShadow: 2,
-            backgroundColor: "#fff",
-            color: "#000",
-            display: "flex",
-            flexDirection: "column",
-            height: "100%",
-          }}
-        >
-          <CardMedia
-            component="img"
-            image={image}
-            alt={title}
-            sx={{
-              objectFit: "cover",
-              height: 180,
-              width: "100%",
-              borderRadius: "12px 12px 0 0",
-              borderBottom: "1px solid rgba(0,0,0,0.1)",
-            }}
-          />
+      <CardActionArea href={url} target="_blank" rel="noopener noreferrer">
+        <CardMedia
+          component="img"
+          height="270"
+          image={image}
+          alt={title}
+          sx={{ objectFit: "cover" }}
+        />
 
-          <CardContent sx={{ px: 3, py: 2, flexGrow: 1 }}>
-            <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
-              {title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              {description}
-            </Typography>
-          </CardContent>
+        <CardContent>
+          <Typography
+            variant="h6"
+            sx={{ fontWeight: "bold", fontSize: "1.2rem", textAlign: "center", padding: 2 }}
+          >
+            {title}
+          </Typography>
 
-          <CardActions sx={{ justifyContent: "center", px: 3, pb: 2 }}>
-            <Typography
-              variant="caption"
-              sx={{
-                backgroundColor: "#e3f2fd",
-                color: "#1976d2",
-                px: 1.5,
-                py: 0.5,
-                borderRadius: "6px",
-                fontSize: "0.75rem",
-                fontWeight: 500,
-                whiteSpace: "nowrap",
-              }}
-            >
-              {language}
-            </Typography>
-          </CardActions>
-        </Card>
-      </Box>
-    </Link>
+          <Stack direction="row" spacing={1} flexWrap="wrap" mt={1} justifyContent={"center"}>
+            {tags.map((tag, i) => (
+              <Chip
+                key={i}
+                label={tag}
+                size="medium"
+                variant="filled"
+                color={getChipColor(tag)} // Use the color based on tag
+                sx={{ fontSize: "0.75rem" }}
+              />
+            ))}
+          </Stack>
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 }
 

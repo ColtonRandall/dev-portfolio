@@ -12,7 +12,7 @@ function Certificates() {
       <Navbar />
       <CoverImage src={"./images/certificates-cover.jpg"} />
 
-      <p id="industryCertsTitle">Industry</p>
+      <p id="industryCertsTitle">Industry Certifications</p>
       <div className="industryCerts">
         <img
           src="./images/awsCP.png"
@@ -24,7 +24,7 @@ function Certificates() {
 
       <hr />
 
-      <p id="OnlineCertsTitle">Online Courses</p>
+      <p id="OnlineCertsTitle">Online Courses & Learning</p>
 
       <Grid
         container
@@ -32,137 +32,90 @@ function Certificates() {
         direction="row"
         justifyContent={"center"}
         alignItems={"center"}
-        sx={{
-          marginBottom: 15,
-        }}
+        sx={{ marginBottom: 15 }}
       >
-        {/* Java udemy */}
+        {/* Backend / Java */}
+        <CertCard
+          image={"./images/in-progress.png"}
+          title={"Spring Boot – Chad Darby (In Progress)"}
+          language={"Java • Spring Boot • Hibernate"}
+          url={
+            "https://www.udemy.com/course/spring-hibernate-tutorial/?couponCode=PMNVD2525"
+          }
+        />
+
         <CertCard
           image={"./images/java.png"}
           title={"Learn Java"}
-          description={
-            <>
-              Learn to code in Java — a robust programming language used to
-              create software, web and mobile apps, and more.
-            </>
-          }
-          language={"Core programming & OOP concepts in Java"}
+          language={"Java • OOP • Syntax"}
           url={"https://www.codecademy.com/learn/learn-java"}
         />
 
-        {/* AWS udemy */}
+        <CertCard
+          image={"./images/udemy.png"}
+          title={"Practice Java by Building Projects"}
+          language={"Java • OOP • Projects"}
+          url={
+            "https://www.udemy.com/course/practice-java-by-building-projects/?couponCode=LEARNNOWPLANS"
+          }
+        />
+
+        {/* Cloud / DevOps */}
         <CertCard
           image={"./images/udemyAWS.jpg"}
-          title={"Ultimate AWS Certified Cloud Practitioner"}
-          description={
-            <>
-              Course intended to prepare students for the AWS Cloud Practitioner
-              certification.
-            </>
-          }
-          language={"AWS services, Cloud computing concepts"}
+          title={"AWS Cloud Practitioner – Udemy"}
+          language={"AWS • Cloud • IAM"}
           url={
             "https://www.udemy.com/course/aws-certified-cloud-practitioner-new/?couponCode=LEARNNOWPLANS"
           }
         />
 
-        {/* Java projects udemy */}
         <CertCard
-          image={"./images/udemy.png"}
-          title={"Practice Java by Building Projects"}
-          description={
-            <>
-              Ultimate Java course - 100% focused on applying object-oriented
-              design in real-world applications.
-            </>
-          }
-          language={"Java"}
+          image={"./images/git.png"}
+          title={"Git & GitHub"}
+          language={"Git • GitHub • Version Control"}
           url={
-            "https://www.udemy.com/course/practice-java-by-building-projects/?srsltid=AfmBOorpA1aLR6uXOnU6jV4Unq2dGqomSRhMjnzjuaz8b0vntRZw0sGX&couponCode=LEARNNOWPLANS"
+            "https://www.udemy.com/course/github-ultimate/?couponCode=LEARNNOWPLANS"
           }
         />
 
-        {/* Python sololearn */}
+        {/* Python */}
         <CertCard
           image={"./images/python.png"}
-          title={"Python Course"}
-          description={<>Master foundational concepts of coding with Python.</>}
-          language={"Python 3"}
+          title={"Python Fundamentals"}
+          language={"Python • Syntax • Logic"}
           url={"https://www.sololearn.com/en/learn/courses/python-introduction"}
         />
 
-        {/* Python coursera */}
         <CertCard
           image={"./images/coursera.png"}
-          title={"Learning to Program: The Fundamentals"}
-          description={
-            <>
-              This course introduces the fundamental building blocks of
-              programming and teaches you how to write fun and useful programs
-              using the Python language.
-            </>
-          }
-          language={"Python 3"}
+          title={"Programming Basics – Coursera"}
+          language={"Python • Functions • Flow"}
           url={"https://www.coursera.org/learn/learn-to-program"}
         />
 
-        {/* Git udemy */}
-        <CertCard
-          image={"./images/git.png"}
-          title={"Git and GitHub"}
-          description={
-            <>
-              Go from complete novice to expert in Git and GitHub using
-              step-by-step, no-assumptions learning.
-            </>
-          }
-          language={"Git, Github, Version control"}
-          url={
-            "https://www.udemy.com/course/github-ultimate/?srsltid=AfmBOoq48fKdDN7kKeK5dyvv5jYxJZQgRzkEgLsgdwXe6Ox_XJRU5Sm1&couponCode=LEARNNOWPLANS"
-          }
-        />
-
-        {/* SQL Sololearn */}
+        {/* Databases */}
         <CertCard
           image={"./images/sql.png"}
           title={"SQL Fundamentals"}
-          description={
-            <>
-              Learn how to use the SQL standardized database language to access
-              and manipulate data stored in databases.
-            </>
-          }
-          language={"SQL, Databases"}
+          language={"SQL • Queries • Databases"}
           url={"https://www.sololearn.com/en/learn/courses/sql-introduction"}
         />
 
-        {/* JS sololearn */}
+        {/* Frontend */}
         <CertCard
           image={"./images/js.png"}
-          title={"JavaScript"}
-          description={
-            <>
-              By the end of this course you’ll know the basics of using
-              JavaScript to make an interactive website.
-            </>
-          }
-          language={"JavaScript"}
+          title={"JavaScript Basics"}
+          language={"JavaScript • DOM"}
           url={
             "https://www.sololearn.com/en/learn/courses/javascript-introduction"
           }
         />
 
-        {/* HTML Sololearn */}
         <CertCard
           image={"./images/html.png"}
           title={"HTML Fundamentals"}
-          description={
-            <>
-              Learn the basic structure of using HTML to build a webpage and
-              discover how you can help a web browser understand your content.
-            </>
-          }
-          language={"HTML 5"}
+          language={"HTML • Tags • Layout"}
           url={"https://www.sololearn.com/en/learn/courses/html-introduction"}
         />
       </Grid>
