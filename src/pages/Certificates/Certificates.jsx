@@ -24,7 +24,7 @@ function Certificates() {
 
       <hr />
 
-      <p id="OnlineCertsTitle">Online Courses & Learning</p>
+      <p id="OnlineCertsTitle">Online Courses</p>
 
       <Grid
         container

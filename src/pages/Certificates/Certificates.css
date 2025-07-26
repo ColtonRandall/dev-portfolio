@@ -1,4 +1,3 @@
-
 #industryCertsTitle,
 #OnlineCertsTitle {
   font-size: 40pt;
@@ -75,8 +74,7 @@
   animation: arrow 1.5s ease infinite;
 }
 
-timeline of hover animation
-@keyframes arrow {
+timeline of hover animation @keyframes arrow {
   0% {
     transform: translate(0);
   }
@@ -93,10 +91,18 @@ hr {
 }
 
 @media (max-width: 800px) {
+  hr {
+    width: 55%;
+  }
+
   #industryCertsTitle,
   #UniCertsTitle,
   #OnlineCertsTitle {
     font-size: 25pt;
+  }
+
+  #OnlineCertsTitle {
+    padding-bottom: 4rem;
   }
 
   .uniCerts,
