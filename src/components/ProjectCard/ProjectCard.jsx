@@ -39,7 +39,7 @@ function ProjectCard({
       >
         <Card
           sx={{
-            width: 600,
+            width: { xs: 300, sm: 600 }, // smaller on mobile
             height: "100%",
             borderRadius: 3,
             boxShadow: 2,
@@ -55,7 +55,7 @@ function ProjectCard({
             alt={title}
             sx={{
               objectFit: "contain",
-              width: 600,
+              width: { xs: 300, sm: 600 },
               height: "100%",
               borderRadius: "12px 12px 0 0",
               borderBottom: "1px solid rgba(0,0,0,0.1)",
@@ -63,20 +63,36 @@ function ProjectCard({
           />
 
           <CardContent sx={{ px: 3, py: 2, flexGrow: 1 }}>
-            <Typography variant="h5" gutterBottom sx={{ fontWeight: 600 }}>
+            <Typography
+              variant="h5"
+              gutterBottom
+              sx={{
+                fontWeight: 600,
+                fontSize: { xs: "1rem", sm: "1.5rem" }, // smaller on mobile
+              }}
+            >
               {title}
             </Typography>
-            <Typography variant="body1" color="text.secondary">
+            <Typography
+              variant="body1"
+              color="text.secondary"
+              sx={{
+                fontSize: { xs: "0.875rem", sm: "1rem" },
+              }}
+            >
               {description}
             </Typography>
           </CardContent>
 
-          <CardActions sx={{ justifyContent: "space-between", px: 4, pb: 2 }}>
+          <CardActions sx={{ justifyContent: "space-between", px: 2, pb: 2 }}>
             <Tooltip title="Date created" placement="bottom" arrow>
               <Typography
                 variant="caption"
                 color="text.secondary"
-                sx={{ fontWeight: "bold", fontSize: "12pt" }}
+                sx={{
+                  fontWeight: "bold",
+                  fontSize: { xs: "10pt", sm: "12pt" },
+                }}
               >
                 {dateCreated}
               </Typography>
@@ -90,7 +106,7 @@ function ProjectCard({
                 px: 1.5,
                 py: 0.5,
                 borderRadius: "6px",
-                fontSize: "12pt",
+                fontSize: { xs: "8pt", sm: "12pt" },
                 fontWeight: 500,
                 whiteSpace: "nowrap",
               }}
