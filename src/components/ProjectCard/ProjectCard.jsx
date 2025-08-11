@@ -39,14 +39,14 @@ function ProjectCard({
       >
         <Card
           sx={{
-            maxWidth: 345,
+            width: 600,
+            height: "100%",
             borderRadius: 3,
             boxShadow: 2,
             backgroundColor: "background.paper",
             color: "text.primary",
             display: "flex",
             flexDirection: "column",
-            height: "100%",
           }}
         >
           <CardMedia
@@ -54,29 +54,29 @@ function ProjectCard({
             image={image}
             alt={title}
             sx={{
-              objectFit: "cover",
-              height: 180,
-              width: "100%",
+              objectFit: "contain",
+              width: 600,
+              height: "100%",
               borderRadius: "12px 12px 0 0",
               borderBottom: "1px solid rgba(0,0,0,0.1)",
             }}
           />
 
           <CardContent sx={{ px: 3, py: 2, flexGrow: 1 }}>
-            <Typography variant="h6" gutterBottom sx={{ fontWeight: 600 }}>
+            <Typography variant="h5" gutterBottom sx={{ fontWeight: 600 }}>
               {title}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body1" color="text.secondary">
               {description}
             </Typography>
           </CardContent>
 
-          <CardActions sx={{ justifyContent: "space-between", px: 3, pb: 2 }}>
+          <CardActions sx={{ justifyContent: "space-between", px: 4, pb: 2 }}>
             <Tooltip title="Date created" placement="bottom" arrow>
               <Typography
                 variant="caption"
                 color="text.secondary"
-                sx={{ fontWeight: "bold" }}
+                sx={{ fontWeight: "bold", fontSize: "12pt" }}
               >
                 {dateCreated}
               </Typography>
@@ -90,7 +90,7 @@ function ProjectCard({
                 px: 1.5,
                 py: 0.5,
                 borderRadius: "6px",
-                fontSize: "0.75rem",
+                fontSize: "12pt",
                 fontWeight: 500,
                 whiteSpace: "nowrap",
               }}

@@ -12,7 +12,7 @@ function Projects() {
       <CoverImage src={"./images/projects-cover.jpg"} />
       <Grid
         container
-        spacing={6}
+        spacing={10}
         direction="row"
         justifyContent={"center"}
         alignItems={"center"}
@@ -22,7 +22,34 @@ function Projects() {
         }}
       >
         <ProjectCard
-          image={"./images/note-app.png"}
+          image={"./gif/aiCodeExplainer.gif"}
+          title={"AI Code Explainer"}
+          description={
+            <>
+              A Next.js and TypeScript web app that integrates with the
+              OpenRouter API to deliver AI-powered text generation via the LLaMA
+              3 model to explain code. Implemented API communication with Axios
+              and deployed the project on Vercel - see live app{" "}
+              <a
+                href="https://ai-code-explainer-sigma.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  color: "orange",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                }}
+              >
+                here.
+              </a>
+            </>
+          }
+          language={"AI · Next.js · TypeScript"}
+          dateCreated={"29.07.2025"}
+          url={"https://github.com/ColtonRandall/ai-code-explainer"}
+        />
+        <ProjectCard
+          image={"./gif/notesApp.gif"}
           title={"Full Stack Notes App"}
           description={
             "Java + Spring Boot + React app to create, view, and delete personal notes with a clean, responsive UI."
