@@ -76,7 +76,7 @@ This project is currently deployed to **GitHub Pages** as the primary production
 
 3. **Build the Project**:
 
-   - Generate the production-ready files:
+   - Generate production-ready files:
      ```sh
      npm run build
      ```
