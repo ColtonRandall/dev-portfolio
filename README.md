@@ -13,6 +13,7 @@ This site also serves as my development sandbox, where I consolidate modern web 
 ### UI
 
 Dark mode
+
 <img 
   src="./public/images/desktop-dark.png" 
   width="400" 
@@ -21,6 +22,7 @@ Dark mode
 />
 
 Light mode
+
 <img 
   src="./public/images/desktop-light.png" 
   width="400" 
