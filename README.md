@@ -102,6 +102,7 @@ This project is currently deployed to **GitHub Pages** as the primary production
      ```sh
      npm run deploy:all
      ```
+  - Remember to always run `npm run build` before doing a `terraform apply` 
 
 6. **Future Plans**:
    - Transition the primary deployment to AWS S3 with a custom domain and HTTPS support.
