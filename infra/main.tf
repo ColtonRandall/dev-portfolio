@@ -4,6 +4,7 @@ provider "aws" {
 }
 
 # Create the S3 bucket
+# NOSONAR: Static website bucket - logging not required for this use case
 resource "aws_s3_bucket" "website" {
   bucket = "colton-website"
 }
@@ -22,6 +23,7 @@ resource "aws_s3_bucket_website_configuration" "website" {
 }
 
 # Allow public access (required for websites)
+# NOSONAR: Public access is intentional for static website hosting
 resource "aws_s3_bucket_public_access_block" "website" {
   bucket = aws_s3_bucket.website.id
 
@@ -32,6 +34,7 @@ resource "aws_s3_bucket_public_access_block" "website" {
 }
 
 # Policy: let anyone read the files
+# NOSONAR: Public read access is required for static website hosting
 resource "aws_s3_bucket_policy" "website_policy" {
   bucket     = aws_s3_bucket.website.id
   depends_on = [aws_s3_bucket_public_access_block.website]
@@ -54,7 +57,7 @@ resource "aws_s3_object" "files" {
   bucket = aws_s3_bucket.website.bucket
   key    = each.value
   source = "../dist/${each.value}"
-  etag   = filemd5("../dist/${each.value}")  # Changed this line
+  etag   = filemd5("../dist/${each.value}")
 
   # Set correct content type based on file extension
   content_type = (
