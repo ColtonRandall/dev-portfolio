@@ -113,4 +113,4 @@ This project is currently deployed to **GitHub Pages** as the primary production
 
 ### 🚧 Work in Progress
 
-This site evolves alongside my career, both in content and code. More projects, UI refinements, and interactive features will be added over time.
+This site evolves alongside my career, both in content and code. More projects, UI refinements, and interactive features will be added as I learn more.
