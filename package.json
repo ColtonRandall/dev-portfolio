@@ -11,7 +11,10 @@
     "preview": "vite preview",
     "test": "vitest",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "deploy:github": "npm run deploy",
+    "deploy:aws": "cd infra && terraform apply -auto-approve",
+    "deploy:all": "npm run build && npm run deploy:github && npm run deploy:aws"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
