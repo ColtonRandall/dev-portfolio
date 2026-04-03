@@ -103,18 +103,8 @@ function ColtonTimeline() {
           link="https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/master-of-information-technology-minfotech.html"
           description="Auckland University"
           logo="./images/aucklandUni.png"
-          subtext={
-            <>
-              Partial completion before moving into industry
-              <br />
-              <u>Courses</u>
-              <br />
-              - Creating maintainable software (Java)
-              <br />
-              - AWS Cloud Computing (Cloud Practitioner certification)
-              <br />- Health Informatics
-            </>
-          }
+          subtext="Partial completion before moving into industry"
+          techStack={["Java", "AWS (Cloud Practitioner)", "Health Informatics"]}
         />
 
         <TimelineComponent
@@ -125,12 +115,7 @@ function ColtonTimeline() {
           link="https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/postgraduate-certificate-in-information-technology-pgcertinfotech.html"
           description="Auckland University"
           logo="./images/aucklandUni.png"
-          subtext={
-            <>
-              - HTML, CSS, JavaScript, SQL, Node.js
-              <br />- Java (OOP and Design Patterns)
-            </>
-          }
+          techStack={["HTML", "CSS", "JavaScript", "SQL", "Node.js", "Java"]}
         />
 
         <TimelineComponent
@@ -156,7 +141,7 @@ function ColtonTimeline() {
           iconComponent={<CoronavirusIcon />}
           title="COVID Lockdown"
           description="Continued learning to code"
-          subtext="HTML, CSS, JavaScript"
+          techStack={["HTML", "CSS", "JavaScript"]}
         />
 
         <TimelineComponent
@@ -164,7 +149,7 @@ function ColtonTimeline() {
           iconColour="primary"
           iconComponent={<CodeIcon />}
           title="Self-taught programming at home"
-          subtext="Python"
+          techStack={["Python"]}
         />
 
         <TimelineComponent
