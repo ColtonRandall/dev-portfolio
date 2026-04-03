@@ -5,7 +5,7 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { Tooltip } from "@mui/material";
+import { Tooltip, Chip, Box } from "@mui/material";
 
 function TimelineComponent({
   yearEntry,
@@ -16,6 +16,7 @@ function TimelineComponent({
   description,
   logo,
   subtext,
+  techStack,
 }) {
   return (
     <TimelineItem>
@@ -69,6 +70,13 @@ function TimelineComponent({
           <Typography variant="subtitle2" component="span">
             {subtext}
           </Typography>
+        ) : null}
+        {techStack ? (
+          <Box sx={{ mt: 1 }}>
+            {techStack.map((tech) => (
+              <Chip key={tech} label={tech} size="small" variant="outlined" sx={{ m: 0.25 }} />
+            ))}
+          </Box>
         ) : null}
       </TimelineContent>
     </TimelineItem>

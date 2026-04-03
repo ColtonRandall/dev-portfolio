@@ -28,13 +28,31 @@ function ColtonTimeline() {
         sx={{ margin: "50px auto" }}
       >
         <TimelineComponent
-          yearEntry="2025 (Apr) - Present ⭐️"
+          yearEntry="2026 (Mar) - Present ⭐️"
+          iconColour="primary"
+          iconComponent={<RocketLaunchIcon />}
+          title="Software Engineer"
+          description="Sinch"
+          logo="./images/sinch.jpg"
+          techStack={["Java 21", "Spring Boot", "AWS", "CloudFormation", "RDS", "SQS", "DevOps"]}
+        />
+
+        <TimelineComponent
+          yearEntry="2026 (Mar)"
+          iconColour="primary"
+          iconComponent={<FlightTakeoffIcon />}
+          title="Moved to Melbourne"
+          subtext="🇦🇺 New Zealand → Australia"
+        />
+
+        <TimelineComponent
+          yearEntry="2025 (Apr) - 2026 (Mar)"
           iconColour="primary"
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer"
           description="Westpac New Zealand"
           logo="./images/westpac.png"
-          subtext="Java 17, Spring Boot, Kubernetes, Docker"
+          techStack={["Java 17", "Spring Boot", "Kubernetes", "Docker"]}
         />
 
         <TimelineComponent
@@ -44,7 +62,7 @@ function ColtonTimeline() {
           title="Full-Stack Software Engineer"
           description="Xero"
           logo="./images/xero.png"
-          subtext="C# (.NET), React, TypeScript, AWS"
+          techStack={["C# (.NET)", "React", "TypeScript", "AWS"]}
         />
 
         <TimelineComponent
@@ -54,7 +72,7 @@ function ColtonTimeline() {
           title="Associate Software Engineer"
           description="Xero"
           logo="./images/xero.png"
-          subtext="C# (.NET), React, TypeScript, AWS"
+          techStack={["C# (.NET)", "React", "TypeScript", "AWS"]}
         />
 
         <TimelineComponent
@@ -64,7 +82,7 @@ function ColtonTimeline() {
           title="Graduate Software Engineer"
           description="Xero"
           logo="./images/xero.png"
-          subtext="C# (.NET), React, TypeScript, AWS"
+          techStack={["C# (.NET)", "React", "TypeScript", "AWS"]}
         />
 
         <TimelineComponent
@@ -74,7 +92,7 @@ function ColtonTimeline() {
           title="Software Engineer Intern"
           description="Xero"
           logo="./images/xero.png"
-          subtext="C#, AWS, Docker, Kubernetes"
+          techStack={["C#", "AWS", "Docker", "Kubernetes"]}
         />
 
         <TimelineComponent
