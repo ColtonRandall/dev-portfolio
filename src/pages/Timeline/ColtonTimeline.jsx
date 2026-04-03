@@ -21,15 +21,14 @@ function ColtonTimeline() {
   return (
     <>
       <Navbar />
-      <CoverImage src={"./images/my-journey-cover.jpg"} />
+      <CoverImage src="./images/my-journey-cover.jpg" />
       <Timeline
-        className="timeline"
         position="alternate"
-        sx={{ margin: "50px auto" }}
+        sx={{ margin: "50px auto", maxWidth: "900px" }}
       >
         <TimelineComponent
           yearEntry="2026 (Mar) - Present ⭐️"
-          iconColour="primary"
+
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer"
           description="Sinch"
@@ -39,7 +38,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2026 (Mar)"
-          iconColour="primary"
+
           iconComponent={<FlightTakeoffIcon />}
           title="Moved to Melbourne"
           subtext="🇦🇺 New Zealand → Australia"
@@ -47,7 +46,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2025 (Apr) - 2026 (Mar)"
-          iconColour="primary"
+
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer"
           description="Westpac New Zealand"
@@ -57,7 +56,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2024 (Jul) - 2025 (Apr)"
-          iconColour="primary"
+
           iconComponent={<TrendingUpIcon />}
           title="Full-Stack Software Engineer"
           description="Xero"
@@ -67,7 +66,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2023 (Feb) - 2024 (Jul)"
-          iconColour="primary"
+
           iconComponent={<TrendingUpIcon />}
           title="Associate Software Engineer"
           description="Xero"
@@ -77,7 +76,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2022 (Feb) - 2023 (Feb)"
-          iconColour="primary"
+
           iconComponent={<TrendingUpIcon />}
           title="Graduate Software Engineer"
           description="Xero"
@@ -87,7 +86,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2021 (Nov) - 2022 (Feb)"
-          iconColour="primary"
+
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer Intern"
           description="Xero"
@@ -97,7 +96,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2021 (Jul - Nov)"
-          iconColour="primary"
+
           iconComponent={<SchoolIcon />}
           title="Master of IT"
           link="https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/master-of-information-technology-minfotech.html"
@@ -109,7 +108,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2021 (Feb - Jun)"
-          iconColour="primary"
+
           iconComponent={<SchoolIcon />}
           title="Postgraduate Certificate in IT"
           link="https://www.auckland.ac.nz/en/study/study-options/find-a-study-option/postgraduate-certificate-in-information-technology-pgcertinfotech.html"
@@ -120,7 +119,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2020"
-          iconColour="primary"
+
           iconComponent={<BiotechIcon />}
           title="Bioinformatics Research Assistant"
           description="Auckland University"
@@ -129,7 +128,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2020"
-          iconColour="primary"
+
           iconComponent={<ForkRightIcon />}
           title="Career Pivot"
           subtext="Aviation → Tech"
@@ -137,7 +136,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2020 (Mar - May)"
-          iconColour="primary"
+
           iconComponent={<CoronavirusIcon />}
           title="COVID Lockdown"
           description="Continued learning to code"
@@ -146,7 +145,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2019"
-          iconColour="primary"
+
           iconComponent={<CodeIcon />}
           title="Self-taught programming at home"
           techStack={["Python"]}
@@ -154,7 +153,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2019"
-          iconColour="primary"
+
           iconComponent={<AirplanemodeActiveIcon />}
           title="Began training as a pilot"
           description="Ardmore Flying School"
@@ -163,7 +162,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2018"
-          iconColour="primary"
+
           iconComponent={<SchoolIcon />}
           title="Graduated - BSc Biochemistry"
           description="University of Otago"
@@ -172,7 +171,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2016 (Jun - Jul)"
-          iconColour="primary"
+
           iconComponent={<VolunteerActivismIcon />}
           title="Volunteering"
           subtext="🇰🇪 Nairobi, Kenya"
@@ -180,7 +179,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2015"
-          iconColour="primary"
+
           iconComponent={<SchoolIcon />}
           title="First year of University"
           description="University of Otago"
@@ -189,7 +188,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2013 - 2014"
-          iconColour="primary"
+
           iconComponent={<MapIcon />}
           title="Travel & work abroad"
           subtext={
@@ -205,7 +204,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2013 (Mar - May)"
-          iconColour="primary"
+
           iconComponent={<VolunteerActivismIcon />}
           title="Volunteering"
           subtext="🇷🇼 Rwanda, Africa"
@@ -213,7 +212,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="2012"
-          iconColour="primary"
+
           iconComponent={<SchoolIcon />}
           title="Finished High School"
           description="Westlake Boys High School"
@@ -222,7 +221,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="1998"
-          iconColour="primary"
+
           iconComponent={<FlightTakeoffIcon />}
           title="Family move overseas"
           subtext="🇨🇦 Canada to 🇳🇿 New Zealand"
@@ -230,7 +229,7 @@ function ColtonTimeline() {
 
         <TimelineComponent
           yearEntry="Before 1998"
-          iconColour="primary"
+
           iconComponent={<ChildCareIcon />}
           title="Early Days"
           subtext="Born in Canada"

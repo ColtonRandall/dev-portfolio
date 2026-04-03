@@ -9,7 +9,7 @@ import { Tooltip, Chip, Box } from "@mui/material";
 
 function TimelineComponent({
   yearEntry,
-  iconColour,
+  iconColour = "primary",
   iconComponent,
   title,
   link,
@@ -47,7 +47,7 @@ function TimelineComponent({
           <Typography
             variant="h6"
             component="span"
-            sx={{ textDecoration: "Underline" }}
+            sx={{ textDecoration: "underline" }}
           >
             {title}
           </Typography>
@@ -57,7 +57,7 @@ function TimelineComponent({
             <img
               src={logo}
               style={{
-                width: "20px",
+                width: "30px",
                 marginTop: "10px",
                 marginRight: "8px",
                 borderRadius: "5px",
