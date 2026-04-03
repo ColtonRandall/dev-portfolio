@@ -28,22 +28,22 @@ function HomeContent() {
         title="My Toolbox"
         subTitle="My core technical experience and skills."
         text={[
-          "Full-stack development: C#/.NET, React, TypeScript",
           "Java & Spring Boot",
-          "Docker, Kubernetes, AWS (cloud-native DevOps)",
-          "REST APIs & microservices",
+          "C#/.NET, React, TypeScript",
+          "AWS (CloudFormation, RDS, SQS), DevOps",
+          "Docker, Kubernetes, microservices",
         ]}
         bgcolor="#bfdbfe"
       />
       <InfoCard
         icon={(props) => <StarsIcon sx={{ color: orange[700] }} {...props} />}
         title="Current Role"
-        subTitle={"Backend Software Engineer at Westpac New Zealand"}
+        subTitle={"Software Engineer at Sinch, Melbourne"}
         text={[
-          "Java 17, Spring Boot, Maven",
-          "Docker, Kubernetes, Jenkins",
-          "Backend modernisation & performance optimisation",
-          "System design & architecture",
+          "Java 21+, Spring Boot, AWS",
+          "CloudFormation, RDS, SQS",
+          "Queue-driven architecture & system design",
+          "DevOps & cloud-native development",
         ]}
         bgcolor="#fcd6a0"
         iconColor={orange[700]}
