@@ -3,7 +3,7 @@ import { Box } from "@mui/material";
 import BuildIcon from "@mui/icons-material/Build";
 import StarsIcon from "@mui/icons-material/Stars";
 import LandscapeIcon from "@mui/icons-material/Landscape";
-import { orange } from "@mui/material/colors";
+import { orange, blue, green } from "@mui/material/colors";
 import InfoCard from "./InfoCard";
 
 function HomeContent() {
@@ -24,7 +24,7 @@ function HomeContent() {
       }}
     >
       <InfoCard
-        icon={(props) => <BuildIcon color="primary" {...props} />}
+        icon={(props) => <BuildIcon sx={{ color: blue[700] }} {...props} />}
         title="My Toolbox"
         subTitle="My core technical experience and skills."
         text={[
@@ -49,7 +49,7 @@ function HomeContent() {
         iconColor={orange[700]}
       />
       <InfoCard
-        icon={(props) => <LandscapeIcon color="success" {...props} />}
+        icon={(props) => <LandscapeIcon sx={{ color: green[700] }} {...props} />}
         title="Beyond Work"
         subTitle="What inspires me and keeps me balanced."
         text={[

@@ -15,7 +15,7 @@ function Header() {
           <LocationPinIcon
             style={{ verticalAlign: "middle", marginRight: "0.5rem" }}
           />
-          Auckland, New Zealand
+          Melbourne, Australia
         </p>
         <div className="header-icons">
           <Icons />
