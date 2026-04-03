@@ -33,7 +33,7 @@ function ColtonTimeline() {
           title="Software Engineer"
           description="Sinch"
           logo="./images/sinch.jpg"
-          techStack={["Java 21", "Spring Boot", "AWS", "CloudFormation", "RDS", "SQS", "DevOps"]}
+          techStack={["Java 21+", "Spring Boot", "AWS", "CloudFormation", "RDS", "SQS", "DevOps"]}
         />
 
         <TimelineComponent
@@ -91,7 +91,7 @@ function ColtonTimeline() {
           title="Software Engineer Intern"
           description="Xero"
           logo="./images/xero.png"
-          techStack={["C#", "AWS", "Docker", "Kubernetes"]}
+          techStack={["C# (.NET)", "AWS", "Docker", "Kubernetes"]}
         />
 
         <TimelineComponent

@@ -52,15 +52,15 @@ function TimelineComponent({
             {title}
           </Typography>
         )}
-        <Typography fontWeight="bold">
+        <Typography fontWeight="bold" sx={{ mt: 0.5 }}>
           {logo ? (
             <img
               src={logo}
               style={{
                 width: "30px",
-                marginTop: "10px",
                 marginRight: "8px",
                 borderRadius: "5px",
+                verticalAlign: "middle",
               }}
             />
           ) : null}
