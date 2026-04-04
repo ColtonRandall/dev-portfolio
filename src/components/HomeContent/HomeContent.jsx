@@ -56,7 +56,7 @@ function HomeContent() {
           "Photography, travel, guitar, movies",
           "Love coffee and trying new food",
           "Exploring the outdoors with my wife and dog",
-          "Always learning and growing",
+          "Building side projects",
         ]}
         bgcolor="#a7f3d0"
       />

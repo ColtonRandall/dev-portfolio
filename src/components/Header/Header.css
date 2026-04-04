@@ -68,6 +68,19 @@
   margin: 0;
 }
 
+.tagline {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.8rem 0 0 0;
+  color: var(--text);
+  font-weight: 400;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  border: 1.5px solid tomato;
+  border-radius: 999px;
+  opacity: 0.85;
+  max-width: 45%;
+}
+
 #location {
   display: flex;
   margin: 0;

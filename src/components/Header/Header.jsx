@@ -9,6 +9,7 @@ function Header() {
         <div className="header-text">
           <div className="title">Colton Randall</div>
           <div className="subTitle">Software Engineer</div>
+          <div className="tagline">Backend-focused engineer with 5+ years building production systems at Xero, Westpac, and Sinch.</div>
         </div>
         <img src="./images/me-circle.png" id="mainphoto" />
         <p id="location">
