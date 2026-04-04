@@ -7,7 +7,10 @@ import {
   Typography,
   Tooltip,
   Box,
+  Stack,
+  Chip,
 } from "@mui/material";
+import { getChipColour } from "../../utils/chipColour";
 
 function ProjectCard({
   image,
@@ -17,6 +20,8 @@ function ProjectCard({
   language,
   url,
 }) {
+  const tags = language ? language.split("·").map((t) => t.trim()) : [];
+
   return (
     <Link
       to={url}
@@ -39,7 +44,7 @@ function ProjectCard({
       >
         <Card
           sx={{
-            width: { xs: 300, sm: 600 }, // smaller on mobile
+            width: { xs: 320, sm: 450 },
             height: "100%",
             borderRadius: 3,
             boxShadow: 2,
@@ -55,8 +60,8 @@ function ProjectCard({
             alt={title}
             sx={{
               objectFit: "contain",
-              width: { xs: 300, sm: 600 },
-              height: "100%",
+              width: { xs: 320, sm: 450 },
+              height: 200,
               borderRadius: "12px 12px 0 0",
               borderBottom: "1px solid rgba(0,0,0,0.1)",
             }}
@@ -64,27 +69,34 @@ function ProjectCard({
 
           <CardContent sx={{ px: 3, py: 2, flexGrow: 1 }}>
             <Typography
-              variant="h5"
+              variant="h6"
               gutterBottom
               sx={{
                 fontWeight: 600,
-                fontSize: { xs: "1rem", sm: "1.5rem" }, // smaller on mobile
+                fontSize: { xs: "0.95rem", sm: "1.1rem" },
               }}
             >
               {title}
             </Typography>
             <Typography
-              variant="body1"
+              variant="body2"
               color="text.secondary"
               sx={{
-                fontSize: { xs: "0.875rem", sm: "1rem" },
+                fontSize: { xs: "0.8rem", sm: "0.875rem" },
               }}
             >
               {description}
             </Typography>
           </CardContent>
 
-          <CardActions sx={{ justifyContent: "space-between", px: 2, pb: 2 }}>
+          <CardActions
+            sx={{
+              justifyContent: "space-between",
+              px: 2,
+              pb: 2,
+              alignItems: "flex-end",
+            }}
+          >
             <Tooltip title="Date created" placement="bottom" arrow>
               <Typography
                 variant="caption"
@@ -92,27 +104,30 @@ function ProjectCard({
                 sx={{
                   fontWeight: "bold",
                   fontSize: { xs: "10pt", sm: "12pt" },
+                  whiteSpace: "nowrap",
                 }}
               >
                 {dateCreated}
               </Typography>
             </Tooltip>
 
-            <Typography
-              variant="caption"
-              sx={{
-                backgroundColor: "primary.main",
-                color: "#fff",
-                px: 1.5,
-                py: 0.5,
-                borderRadius: "6px",
-                fontSize: { xs: "8pt", sm: "12pt" },
-                fontWeight: 500,
-                whiteSpace: "nowrap",
-              }}
+            <Stack
+              direction="row"
+              spacing={0.5}
+              flexWrap="wrap"
+              justifyContent="flex-end"
+              sx={{ gap: 0.5 }}
             >
-              {language}
-            </Typography>
+              {tags.map((tag) => (
+                <Chip
+                  key={tag}
+                  label={tag}
+                  size="small"
+                  color={getChipColour(tag)}
+                  sx={{ fontSize: { xs: "0.65rem", sm: "0.75rem" } }}
+                />
+              ))}
+            </Stack>
           </CardActions>
         </Card>
       </Box>
