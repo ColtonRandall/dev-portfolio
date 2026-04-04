@@ -3,6 +3,12 @@ import UpArrow from "../../components/UpArrow/UpArrow";
 import Navbar from "../../components/Navbar/Navbar";
 import CoverImage from "../../components/CoverImage/CoverImage";
 import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 import CodeIcon from "@mui/icons-material/Code";
 import SchoolIcon from "@mui/icons-material/School";
@@ -16,6 +22,7 @@ import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import ChildCareIcon from "@mui/icons-material/ChildCare";
+import Typography from "@mui/material/Typography";
 
 function ColtonTimeline() {
   return (
@@ -26,6 +33,24 @@ function ColtonTimeline() {
         position="alternate"
         sx={{ margin: "50px auto", maxWidth: "900px" }}
       >
+        <TimelineItem>
+          <TimelineOppositeContent />
+          <TimelineSeparator>
+            <TimelineDot
+              sx={{
+                bgcolor: "tomato",
+                boxShadow: "0 0 0 5px rgba(255,99,71,0.2)",
+              }}
+            />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: 1, px: 2 }}>
+            <Typography variant="caption" color="tomato" fontWeight="bold">
+              Present
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+
         <TimelineComponent
           yearEntry="2026 (Mar) - Present ⭐️"
           iconComponent={<RocketLaunchIcon />}
