@@ -65,6 +65,19 @@
   text-align: left;
   font-weight: bold;
   margin: 0;
+  min-height: 1.2em;
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  color: tomato;
+  animation: cursorBlink 0.7s step-end infinite;
+  margin-left: 2px;
+}
+
+@keyframes cursorBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 .tagline {
