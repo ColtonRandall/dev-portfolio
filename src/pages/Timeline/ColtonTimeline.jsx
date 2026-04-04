@@ -52,7 +52,7 @@ function ColtonTimeline() {
         </TimelineItem>
 
         <TimelineComponent
-          yearEntry="2026 (Mar) - Present ⭐️"
+          yearEntry="2026 (Mar) ⭐️"
           iconComponent={<RocketLaunchIcon />}
           title="Software Engineer II"
           description="Sinch"
