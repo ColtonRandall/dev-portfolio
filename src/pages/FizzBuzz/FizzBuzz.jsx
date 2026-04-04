@@ -46,7 +46,7 @@ function FizzBuzz() {
         style={{
           display: "flex",
           flexDirection: "column",
-          minHeight: "98vh",
+          minHeight: "100vh",
         }}
       >
         <div style={{ flex: 1 }}>
