@@ -1,7 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer.jsx";
 import CoverImage from "../../components/CoverImage/CoverImage.jsx";
-import { Grid, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import BlogCard from "./BlogCard";
 
 const POSTS = [
@@ -25,21 +25,30 @@ const POSTS = [
 
 function Blog() {
   return (
-    <Box>
+    <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Navbar />
       <CoverImage title="Blog" />
-      <Grid
-        container
-        spacing={4}
-        justifyContent="center"
-        sx={{ maxWidth: 1000, mx: "auto", px: { xs: 2, md: 4 }, mt: 5, mb: 6 }}
+      <Box
+        sx={{
+          flex: 1,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 4,
+          maxWidth: 700,
+          width: "100%",
+          mx: "auto",
+          px: { xs: 2, md: 4 },
+          mt: 11,
+          mb: 6,
+        }}
       >
         {POSTS.map((post) => (
-          <Grid item xs={12} md={6} key={post.slug} sx={{ display: "flex" }}>
+          <Box key={post.slug} sx={{ width: "100%" }}>
             <BlogCard post={post} />
-          </Grid>
+          </Box>
         ))}
-      </Grid>
+      </Box>
       <Footer />
     </Box>
   );
