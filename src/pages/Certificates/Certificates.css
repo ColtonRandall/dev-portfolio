@@ -40,7 +40,7 @@
 .certImages img {
   align-items: center;
   position: relative;
-  border: 3px solid black;
+  border: 3px solid var(--text);
   box-shadow: var(--shadow);
   width: 20%;
   margin: 1rem;

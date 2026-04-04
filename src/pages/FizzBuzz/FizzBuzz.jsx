@@ -39,7 +39,6 @@ function FizzBuzz() {
 
   return (
     <>
-      <title>FizzBuzz</title>
       <Navbar />
 
       <div
@@ -113,8 +112,10 @@ function FizzBuzz() {
               color: "#FA5F55",
               textAlign: "center",
               marginTop: 50,
-              marginLeft: 200,
-              marginRight: 200,
+              maxWidth: "700px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              padding: "0 1rem",
             }}
           >
             {submittedText}

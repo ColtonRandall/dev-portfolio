@@ -56,6 +56,7 @@ function TimelineComponent({
           {logo ? (
             <img
               src={logo}
+              alt={description}
               style={{
                 width: "30px",
                 marginRight: "8px",

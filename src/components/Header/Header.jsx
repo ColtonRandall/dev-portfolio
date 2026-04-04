@@ -11,7 +11,7 @@ function Header() {
           <div className="subTitle">Software Engineer</div>
           <div className="tagline">Backend-focused engineer with 5+ years building production systems at Xero, Westpac, and Sinch.</div>
         </div>
-        <img src="./images/me-circle.png" id="mainphoto" />
+        <img src="./images/me-circle.png" id="mainphoto" alt="Colton Randall" />
         <p id="location">
           <LocationPinIcon
             style={{ verticalAlign: "middle", marginRight: "0.5rem" }}

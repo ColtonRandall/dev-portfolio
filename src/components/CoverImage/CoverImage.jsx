@@ -3,7 +3,7 @@ import "./CoverImage.css";
 function CoverImage({ src }) {
   return (
     <>
-      <img src={src} className="coverImage" />
+      <img src={src} className="coverImage" alt="" />
     </>
   );
 }

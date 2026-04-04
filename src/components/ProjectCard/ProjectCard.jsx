@@ -101,8 +101,8 @@ function ProjectCard({
             <Typography
               variant="caption"
               sx={{
-                backgroundColor: "#e3f2fd",
-                color: "#1976d2",
+                backgroundColor: "primary.main",
+                color: "#fff",
                 px: 1.5,
                 py: 0.5,
                 borderRadius: "6px",

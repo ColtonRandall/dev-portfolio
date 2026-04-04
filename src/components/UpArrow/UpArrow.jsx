@@ -6,13 +6,11 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 function UpArrow() {
   return (
     <div className="toTop">
-      <a href="#">
-        <Tooltip title="Back to top">
-          <Fab className="upArrow" size="small">
-            <NavigationIcon />
-          </Fab>
-        </Tooltip>
-      </a>
+      <Tooltip title="Back to top">
+        <Fab className="upArrow" size="small" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+          <NavigationIcon />
+        </Fab>
+      </Tooltip>
     </div>
   );
 }

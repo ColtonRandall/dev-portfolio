@@ -17,9 +17,10 @@ function Certificates() {
         <img
           src="./images/awsCP.png"
           id="awsCP"
+          alt="AWS Certified Cloud Practitioner"
           title="AWS Certified Cloud Practitioner"
         />
-        <img src="./images/aws.png" id="aws" title="AWS Academy Graduate" />
+        <img src="./images/aws.png" id="aws" alt="AWS Academy Graduate" title="AWS Academy Graduate" />
       </div>
 
       <hr />

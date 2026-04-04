@@ -6,8 +6,8 @@
   padding: 0.6em 1.4em;
   border-radius: 8px;
   border: 1.5px solid #888;
-  background: #fff;
-  color: #222;
+  background: var(--bg);
+  color: var(--text);
   font-size: 1rem;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
