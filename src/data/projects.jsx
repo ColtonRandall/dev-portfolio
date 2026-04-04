@@ -1,0 +1,98 @@
+const PROJECTS = [
+  {
+    image: "./gif/aiCodeExplainer.gif",
+    title: "AI Code Explainer",
+    description: (
+      <>
+        A Next.js and TypeScript web app that integrates with the OpenRouter API
+        to deliver AI-powered text generation via the LLaMA 3 model to explain
+        code. Implemented API communication with Axios and deployed the project
+        on Vercel - see live app{" "}
+        <a
+          href="https://ai-code-explainer-sigma.vercel.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: "orange", textDecoration: "none", fontWeight: "bold" }}
+        >
+          here.
+        </a>
+      </>
+    ),
+    language: "AI · Next.js · TypeScript",
+    dateCreated: "29.07.2025",
+    url: "https://github.com/ColtonRandall/ai-code-explainer",
+    tags: ["AI", "React"],
+  },
+  {
+    image: "./gif/notesApp.gif",
+    title: "Full Stack Notes App",
+    description:
+      "Java + Spring Boot + React app to create, view, and delete personal notes with a clean, responsive UI.",
+    language: "Java · Spring Boot · React",
+    dateCreated: "29.06.2025",
+    url: "https://github.com/ColtonRandall/notes-app",
+    tags: ["Java", "React"],
+  },
+  {
+    image: "./images/java-weather-app.png",
+    title: "Weather App",
+    description:
+      "Console-based Java app that mimics a weather API using Spring Boot and REST, built with layered architecture.",
+    language: "Java · Spring Boot · REST API",
+    dateCreated: "28.03.2025",
+    url: "https://github.com/ColtonRandall/java-weather-information-service",
+    tags: ["Java"],
+  },
+  {
+    image: "./images/tictactoe.png",
+    title: "Tic Tac Toe",
+    description:
+      "OOP-based C#/.NET console game with a basic AI opponent and game loop logic for win/draw detection.",
+    language: "C# · .NET 7",
+    dateCreated: "28.02.2025",
+    url: "https://github.com/ColtonRandall/tic-tac-toe-csharp",
+    tags: ["C#"],
+  },
+  {
+    image: "./images/dev-portfolio-image.png",
+    title: "This Website / Dev Portfolio",
+    description:
+      "Personal portfolio site built with React & Material UI; responsive, modular, and evolved from early HTML/CSS work.",
+    language: "React · JavaScript · Material UI",
+    dateCreated: "01.05.2021",
+    url: "https://github.com/ColtonRandall/dev-portfolio",
+    tags: ["React", "JavaScript"],
+  },
+  {
+    image: "./images/kalah.png",
+    title: "Kalah Board Game",
+    description:
+      "Advanced Java console game from a postgraduate assignment, showcasing AI difficulty levels and OOP principles.",
+    language: "Java · OOP · Game Logic",
+    dateCreated: "07.09.2021",
+    url: "https://github.com/ColtonRandall/Kalah",
+    tags: ["Java"],
+  },
+  {
+    image: "./images/rpgGame.jpg",
+    title: "Console RPG App",
+    description:
+      "Console-based C# RPG game using OOP; features include player creation, enemy combat, and game progression.",
+    language: "C# · OOP · Console",
+    dateCreated: "10.10.2022",
+    url: "https://github.com/ColtonRandall/console-rpg",
+    tags: ["C#"],
+  },
+  {
+    image: "./images/bulls.png",
+    title: "Bulls & Cows Game",
+    description:
+      "OOP-based number guessing game in Java, featuring difficulty levels, computer logic, and .txt file output.",
+    language: "Java · File I/O · OOP",
+    dateCreated: "28.04.2021",
+    url: "https://github.com/ColtonRandall/Bulls-And-Cows-Game",
+    tags: ["Java"],
+  },
+];
+
+export default PROJECTS;
