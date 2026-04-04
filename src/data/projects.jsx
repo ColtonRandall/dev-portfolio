@@ -3,9 +3,9 @@ const PROJECTS = [
     image: "./images/octocat.png",
     title: "Task Manager API",
     description:
-      "Spring Boot REST API featuring JPA/H2 persistence, soft deletes, event publishing, Docker containerisation, and automated CI/CD via GitHub Actions.",
+      "Java 21 + Spring Boot REST API with JPA/H2 persistence, soft deletes, event publishing, Docker support, and GitHub Actions CI/CD.",
     language: "Java · Spring Boot · Docker",
-    dateCreated: "2025",
+    dateCreated: "04.03.2026",
     url: "https://github.com/ColtonRandall/task-manager-api",
     tags: ["Java"],
   },
@@ -13,9 +13,9 @@ const PROJECTS = [
     image: "./images/octocat.png",
     title: "SMS Routing Service",
     description:
-      "Routes outbound SMS messages to the correct carrier (AU, NZ, Global) based on phone prefix, with opt-out compliance and delivery state tracking.",
+      "Java 21 + Spring Boot REST API that routes outbound SMS messages to the correct carrier (AU, NZ, Global) based on phone prefix, with opt-out compliance and delivery state tracking.",
     language: "Java · Spring Boot · REST API",
-    dateCreated: "01.11.2026",
+    dateCreated: "11.01.2026",
     url: "https://github.com/ColtonRandall/sms-routing-service",
     tags: ["Java"],
   },
@@ -111,7 +111,7 @@ const PROJECTS = [
     image: "./images/bulls.png",
     title: "Bulls & Cows Game",
     description:
-      "Java number-guessing game built as a university assignment, featuring difficulty levels, computer logic, and .txt file output.",
+      "OOP-based number guessing game in Java, featuring difficulty levels, computer logic, and .txt file output.",
     language: "Java · File I/O · OOP",
     dateCreated: "28.04.2021",
     url: "https://github.com/ColtonRandall/Bulls-And-Cows-Game",
