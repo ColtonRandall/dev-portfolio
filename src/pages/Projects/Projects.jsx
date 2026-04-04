@@ -9,7 +9,7 @@ function Projects() {
   return (
     <>
       <Navbar />
-      <CoverImage src={"./images/projects-cover.jpg"} />
+      <CoverImage title="Projects" />
       <Grid
         container
         spacing={10}

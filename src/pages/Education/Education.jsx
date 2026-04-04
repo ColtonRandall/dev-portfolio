@@ -8,7 +8,7 @@ function Education() {
   return (
     <>
       <Navbar />
-      <CoverImage src={"./images/education-cover.jpg"} />
+      <CoverImage title="Education" />
 
 
 

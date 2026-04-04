@@ -1,10 +1,10 @@
 import "./CoverImage.css";
 
-function CoverImage({ src }) {
+function CoverImage({ title }) {
   return (
-    <>
-      <img src={src} className="coverImage" alt="" />
-    </>
+    <div className="page-hero">
+      <h1 className="page-hero-title">{title}</h1>
+    </div>
   );
 }
 

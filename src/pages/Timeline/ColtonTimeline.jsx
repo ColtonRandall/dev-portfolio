@@ -21,7 +21,7 @@ function ColtonTimeline() {
   return (
     <>
       <Navbar />
-      <CoverImage src="./images/my-journey-cover.jpg" />
+      <CoverImage title="My Journey" />
       <Timeline
         position="alternate"
         sx={{ margin: "50px auto", maxWidth: "900px" }}

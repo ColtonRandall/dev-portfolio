@@ -10,7 +10,7 @@ function Certificates() {
   return (
     <div>
       <Navbar />
-      <CoverImage src={"./images/certificates-cover.jpg"} />
+      <CoverImage title="Certificates" />
 
       <p id="industryCertsTitle">Industry Certifications</p>
       <div className="industryCerts">

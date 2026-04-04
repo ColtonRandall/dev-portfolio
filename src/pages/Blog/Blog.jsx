@@ -9,7 +9,7 @@ function Blog() {
   return (
     <Box>
       <Navbar />
-      <CoverImage src={"./images/blog-cover.jpg"} />
+      <CoverImage title="Blog" />
       <Grid container direction="row" justifyContent="center">
         <Grid item xs={12} md={8}>
           <BlogPost

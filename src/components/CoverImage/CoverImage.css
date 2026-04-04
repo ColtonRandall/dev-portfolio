@@ -1,18 +1,24 @@
-.coverImage {
-  width: 95%;
-  height: 200px;
-  object-fit: cover;
-  display: block;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
-  margin-bottom: 0;
-  margin: auto;
-  margin-top: 7rem;
-  border-radius: 10px;
+.page-hero {
+  width: 100%;
+  margin-top: 60px;
+  padding: 2.5rem 2rem;
+  background: linear-gradient(135deg, rgba(255, 99, 71, 0.15) 0%, transparent 100%);
+  border-bottom: 1px solid rgba(255, 99, 71, 0.2);
+  text-align: center;
+  box-sizing: border-box;
 }
 
-@media (max-width: 680px) {
-  .coverImage {
-    width: 80%;
+.page-hero-title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: tomato;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 600px) {
+  .page-hero-title {
+    font-size: 1.8rem;
   }
 }
