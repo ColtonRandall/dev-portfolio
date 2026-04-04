@@ -1,166 +1,67 @@
 import "./Projects.css";
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import Grid from "@mui/material/Grid";
 import Footer from "../../components/Footer/Footer.jsx";
 import CoverImage from "../../components/CoverImage/CoverImage.jsx";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
+import PROJECTS from "../../data/projects.jsx";
+import Grid from "@mui/material/Grid";
+import { Box, Chip, Stack } from "@mui/material";
+
+const FILTERS = ["All", "Java", "React", "C#", "JavaScript", "AI"];
 
 function Projects() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const visible =
+    activeFilter === "All"
+      ? PROJECTS
+      : PROJECTS.filter((p) => p.tags.includes(activeFilter));
+
   return (
     <>
       <Navbar />
       <CoverImage title="Projects" />
+
+      <Stack
+        direction="row"
+        spacing={1}
+        justifyContent="center"
+        flexWrap="wrap"
+        sx={{ mt: 4, mb: 2, px: 2, gap: 1 }}
+      >
+        {FILTERS.map((f) => (
+          <Chip
+            key={f}
+            label={f}
+            onClick={() => setActiveFilter(f)}
+            variant={activeFilter === f ? "filled" : "outlined"}
+            color={activeFilter === f ? "primary" : "default"}
+            sx={{
+              fontWeight: activeFilter === f ? 700 : 400,
+              cursor: "pointer",
+              fontSize: "0.9rem",
+              transition: "all 0.2s",
+            }}
+          />
+        ))}
+      </Stack>
+
+      <Box sx={{ minHeight: "8px", textAlign: "center", mb: 1, color: "text.secondary", fontSize: "0.85rem" }}>
+        {visible.length} project{visible.length !== 1 ? "s" : ""}
+      </Box>
+
       <Grid
         container
-        spacing={10}
+        spacing={4}
         direction="row"
-        justifyContent={"center"}
-        alignItems={"center"}
-        sx={{
-          height: "50vh",
-          marginTop: 10,
-        }}
+        justifyContent="center"
+        alignItems="flex-start"
+        sx={{ marginTop: 4, px: { xs: 2, md: 6 } }}
       >
-        <ProjectCard
-          image={"./gif/aiCodeExplainer.gif"}
-          title={"AI Code Explainer"}
-          description={
-            <>
-              A Next.js and TypeScript web app that integrates with the
-              OpenRouter API to deliver AI-powered text generation via the LLaMA
-              3 model to explain code. Implemented API communication with Axios
-              and deployed the project on Vercel - see live app{" "}
-              <a
-                href="https://ai-code-explainer-sigma.vercel.app"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: "orange",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                }}
-              >
-                here.
-              </a>
-            </>
-          }
-          language={"AI · Next.js · TypeScript"}
-          dateCreated={"29.07.2025"}
-          url={"https://github.com/ColtonRandall/ai-code-explainer"}
-        />
-        <ProjectCard
-          image={"./gif/notesApp.gif"}
-          title={"Full Stack Notes App"}
-          description={
-            "Java + Spring Boot + React app to create, view, and delete personal notes with a clean, responsive UI."
-          }
-          language={"Java · Spring Boot · React"}
-          dateCreated={"29.06.2025"}
-          url={"https://github.com/ColtonRandall/notes-app"}
-        />
-
-        <ProjectCard
-          image={"./images/java-weather-app.png"}
-          title={"Weather App"}
-          description={
-            "Console-based Java app that mimics a weather API using Spring Boot and REST, built with layered architecture."
-          }
-          language={"Java · Spring Boot · REST API"}
-          dateCreated={"28.03.2025"}
-          url={
-            "https://github.com/ColtonRandall/java-weather-information-service"
-          }
-        />
-
-        <ProjectCard
-          image={"./images/tictactoe.png"}
-          title={"Tic Tac Toe"}
-          description={
-            "OOP-based C#/.NET console game with a basic AI opponent and game loop logic for win/draw detection."
-          }
-          language={"C# · .NET 7"}
-          dateCreated={"28.02.2025"}
-          url={"https://github.com/ColtonRandall/tic-tac-toe-csharp"}
-        />
-
-        <ProjectCard
-          image={"./images/dev-portfolio-image.png"}
-          title={"This Website / Dev Portfolio"}
-          description={
-            "Personal portfolio site built with React & Material UI; responsive, modular, and evolved from early HTML/CSS work."
-          }
-          language={"React · JavaScript · Material UI"}
-          dateCreated={"01.05.2021"}
-          url={"https://github.com/ColtonRandall/dev-portfolio"}
-        />
-
-        <ProjectCard
-          image={"./images/react-todo.png"}
-          title={"Todo App"}
-          description={
-            "Lightweight React app for task management with persistent state and styled component design."
-          }
-          language={"React · JavaScript"}
-          dateCreated={"31.05.2021"}
-          url={"https://github.com/ColtonRandall/react-todo-app"}
-        />
-
-        <ProjectCard
-          image={"./images/java-contact-book.png"}
-          title={"Contact Book"}
-          description={
-            "Java console CRUD app for managing contacts — a practical refresher in object-oriented programming."
-          }
-          language={"Java · OOP · Console"}
-          dateCreated={"23.03.2025"}
-          url={"https://github.com/ColtonRandall/Java-ContactBook"}
-        />
-
-        <ProjectCard
-          image={"./images/kalah.png"}
-          title={"Kalah Board Game"}
-          description={
-            "Advanced Java console game from a postgraduate assignment, showcasing AI difficulty levels and OOP principles."
-          }
-          language={"Java · OOP · Game Logic"}
-          dateCreated={"07.09.2021"}
-          url={"https://github.com/ColtonRandall/Kalah"}
-        />
-
-        <ProjectCard
-          image={"./images/rpgGame.jpg"}
-          title={"Console RPG App"}
-          description={
-            "Console-based C# RPG game using OOP; features include player creation, enemy combat, and game progression."
-          }
-          language={"C# · OOP · Console"}
-          dateCreated={"10.10.2022"}
-          url={"https://github.com/ColtonRandall/console-rpg"}
-        />
-
-        <ProjectCard
-          image={"./images/paperScissorsRock.png"}
-          title={"Paper Scissors Rock"}
-          description={
-            "JavaScript UI game with interactive buttons, score tracking, and a win declaration after 5 rounds."
-          }
-          language={"JavaScript · HTML · CSS"}
-          dateCreated={"11.10.2023"}
-          url={"https://github.com/ColtonRandall/rock-paper-scissors"}
-        />
-
-        <ProjectCard
-          image={"./images/bulls.png"}
-          title={"Bulls & Cows Game"}
-          description={
-            "OOP-based number guessing game in Java, featuring difficulty levels, computer logic, and .txt file output."
-          }
-          language={"Java · File I/O · OOP"}
-          dateCreated={"28.04.2021"}
-          url={"https://github.com/ColtonRandall/Bulls-And-Cows-Game"}
-          height="50px"
-        />
-
+        {visible.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
         <Footer />
       </Grid>
     </>
