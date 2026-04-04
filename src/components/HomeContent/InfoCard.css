@@ -1,6 +1,7 @@
 .section-card {
   border-radius: 18px;
-  box-shadow: 0 1px 8px black;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
   background: var(--card-bg, #fff);
   padding: 1.2rem 0;
@@ -15,7 +16,7 @@
 
 .section-card:hover {
   transform: translateY(-6px);
-  transition: 0.5s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 900px) {

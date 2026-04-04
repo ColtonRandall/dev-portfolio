@@ -1,5 +1,5 @@
 #header {
-  color: var(--text-colour);
+  color: var(--text);
   margin: auto;
   display: block;
   position: relative;
@@ -32,9 +32,7 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25),
     0 1px 0.5px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  animation-delay: 1.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
+  animation: mainImageFadeIn 1s ease 1.5s both;
 }
 
 @keyframes mainImageFadeIn {
@@ -55,12 +53,12 @@
   100% {
     opacity: 1;
     color: tomato;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
   }
 }
 
 .subTitle {
-  color: var(--text-colour);
+  color: var(--text);
   font-size: 3.5rem;
   margin: auto;
   text-align: left;
@@ -71,14 +69,15 @@
 .tagline {
   display: inline-block;
   font-size: 1rem;
-  margin: 0.8rem 0 0 0;
+  margin: 0.8rem 0 0.6rem 0;
   color: var(--text);
-  font-weight: 400;
+  font-weight: 500;
   padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  background: rgba(255, 99, 71, 0.08);
   border: 1.5px solid tomato;
   border-radius: 999px;
   opacity: 0.85;
-  max-width: 45%;
+  max-width: 40%;
 }
 
 #location {
@@ -116,6 +115,10 @@
     margin: 2rem auto 1rem auto;
     width: 15rem;
   }
+  .tagline {
+    max-width: 90%;
+  }
+
   #location {
     margin: 1.5rem;
     justify-content: center;

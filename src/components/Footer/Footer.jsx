@@ -6,7 +6,7 @@ function Footer() {
     return date.getFullYear();
   };
 
-  return <footer>© Colton Randall - 2025</footer>;
+  return <footer>© Colton Randall - {currentYear()}</footer>;
 }
 
 export default Footer;

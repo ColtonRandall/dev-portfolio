@@ -1,6 +1,7 @@
 :root {
   --textColour: rgb(200, 200, 200);
-  --navColour: #333;
+  --navTextColour: #333;
+  --navColour: rgba(255, 255, 255, 0.8);
   --shadow: 1px 1px 1px black;
   --textShadow: 1px 1px 1px black;
   --font: "Nunito Sans", sans-serif;
@@ -9,6 +10,8 @@
 }
 
 .dark {
+  --navTextColour: rgb(152, 204, 179);
+  --navColour: rgba(39, 39, 39, 0.92);
   --bg: #272727ff;
   --text: #e0e0e0;
 }

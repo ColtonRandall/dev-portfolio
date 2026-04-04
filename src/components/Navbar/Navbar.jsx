@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import { useState } from "react";
+import { useTheme } from "../ThemeToggle/ThemeProvider";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
@@ -8,6 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useMediaQuery, IconButton, Menu, MenuItem, Box } from "@mui/material";
 
 function Navbar() {
+  const { theme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const isMobile = useMediaQuery("(max-width:1000px)");
@@ -151,20 +153,19 @@ function Navbar() {
               isActive ? "home-button active" : "home-button"
             }
           >
-            <HomeRoundedIcon
-              sx={{
+            {({ isActive }) => (
+              <span style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
                 margin: "auto",
-                fontSize: 27,
-                "&.active": {
-                  background: "#c2c5c7",
-                  color: "black",
-                },
-                "&:hover": {
-                  background: "tomato",
-                  color: "white",
-                },
-              }}
-            />
+                color: isActive
+                  ? theme === "dark" ? "black" : "white"
+                  : theme === "dark" ? "rgb(152, 204, 179)" : "#333",
+              }}>
+                <HomeRoundedIcon sx={{ fontSize: 27 }} />
+              </span>
+            )}
           </NavLink>
         </nav>
       )}
