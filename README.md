@@ -1,12 +1,10 @@
-# Colton’s Developer Portfolio | Website
-
-<br/>
+# Colton's Developer Portfolio
 
 🔗 View the live site → [coltonrandall.com](https://coltonrandall.com)
 
-Welcome to my personal developer portfolio. This is a space where you can learn more about my professional background, training, and explore the projects I’ve built 🔨.
+Personal developer portfolio built with React and Material UI. A space to showcase my professional background, career timeline, and the projects I've built.
 
-This site also serves as my development sandbox, where I consolidate modern web knowledge across frameworks and languages, while experimenting with new tools, techniques, and UI patterns.
+This site also serves as my development sandbox — a place to consolidate modern web knowledge and experiment with new tools, techniques, and UI patterns.
 
 <br/>
 
@@ -41,76 +39,59 @@ Mobile
 
 <br/>
 
+### Features
+
+- Dark / light mode toggle
+- Typewriter animation cycling through role titles
+- Project gallery with filterable tech stack chips
+- Career timeline
+- Blog with markdown-rendered posts
+- Responsive design — mobile & tablet friendly
+- Automated CI/CD via GitHub Actions
+
+<br/>
+
 ### ⚙️ Tech Stack
 
-- Framework: React
-- UI Library: Material UI (MUI)
-- Deployment: GitHub Actions + GitHub Pages
-- Infrastructure as Code: Terraform for AWS S3 static website hosting
-- Responsive Design: Mobile & tablet-friendly layouts
+- **Framework:** React + Vite
+- **Routing:** React Router
+- **UI Library:** Material UI (MUI)
+- **Deployment:** GitHub Pages via GitHub Actions
+- **Infrastructure:** Terraform for AWS S3 static hosting (experimental)
 
-This version is a complete overhaul of my original static HTML/CSS/JS site, which you can still view here: [old-portfolio-website](https://github.com/ColtonRandall/old-portfolio-website).
+<br/>
+
+### 🚀 Getting Started
+
+```sh
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
+```
+
+For AWS deployment via Terraform:
+
+```sh
+cd infra
+terraform apply
+```
+
+> Or use `npm run deploy:all` to deploy to both GitHub Pages and AWS in one step.
 
 <br/>
 
 ### 🌐 AWS Integration
 
-This project also includes a Terraform setup for deploying the site to AWS S3. The configuration automates the creation of an S3 bucket, enables static website hosting, and uploads the production-ready files from the `dist` directory. The intention is for this project to be fully moved to the cloud in the near future.
+Includes a Terraform setup for deploying to AWS S3 with static website hosting. The intention is to fully migrate to AWS with Route 53 for domain management and CloudFront for CDN and HTTPS support.
 
 <br/>
 
-### 🚀 Deployment Workflow
-
-This project is currently deployed to **GitHub Pages** as the primary production site, with an experimental deployment to **AWS S3** using Terraform. Below is the workflow for updating the site:
-
-1. **Make Code Changes**:
-
-   - Edit the code in the `src/` directory.
-
-2. **Test Locally**:
-
-   - Run the development server:
-     ```sh
-     npm run dev
-     ```
-
-3. **Build the Project**:
-
-   - Generate production-ready files:
-     ```sh
-     npm run build
-     ```
-
-4. **Deploy to GitHub Pages**:
-
-   - Update the live site:
-     ```sh
-     npm run deploy
-     ```
-
-5. **(Optional for now) Deploy to AWS S3**:
-
-   - Deploy the same build to AWS for testing:
-
-     ```sh
-     cd infra
-     terraform apply
-     ```
-
-     > alternatively, use the `package.json` shortcut to deploy to both GitHub pages and AWS.
-
-     ```sh
-     npm run deploy:all
-     ```
-  - Remember to always run `npm run build` before doing a `terraform apply` 
-
-6. **Future Plans**:
-   - Transition the primary deployment to AWS S3 with a custom domain and HTTPS support.
-   - Integrate AWS Route 53 for domain management.
-   - Use AWS CloudFront for content delivery and caching.
-
-<br/>
-
-### 🚧 Work in Progress
-
-This site evolves alongside my career, both in content and code. More projects, UI refinements, and interactive features will be added as I learn more.
+This is a complete overhaul of my original static HTML/CSS/JS site — [old-portfolio-website](https://github.com/ColtonRandall/old-portfolio-website).
