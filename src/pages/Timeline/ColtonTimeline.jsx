@@ -72,7 +72,7 @@ function ColtonTimeline() {
           yearEntry="2026 (Mar)"
           iconComponent={<FlightTakeoffIcon />}
           title="Moved to Melbourne"
-          subtext="🇦🇺 New Zealand → Australia"
+          subtext="🇦🇺 New Zealand → 🇦🇺 Australia"
         />
 
         <TimelineComponent
@@ -235,8 +235,8 @@ function ColtonTimeline() {
         <TimelineComponent
           yearEntry="1998"
           iconComponent={<FlightTakeoffIcon />}
-          title="Family move overseas"
-          subtext="🇨🇦 Canada to 🇳🇿 New Zealand"
+          title="Moved to New Zealand"
+          subtext="🇨🇦 Canada → 🇳🇿 New Zealand"
         />
 
         <TimelineComponent

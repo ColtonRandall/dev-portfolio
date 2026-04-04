@@ -1,5 +1,35 @@
 const PROJECTS = [
   {
+    image: "./images/octocat.png",
+    title: "Task Manager API",
+    description:
+      "Spring Boot REST API featuring JPA/H2 persistence, soft deletes, event publishing, Docker containerisation, and automated CI/CD via GitHub Actions.",
+    language: "Java · Spring Boot · Docker",
+    dateCreated: "2025",
+    url: "https://github.com/ColtonRandall/task-manager-api",
+    tags: ["Java"],
+  },
+  {
+    image: "./images/octocat.png",
+    title: "SMS Routing Service",
+    description:
+      "Routes outbound SMS messages to the correct carrier (AU, NZ, Global) based on phone prefix, with opt-out compliance and delivery state tracking.",
+    language: "Java · Spring Boot · REST API",
+    dateCreated: "01.11.2026",
+    url: "https://github.com/ColtonRandall/sms-routing-service",
+    tags: ["Java"],
+  },
+  {
+    image: "./images/octocat.png",
+    title: "CI/CD Release Retention",
+    description:
+      "A C#/.NET 8 utility that determines which software releases to retain based on recent deployment activity, with a full unit test suite.",
+    language: "C# · .NET 8 · Unit Testing",
+    dateCreated: "12.11.2025",
+    url: "https://github.com/ColtonRandall/cicd-release-retention-project",
+    tags: ["C#"],
+  },
+  {
     image: "./gif/aiCodeExplainer.gif",
     title: "AI Code Explainer",
     description: (
@@ -12,7 +42,11 @@ const PROJECTS = [
           href="https://ai-code-explainer-sigma.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ color: "orange", textDecoration: "none", fontWeight: "bold" }}
+          style={{
+            color: "orange",
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
         >
           here.
         </a>
@@ -32,16 +66,6 @@ const PROJECTS = [
     dateCreated: "29.06.2025",
     url: "https://github.com/ColtonRandall/notes-app",
     tags: ["Java", "React"],
-  },
-  {
-    image: "./images/java-weather-app.png",
-    title: "Weather App",
-    description:
-      "Console-based Java app that mimics a weather API using Spring Boot and REST, built with layered architecture.",
-    language: "Java · Spring Boot · REST API",
-    dateCreated: "28.03.2025",
-    url: "https://github.com/ColtonRandall/java-weather-information-service",
-    tags: ["Java"],
   },
   {
     image: "./images/tictactoe.png",
@@ -87,7 +111,7 @@ const PROJECTS = [
     image: "./images/bulls.png",
     title: "Bulls & Cows Game",
     description:
-      "OOP-based number guessing game in Java, featuring difficulty levels, computer logic, and .txt file output.",
+      "Java number-guessing game built as a university assignment, featuring difficulty levels, computer logic, and .txt file output.",
     language: "Java · File I/O · OOP",
     dateCreated: "28.04.2021",
     url: "https://github.com/ColtonRandall/Bulls-And-Cows-Game",
