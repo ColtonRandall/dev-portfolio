@@ -46,7 +46,7 @@ function Navbar() {
             top: 10,
             right: 0,
             zIndex: 20,
-            background: "transparent",
+            // background: "transparent",
             boxShadow: "none",
             width: "100%",
             display: "flex",
@@ -154,15 +154,21 @@ function Navbar() {
             }
           >
             {({ isActive }) => (
-              <span style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                margin: "auto",
-                color: isActive
-                  ? theme === "dark" ? "black" : "white"
-                  : theme === "dark" ? "rgb(152, 204, 179)" : "#333",
-              }}>
+              <span
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  margin: "auto",
+                  color: isActive
+                    ? theme === "dark"
+                      ? "black"
+                      : "white"
+                    : theme === "dark"
+                      ? "rgb(152, 204, 179)"
+                      : "#333",
+                }}
+              >
                 <HomeRoundedIcon sx={{ fontSize: 27 }} />
               </span>
             )}
