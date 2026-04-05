@@ -49,7 +49,7 @@ function Icons({iconColor = "#6A9F85" }) {
 }
 
 Icons.propTypes = {
-  size: PropTypes.number,
+  iconColor: PropTypes.string,
 };
 
 export default Icons;

@@ -1,12 +1,9 @@
 import "./Footer.css";
 
 function Footer() {
-  const currentYear = () => {
-    const date = new Date();
-    return date.getFullYear();
-  };
+  const currentYear = new Date().getFullYear();
 
-  return <footer>© Colton Randall - {currentYear()}</footer>;
+  return <footer>© Colton Randall - {currentYear}</footer>;
 }
 
 export default Footer;

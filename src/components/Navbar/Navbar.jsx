@@ -10,19 +10,16 @@ import { useMediaQuery, IconButton, Menu, MenuItem, Box } from "@mui/material";
 
 function Navbar() {
   const { theme } = useTheme();
-  const [menuOpen, setMenuOpen] = useState(false);
-
   const isMobile = useMediaQuery("(max-width:1000px)");
   const [anchorEl, setAnchorEl] = useState(null);
+  const menuOpen = Boolean(anchorEl);
 
   const handleMenuOpen = (e) => {
     setAnchorEl(e.currentTarget);
-    setMenuOpen(true);
   };
 
   const handleMenuClose = () => {
     setAnchorEl(null);
-    setMenuOpen(false);
   };
 
   const navLinks = [
