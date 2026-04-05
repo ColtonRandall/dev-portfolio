@@ -1,5 +1,5 @@
 import "./HomeContent.css";
-import { Box } from "@mui/material";
+import { Box, Tooltip } from "@mui/material";
 import BuildIcon from "@mui/icons-material/Build";
 import LandscapeIcon from "@mui/icons-material/Landscape";
 import { blue, green } from "@mui/material/colors";
@@ -23,7 +23,12 @@ function HomeContent() {
       }}
     >
       <InfoCard
-        icon={(props) => <BuildIcon {...props} sx={{ ...props.sx, color: blue[700], fontSize: 52 }} />}
+        icon={(props) => (
+          <BuildIcon
+            {...props}
+            sx={{ ...props.sx, color: blue[700], fontSize: 52 }}
+          />
+        )}
         title="My Toolbox"
         subTitle="My core technical experience and skills."
         text={[
@@ -36,21 +41,30 @@ function HomeContent() {
       />
       <InfoCard
         icon={() => (
-          <img
-            src="/images/sinch.jpg"
-            alt="Sinch"
-            style={{
-              width: 45,
-              height: 45,
-              objectFit: "contain",
-              borderRadius: 4,
-              border: "1px solid rgba(0,0,0,0.3)",
-              boxShadow: "0 1px 4px rgba(0,0,0,0.2)",
-            }}
-          />
+          <Tooltip title="Sinch" placement="top">
+            <a
+              href="https://www.sinch.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/images/sinch.jpg"
+                alt="Sinch"
+                className="currentRole-logo"
+                style={{
+                  width: 45,
+                  height: 45,
+                  objectFit: "contain",
+                  borderRadius: 4,
+                  border: "1px solid rgba(0,0,0,0.3)",
+                  boxShadow: "0 1px 4px rgba(0,0,0,0.2)",
+                }}
+              />
+            </a>
+          </Tooltip>
         )}
         title="Current Role"
-        subTitle={"Software Engineer II"}
+        subTitle={"Software Engineer II @ Sinch"}
         text={[
           "Java 21+, Spring Boot, AWS",
           "CloudFormation, RDS, SQS",
@@ -61,7 +75,10 @@ function HomeContent() {
       />
       <InfoCard
         icon={(props) => (
-          <LandscapeIcon {...props} sx={{ ...props.sx, color: green[500], fontSize: 52, mb: 0 }} />
+          <LandscapeIcon
+            {...props}
+            sx={{ ...props.sx, color: green[500], fontSize: 52, mb: 0 }}
+          />
         )}
         title="Beyond Work"
         subTitle="What inspires me and keeps me balanced."

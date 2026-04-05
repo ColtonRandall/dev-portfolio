@@ -17,3 +17,17 @@
 .section-card ul {
   margin-top: 1.8rem;
 }
+
+.currentRole-logo {
+  display: block;
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.currentRole-logo:hover {
+  border: 2px solid rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  transform: scale(1.07);
+}
