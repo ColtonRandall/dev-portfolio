@@ -1,9 +1,8 @@
 import "./HomeContent.css";
 import { Box } from "@mui/material";
 import BuildIcon from "@mui/icons-material/Build";
-import StarsIcon from "@mui/icons-material/Stars";
 import LandscapeIcon from "@mui/icons-material/Landscape";
-import { orange, blue, green } from "@mui/material/colors";
+import { blue, green } from "@mui/material/colors";
 import InfoCard from "./InfoCard";
 
 function HomeContent() {
@@ -24,7 +23,7 @@ function HomeContent() {
       }}
     >
       <InfoCard
-        icon={(props) => <BuildIcon sx={{ color: blue[700] }} {...props} />}
+        icon={(props) => <BuildIcon {...props} sx={{ ...props.sx, color: blue[700], fontSize: 52 }} />}
         title="My Toolbox"
         subTitle="My core technical experience and skills."
         text={[
@@ -36,20 +35,34 @@ function HomeContent() {
         bgcolor="#bfdbfe"
       />
       <InfoCard
-        icon={(props) => <StarsIcon sx={{ color: orange[700] }} {...props} />}
+        icon={() => (
+          <img
+            src="/images/sinch.jpg"
+            alt="Sinch"
+            style={{
+              width: 45,
+              height: 45,
+              objectFit: "contain",
+              borderRadius: 4,
+              border: "1px solid rgba(0,0,0,0.3)",
+              boxShadow: "0 1px 4px rgba(0,0,0,0.2)",
+            }}
+          />
+        )}
         title="Current Role"
-        subTitle={"Software Engineer at Sinch, Melbourne"}
+        subTitle={"Software Engineer II"}
         text={[
           "Java 21+, Spring Boot, AWS",
           "CloudFormation, RDS, SQS",
           "Queue-driven architecture & system design",
           "DevOps & cloud-native development",
         ]}
-        bgcolor="#fcd6a0"
-        iconColor={orange[700]}
+        bgcolor="#FFF194"
       />
       <InfoCard
-        icon={(props) => <LandscapeIcon sx={{ color: green[700] }} {...props} />}
+        icon={(props) => (
+          <LandscapeIcon {...props} sx={{ ...props.sx, color: green[500], fontSize: 52, mb: 0 }} />
+        )}
         title="Beyond Work"
         subTitle="What inspires me and keeps me balanced."
         text={[
