@@ -10,12 +10,21 @@ const PREVIEW_CHAR_LIMIT = 400;
 
 const BlogPost = ({ title, description, file, previewOnly, readMoreLink }) => {
   const [content, setContent] = useState("");
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch(file)
-      .then((res) => res.text())
-      .then((text) => setContent(text));
+      .then((res) => {
+        if (!res.ok) throw new Error(`Failed to load post (${res.status})`);
+        return res.text();
+      })
+      .then((text) => setContent(text))
+      .catch((err) => setError(err.message));
   }, [file]);
+
+  if (error) {
+    return <Box className="blog-post-container"><p>Could not load post: {error}</p></Box>;
+  }
 
   const hasMore = content.length > PREVIEW_CHAR_LIMIT;
   const canonicalUrl = `https://coltonrandall.com${window.location.pathname}`;
