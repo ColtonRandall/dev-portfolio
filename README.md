@@ -17,15 +17,16 @@ A single static page built for recruiters and hiring managers. It covers my expe
 
 ```bash
 npm install
-npm run dev
+npm run dev     # local site with hot reload
+npm test        # unit tests for the demo's routing rules
+npm run build   # type-check and production build
 ```
 
 ## Deploy
 
-```bash
-npm run deploy        # builds and publishes dist/ to GitHub Pages (gh-pages branch)
-npm run deploy:aws    # optional: uploads dist/ to the S3 bucket defined in infra/
-```
+Merging to `main` deploys automatically: GitHub Actions runs the tests, builds the site and publishes it to GitHub Pages. Pull requests run the same checks without deploying.
+
+To publish by hand instead, run `npm run deploy`.
 
 ## Files
 
@@ -34,9 +35,10 @@ npm run deploy:aws    # optional: uploads dist/ to the S3 bucket defined in infr
 | `index.html` | Page content and structure |
 | `src/styles.css` | All styles, including the light and dark themes |
 | `src/sms-routing.ts` | Routing rules for the hero demo, mirroring the Java service |
+| `src/sms-routing.test.ts` | Unit tests for those rules, matching the Java test cases |
 | `src/main.ts` | Wires up the demo, theme toggle and copy-email button |
 | `src/easter-egg.ts` | Something for the curious. Start with the plane on the timeline |
 | `public/docs/` | The CV linked from the Résumé button |
 | `public/images/og.png` | Link preview image for LinkedIn, Slack and similar |
 | `public/404.html` | Sends old or broken links back to the home page |
-| `infra/` | Terraform for the optional S3 deployment |
+| `.github/workflows/ci.yml` | Tests, build and automatic deploy |
