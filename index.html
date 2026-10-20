@@ -1,21 +1,66 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Colton Randall</title>
-    <link rel="icon" type="image/png" href="/images/me-circle.png" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Colton Randall · Backend Software Engineer</title>
+    <meta
+      name="description"
+      content="Colton Randall, backend software engineer in Melbourne building messaging infrastructure at Sinch with Java, Spring and AWS. Previously Westpac and Xero."
+    />
+    <link rel="canonical" href="https://coltonrandall.com/" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coltonrandall.com/" />
+    <meta
+      property="og:title"
+      content="Colton Randall · Backend Software Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Backend engineer building messaging infrastructure at Sinch. Java, Spring and AWS. Previously Westpac and Xero."
+    />
     <meta
       property="og:image"
-      content="https://coltonrandall.com/images/me-cirlce.png"
+      content="https://coltonrandall.com/images/og.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
-      rel="stylesheet"
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="theme-color"
+      content="#F3F5F8"
+      media="(prefers-color-scheme: light)"
     />
-    <!-- Google tag (gtag.js) -->
+    <meta
+      name="theme-color"
+      content="#0F131A"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Colton Randall",
+        "jobTitle": "Software Engineer",
+        "worksFor": { "@type": "Organization", "name": "Sinch" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Melbourne",
+          "addressCountry": "AU"
+        },
+        "url": "https://coltonrandall.com",
+        "sameAs": [
+          "https://github.com/ColtonRandall",
+          "https://www.linkedin.com/in/coltonrandall/"
+        ]
+      }
+    </script>
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-MB7ZH4MXJP"
@@ -26,15 +71,506 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
-      // Only run GA if not flagged as dev
-      if (!localStorage.getItem("disableGA")) {
+      try {
+        if (!localStorage.getItem("disableGA")) gtag("config", "G-MB7ZH4MXJP");
+      } catch (e) {
         gtag("config", "G-MB7ZH4MXJP");
       }
     </script>
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch (e) {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
+    <div class="wrap">
+      <svg class="routes" viewBox="0 0 1400 700" aria-hidden="true">
+        <path
+          id="r1"
+          d="M-20 120 C 300 120, 520 260, 900 250 S 1300 160, 1420 190"
+        />
+        <path
+          id="r2"
+          d="M-20 330 C 260 300, 560 380, 900 300 S 1250 420, 1420 380"
+        />
+        <path
+          id="r3"
+          d="M-20 520 C 340 520, 600 420, 900 350 S 1200 560, 1420 560"
+        />
+        <circle r="3.5">
+          <animateMotion dur="9s" repeatCount="indefinite">
+            <mpath href="#r1" />
+          </animateMotion>
+        </circle>
+        <circle r="3.5" class="w">
+          <animateMotion dur="12s" begin="-4s" repeatCount="indefinite">
+            <mpath href="#r2" />
+          </animateMotion>
+        </circle>
+        <circle r="3.5">
+          <animateMotion dur="10s" begin="-7s" repeatCount="indefinite">
+            <mpath href="#r3" />
+          </animateMotion>
+        </circle>
+      </svg>
+      <div class="glow" aria-hidden="true"></div>
+      <div class="glow w" aria-hidden="true"></div>
+
+      <nav>
+        <div class="navlinks">
+          <a href="#work">Experience</a><a href="#projects">Projects</a
+          ><a href="#contact">Contact</a>
+        </div>
+        <button
+          class="theme"
+          id="theme"
+          type="button"
+          aria-label="Switch between light and dark mode"
+        >
+          <svg
+            class="moon"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+          <svg
+            class="sun"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+            />
+          </svg>
+        </button>
+      </nav>
+
+      <header class="hero" id="top">
+        <div class="hero-text">
+          <img class="avatar" src="/images/me.webp" alt="Colton Randall" />
+          <div class="title-block">
+            <h1>Colton Randall</h1>
+            <p class="role-line">Backend software engineer at <em>Sinch</em></p>
+            <span class="status"><i></i>Melbourne, Australia</span>
+          </div>
+          <p class="lede">
+            Nearly five years shipping production systems at Xero, Westpac and
+            Sinch. Java, Spring and AWS day to day, with a full-stack background
+            in C# and React.
+          </p>
+          <div class="ctas">
+            <a
+              class="btn primary"
+              href="/docs/Colton%20Randall%20CV%202026.pdf"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"
+                />
+                <path d="M14 3v5h5M9 13h6M9 17h6" /></svg
+              >Résumé</a
+            >
+            <a class="btn" href="https://github.com/ColtonRandall">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.35 1.09 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.5 9.5 0 0 1 12 6.84c.85 0 1.7.11 2.5.34 1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"
+                /></svg
+              >GitHub</a
+            >
+            <a class="btn" href="https://www.linkedin.com/in/coltonrandall/">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"
+                /></svg
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="console"
+          aria-label="Interactive demo of my SMS routing service"
+        >
+          <div class="c-head">
+            <span class="dots"><i></i><i></i><i></i></span
+            ><span>sms-routing-service · try it</span>
+          </div>
+          <form class="c-form" id="c-form" autocomplete="off">
+            <input
+              id="num"
+              name="num"
+              inputmode="tel"
+              value="+61 412 345 678"
+              aria-label="Destination phone number"
+            />
+            <button type="submit">Send</button>
+          </form>
+          <div class="presets" id="presets">
+            <button type="button" data-n="+61 412 345 678">AU</button>
+            <button type="button" data-n="+64 21 555 0199">NZ</button>
+            <button type="button" data-n="+44 7700 900123">UK</button>
+            <button type="button" data-n="+61 400 000 000">opted out</button>
+            <button type="button" data-n="+61 41abc">invalid</button>
+          </div>
+          <ol class="trace" id="trace" aria-live="polite"></ol>
+          <div class="c-foot">
+            <span>Same rules as the real service</span
+            ><a
+              href="https://github.com/ColtonRandall/sms-routing-service/blob/main/src/main/java/com/smsrouting/service/CarrierService.java"
+              >CarrierService.java ↗</a
+            >
+          </div>
+        </div>
+      </header>
+
+      <div class="highlights" aria-label="Highlights">
+        <div class="hl">
+          <strong>Hackathon <em>winner</em></strong
+          ><span
+            ><b>Xero:</b> won, and the feature shipped to production.<br /><b
+              >Sinch:</b
+            >
+            led and pitched my team's entry.</span
+          >
+        </div>
+        <div class="hl">
+          <strong>Intern <em>→</em> Intermediate</strong
+          ><span>Four roles at Xero in under three years.</span>
+        </div>
+        <div class="hl">
+          <strong>60% <em>→</em> 80%</strong
+          ><span>Test coverage on the Westpac services I modernised.</span>
+        </div>
+      </div>
+
+      <section class="about" aria-labelledby="about-h">
+        <div class="label" id="about-h">About</div>
+        <div class="content">
+          <p>
+            I came to software sideways. After a biochemistry degree I earned my
+            private pilot licence and was in flight school when COVID grounded
+            aviation in 2020. I taught myself to code, worked as a
+            bioinformatics research assistant, finished a postgraduate
+            certificate in IT, and joined Xero as an intern in 2021.
+          </p>
+          <p>
+            Since then I've grown from intern to intermediate engineer across
+            full-stack SaaS at Xero, enterprise banking at Westpac, and now
+            communications infrastructure at Sinch, where my team owns services
+            from design through to production.
+          </p>
+          <p>
+            Outside work I'm usually behind a camera, playing guitar, or out
+            with my wife and our golden retriever.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" aria-labelledby="work-h">
+        <div class="label" id="work-h">Experience</div>
+        <div class="content">
+          <ol class="tl">
+            <li class="now">
+              <div class="role">
+                <h3>Software Engineer II</h3>
+                <span class="when">Mar 2026 – now</span>
+              </div>
+              <div class="org"><b>Sinch</b> · Melbourne</div>
+              <ul class="pts">
+                <li>
+                  Raised link-shortening limits so customers can submit longer
+                  URLs, cutting those failures in the dead letter queue by about
+                  90%.
+                </li>
+                <li>
+                  Added rate limiting to sender throttling so messages flow
+                  evenly through the pipeline.
+                </li>
+                <li>Upgraded a core database three major versions.</li>
+                <li>
+                  Run incident fire drills for the team and buddy new starters.
+                </li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Java</span><span class="chip">Spring</span
+                ><span class="chip">AWS</span><span class="chip">SQS</span
+                ><span class="chip">CloudFormation</span
+                ><span class="chip">Docker</span>
+              </div>
+            </li>
+            <li
+              class="move"
+              aria-label="Relocated from Auckland to Melbourne in March 2026"
+            >
+              <span class="plane" aria-hidden="true"
+                ><svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"
+                  /></svg
+              ></span>
+              <span class="move-text">Auckland → Melbourne · Mar 2026</span>
+            </li>
+            <li>
+              <div class="role">
+                <h3>Software Engineer</h3>
+                <span class="when">Apr 2025 – Mar 2026</span>
+              </div>
+              <div class="org"><b>Westpac NZ</b> · Auckland</div>
+              <ul class="pts">
+                <li>
+                  Shipped customer-facing features end to end, including
+                  transaction enrichment and document downloads, from REST API
+                  design through to production.
+                </li>
+                <li>
+                  Built Java SDK features that standardised internal APIs across
+                  the bank.
+                </li>
+                <li>
+                  Raised test coverage from 60% to 80% while modernising backend
+                  services.
+                </li>
+                <li>
+                  Mentored junior engineers and worked with solutions architects
+                  on Payments and Customer Alerts designs.
+                </li>
+              </ul>
+              <div class="chips">
+                <span class="chip">Java 17</span
+                ><span class="chip">Spring Boot</span
+                ><span class="chip">Kubernetes</span
+                ><span class="chip">Terraform</span>
+              </div>
+            </li>
+            <li>
+              <div class="role">
+                <h3>
+                  Xero <span class="tag">4 roles · intern to intermediate</span>
+                </h3>
+                <span class="when">Nov 2021 – Apr 2025</span>
+              </div>
+              <ol class="ladder">
+                <li>
+                  <div class="step">
+                    <span>Intermediate Engineer</span
+                    ><span class="when">Jul 2024 – Apr 2025</span>
+                  </div>
+                  <p>
+                    Won the company hackathon with a Chart of Accounts export
+                    that shipped to production. Raised test coverage 40% on
+                    legacy React code.
+                  </p>
+                </li>
+                <li>
+                  <div class="step">
+                    <span>Associate Engineer</span
+                    ><span class="when">Feb 2023 – Jul 2024</span>
+                  </div>
+                  <p>
+                    Improved six migration tools that move accounting practices
+                    onto Xero. Mentored a graduate and led incident response.
+                  </p>
+                </li>
+                <li>
+                  <div class="step">
+                    <span>Graduate Engineer</span
+                    ><span class="when">Feb 2022 – Feb 2023</span>
+                  </div>
+                  <p>
+                    Shipped full-stack features across several teams, learning
+                    TDD, pairing and code review.
+                  </p>
+                </li>
+                <li>
+                  <div class="step">
+                    <span>Intern</span
+                    ><span class="when">Nov 2021 – Feb 2022</span>
+                  </div>
+                  <p>
+                    Parallelised API calls to speed up a service and split
+                    feature flags into their own service.
+                  </p>
+                </li>
+              </ol>
+              <div class="chips">
+                <span class="chip">C# / .NET</span
+                ><span class="chip">React</span
+                ><span class="chip">TypeScript</span
+                ><span class="chip">AWS</span
+                ><span class="chip">New Relic</span>
+              </div>
+            </li>
+            <li class="origin">
+              <div class="role">
+                <h3>Career change</h3>
+                <span class="when">2020 – 2021</span>
+              </div>
+              <p>
+                Bioinformatics research assistant at Landcare Research and the
+                University of Auckland, using Python for genome assembly and
+                data quality work. Completed a Postgraduate Certificate in IT
+                with a Certificate of Outstanding Achievement.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="projects" aria-labelledby="proj-h">
+        <div class="label" id="proj-h">Projects</div>
+        <div class="content">
+          <div class="projects">
+            <div class="proj">
+              <h3>
+                <a href="https://github.com/ColtonRandall/sms-routing-service"
+                  >SMS Routing Service</a
+                >
+              </h3>
+              <p>
+                Routes outbound SMS by number prefix, load-balancing AU traffic
+                across two carriers, blocking opted-out numbers and tracking
+                delivery state. Thread-safe in-memory store.
+              </p>
+              <div class="meta">
+                <span class="stack">Java 21 · Spring Boot</span
+                ><a href="#top">Try it above ↑</a>
+              </div>
+            </div>
+            <div class="proj">
+              <h3>
+                <a href="https://github.com/ColtonRandall/task-manager-api"
+                  >Task Manager API</a
+                >
+              </h3>
+              <p>
+                REST API with JPA persistence, soft deletes, domain events with
+                listeners, dev and prod profiles, Actuator health checks and a
+                Docker image.
+              </p>
+              <div class="meta">
+                <span class="stack">Java 21 · Spring Boot · Docker</span
+                ><span class="proof">17 tests · CI</span>
+              </div>
+            </div>
+            <div class="proj">
+              <h3>
+                <a
+                  href="https://github.com/ColtonRandall/spotify-discover-weekly-retention-app"
+                  >Discover Weekly Saver</a
+                >
+              </h3>
+              <p>
+                Spotify wipes your Discover Weekly every Monday. This copies the
+                tracks into a playlist you keep, signing in through Spotify with
+                OAuth2.
+              </p>
+              <div class="meta">
+                <span class="stack">Java · Spring Security · OAuth2</span
+                ><span class="proof">CI</span>
+              </div>
+            </div>
+            <div class="proj">
+              <h3>
+                <a href="https://github.com/ColtonRandall/ai-code-explainer"
+                  >AI Code Explainer</a
+                >
+              </h3>
+              <p>
+                Paste in code and get a plain-English explanation from an LLM.
+                Next.js front end calling the OpenRouter API, deployed on
+                Vercel.
+              </p>
+              <div class="meta">
+                <span class="stack">Next.js · TypeScript</span
+                ><a href="https://ai-code-explainer-sigma.vercel.app"
+                  >Live demo ↗</a
+                >
+              </div>
+            </div>
+          </div>
+          <a
+            class="more"
+            href="https://github.com/ColtonRandall?tab=repositories"
+            >All repositories on GitHub ↗</a
+          >
+        </div>
+      </section>
+
+      <section aria-labelledby="skills-h">
+        <div class="label" id="skills-h">Toolbox</div>
+        <div class="content">
+          <div class="skills">
+            <div>
+              <h3>Languages</h3>
+              <ul>
+                <li>Java</li>
+                <li>C# / .NET</li>
+                <li>TypeScript</li>
+                <li>SQL</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Backend</h3>
+              <ul>
+                <li>Spring, Spring Boot</li>
+                <li>REST APIs</li>
+                <li>Event-driven / SQS</li>
+                <li>Microservices</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Cloud &amp; delivery</h3>
+              <ul>
+                <li>AWS (ECS, RDS, Lambda)</li>
+                <li>CloudFormation</li>
+                <li>Docker, Kubernetes</li>
+                <li>Buildkite, Datadog</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-h">
+        <div class="label">Contact</div>
+        <div class="content">
+          <div class="contact-card">
+            <h2 id="contact-h">Say hello.</h2>
+            <p>The quickest way to reach me is email or LinkedIn.</p>
+            <div class="email">
+              <code id="addr">coltonrandall.nz@gmail.com</code>
+              <button class="btn" id="copy" type="button">Copy email</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <span>© 2026 Colton Randall</span><span>Melbourne, Australia</span>
+      </footer>
+    </div>
   </body>
 </html>

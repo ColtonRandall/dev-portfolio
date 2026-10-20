@@ -1,97 +1,41 @@
-# Colton's Developer Portfolio
+# coltonrandall.com
 
-🔗 View the live site → [coltonrandall.com](https://coltonrandall.com)
+My personal site: [coltonrandall.com](https://coltonrandall.com)
 
-Personal developer portfolio built with React and Material UI. A space to showcase my professional background, career timeline, and the projects I've built.
+A single static page built for recruiters and hiring managers. It covers my experience, selected projects and contact details, and includes a small working demo of my [SMS Routing Service](https://github.com/ColtonRandall/sms-routing-service) that applies the same carrier routing and opt-out rules as the real code.
 
-This site also serves as my development sandbox — a place to consolidate modern web knowledge and experiment with new tools, techniques, and UI patterns.
+<img src="./screenshots/desktop-light.png" width="420" alt="Light mode"> <img src="./screenshots/desktop-dark.png" width="420" alt="Dark mode">
 
-<br/>
+## Stack
 
-### UI
+- Static HTML and CSS with a small amount of TypeScript, and no framework
+- [Vite](https://vite.dev) for local dev and the production build, with `tsc` type-checking in strict mode
+- Light and dark themes that follow the system setting, with a manual toggle
+- Open Graph image, structured data and a sitemap so link previews and search results look right
 
-Dark mode
+## Run locally
 
-<img 
-  src="./public/images/desktop-dark.png" 
-  width="400" 
-  style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"
-  border="2px solid grey" 
-/>
-
-Light mode
-
-<img 
-  src="./public/images/desktop-light.png" 
-  width="400" 
-  style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"
-  border="2px solid grey" 
-/>
-
-Mobile
-<br/>
-<img 
-  src="./public/gif/mobile-mode.gif" 
-  width="200" 
-  style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);"
-  border="2px solid grey" 
-/>
-
-<br/>
-
-### Features
-
-- Dark / light mode toggle
-- Typewriter animation cycling through role titles
-- Project gallery with filterable tech stack chips
-- Career timeline
-- Blog with markdown-rendered posts
-- Responsive design — mobile & tablet friendly
-- Automated CI/CD via GitHub Actions
-
-<br/>
-
-### ⚙️ Tech Stack
-
-- **Framework:** React + Vite
-- **Routing:** React Router
-- **UI Library:** Material UI (MUI)
-- **Deployment:** GitHub Pages via GitHub Actions
-- **Infrastructure:** Terraform for AWS S3 static hosting (experimental)
-
-<br/>
-
-### 🚀 Getting Started
-
-```sh
-# Install dependencies
+```bash
 npm install
-
-# Run dev server
 npm run dev
-
-# Build for production
-npm run build
-
-# Deploy to GitHub Pages
-npm run deploy
 ```
 
-For AWS deployment via Terraform:
+## Deploy
 
-```sh
-cd infra
-terraform apply
+```bash
+npm run deploy        # builds and publishes dist/ to GitHub Pages (gh-pages branch)
+npm run deploy:aws    # optional: uploads dist/ to the S3 bucket defined in infra/
 ```
 
-> Or use `npm run deploy:all` to deploy to both GitHub Pages and AWS in one step.
+## Files
 
-<br/>
-
-### 🌐 AWS Integration
-
-Includes a Terraform setup for deploying to AWS S3 with static website hosting. The intention is to fully migrate to AWS with Route 53 for domain management and CloudFront for CDN and HTTPS support.
-
-<br/>
-
-This is a complete overhaul of my original static HTML/CSS/JS site — [old-portfolio-website](https://github.com/ColtonRandall/old-portfolio-website).
+| Path | What it is |
+| --- | --- |
+| `index.html` | Page content and structure |
+| `src/styles.css` | All styles, including the light and dark themes |
+| `src/sms-routing.ts` | Routing rules for the hero demo, mirroring the Java service |
+| `src/main.ts` | Wires up the demo, theme toggle and copy-email button |
+| `public/docs/` | The CV linked from the Résumé button |
+| `public/images/og.png` | Link preview image for LinkedIn, Slack and similar |
+| `public/404.html` | Sends old or broken links back to the home page |
+| `infra/` | Terraform for the optional S3 deployment |
