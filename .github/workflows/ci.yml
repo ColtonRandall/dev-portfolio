@@ -24,7 +24,7 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: npm
-      - run: npm ci
+      - run: npm ci --ignore-scripts # dependencies need no install scripts; skipping them blocks supply-chain attacks
       - run: npm test
       - run: npm run build # type-checks with tsc, then builds with Vite
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
