@@ -35,6 +35,7 @@ npm run deploy:aws    # optional: uploads dist/ to the S3 bucket defined in infr
 | `src/styles.css` | All styles, including the light and dark themes |
 | `src/sms-routing.ts` | Routing rules for the hero demo, mirroring the Java service |
 | `src/main.ts` | Wires up the demo, theme toggle and copy-email button |
+| `src/easter-egg.ts` | Something for the curious. Start with the plane on the timeline |
 | `public/docs/` | The CV linked from the Résumé button |
 | `public/images/og.png` | Link preview image for LinkedIn, Slack and similar |
 | `public/404.html` | Sends old or broken links back to the home page |
