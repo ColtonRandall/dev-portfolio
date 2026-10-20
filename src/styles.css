@@ -126,7 +126,16 @@ h3 {
   background: var(--warm);
 }
 
-/* dot grid behind the top of the page */
+/* decorative message routes behind the hero, clipped so they never cause sideways scroll */
+.deco {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 760px;
+  overflow: hidden;
+  pointer-events: none;
+}
 .routes {
   position: absolute;
   left: 50%;
@@ -160,7 +169,7 @@ h3 {
 .glow {
   position: absolute;
   top: 60px;
-  right: -120px;
+  right: calc(50% - 560px);
   width: 520px;
   height: 420px;
   pointer-events: none;
@@ -174,7 +183,7 @@ h3 {
 .glow.w {
   top: 300px;
   right: auto;
-  left: -200px;
+  left: calc(50% - 640px);
   width: 420px;
   height: 360px;
   background: radial-gradient(
@@ -282,16 +291,16 @@ nav {
 .status {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font: 500 13px var(--mono);
-  color: var(--muted);
+  gap: 6px;
+  margin-top: 2px;
+  font: 500 15px var(--body);
+  color: var(--ink);
 }
-.status i {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--ok);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--ok) 20%, transparent);
+.status svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  color: var(--warm);
 }
 .hero h1 {
   font-size: clamp(40px, 6.4vw, 60px);
@@ -478,40 +487,6 @@ nav {
 }
 
 /* highlights */
-.highlights {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding-block: 8px 24px;
-  position: relative;
-}
-.hl {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 18px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  min-width: 0;
-}
-.hl strong {
-  font: 700 22px/1.2 var(--display);
-  letter-spacing: -0.01em;
-}
-.hl strong em {
-  font-style: normal;
-  color: var(--warm);
-}
-.hl span {
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.5;
-}
-.hl span b {
-  color: var(--ink);
-  font-weight: 600;
-}
 
 /* sections: separated by space, no rules */
 section {
@@ -608,6 +583,13 @@ section > .label {
   display: grid;
   place-items: center;
   color: var(--warm);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.plane:hover {
+  transform: translateY(-50%) rotate(-12deg) scale(1.12);
 }
 .plane svg {
   width: 18px;
@@ -910,6 +892,21 @@ section > .label {
   color: var(--ink);
   border-color: var(--bg);
 }
+.contact-card .btn.ghost {
+  background: transparent;
+  color: var(--bg);
+  border-color: color-mix(in srgb, var(--bg) 35%, transparent);
+}
+.contact-card .btn.ghost:hover {
+  border-color: var(--bg);
+}
+footer .src {
+  color: var(--muted);
+  text-decoration: none;
+}
+footer .src:hover {
+  color: var(--ink);
+}
 footer {
   padding-block: 32px 48px;
   color: var(--muted);
@@ -920,14 +917,62 @@ footer {
   flex-wrap: wrap;
 }
 
+/* easter egg: the plane on the timeline flies AKL to MEL */
+.flight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  pointer-events: none;
+  color: var(--warm);
+}
+.flight svg {
+  width: 34px;
+  height: 34px;
+  transform: rotate(90deg);
+  filter: drop-shadow(
+    0 4px 6px color-mix(in srgb, var(--ink) 25%, transparent)
+  );
+}
+.flight .banner {
+  font: 500 13px var(--mono);
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 5px 10px;
+  white-space: nowrap;
+  box-shadow: 0 6px 16px -8px color-mix(in srgb, var(--ink) 40%, transparent);
+}
+.flight .banner::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  border-top: 1px dashed var(--muted);
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  z-index: 50;
+  font: 500 13px var(--mono);
+  color: var(--bg);
+  background: var(--ink);
+  padding: 10px 16px;
+  border-radius: 999px;
+}
+
 @media (max-width: 760px) {
   .hero {
     grid-template-columns: 1fr;
     gap: 28px;
     padding-block: 8px 32px;
-  }
-  .highlights {
-    grid-template-columns: 1fr;
   }
   section {
     grid-template-columns: 1fr;
@@ -938,7 +983,22 @@ footer {
     grid-template-columns: 1fr;
   }
   .skills {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .skills ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px 0;
+  }
+  .skills li:not(:last-child)::after {
+    content: "·";
+    margin-inline: 8px;
+    color: var(--muted);
+  }
+  .step {
+    flex-direction: column;
+    gap: 0;
   }
   .navlinks {
     gap: 16px;

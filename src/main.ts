@@ -1,5 +1,6 @@
 import "./styles.css";
 import { SmsRouter, type RouteResult } from "./sms-routing";
+import { setUpEasterEgg } from "./easter-egg";
 
 const prefersReducedMotion = window.matchMedia(
   "(prefers-reduced-motion: reduce)",
@@ -148,3 +149,4 @@ function setUpCopyEmail() {
 setUpSmsDemo();
 setUpThemeToggle();
 setUpCopyEmail();
+setUpEasterEgg();
