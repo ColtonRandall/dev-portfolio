@@ -292,13 +292,15 @@ nav {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font: 500 13px var(--mono);
-  color: var(--muted);
+  margin-top: 2px;
+  font: 500 15px var(--body);
+  color: var(--ink);
 }
 .status svg {
-  width: 14px;
-  height: 14px;
+  width: 17px;
+  height: 17px;
   flex: none;
+  color: var(--warm);
 }
 .hero h1 {
   font-size: clamp(40px, 6.4vw, 60px);
