@@ -53,14 +53,14 @@ export function fly() {
     const x = start.x + (end.x - start.x) * t;
     const climb = t * t * (3 - 2 * t);
     const y = start.y + (end.y - start.y) * climb;
-    const pitch = -18 * Math.sin(Math.PI * t);
+    const pitch = -7 * Math.sin(Math.PI * t);
     return { transform: `translate(${x}px, ${y}px) rotate(${pitch}deg)` };
   });
 
-  const animation = flight.animate(frames, {
-    duration: 3400,
-    easing: "ease-in-out",
-  });
+  // Fly at a steady, readable speed: about 230px a second, kept between 6 and 9 seconds.
+  const distance = end.x - start.x;
+  const duration = Math.min(9000, Math.max(6000, (distance / 230) * 1000));
+  const animation = flight.animate(frames, { duration, easing: "linear" });
   animation.onfinish = () => {
     flight.remove();
     inFlight = false;
