@@ -42,4 +42,3 @@ To publish by hand instead, run `npm run deploy`.
 | `public/images/og.png` | Link preview image for LinkedIn, Slack and similar |
 | `public/404.html` | Sends old or broken links back to the home page |
 | `.github/workflows/ci.yml` | Tests, build and automatic deploy |
-| `infra/` | Terraform for the optional S3 deployment |
